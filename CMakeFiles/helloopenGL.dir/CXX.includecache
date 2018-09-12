@@ -1596,6 +1596,26 @@ Imported3DModel.h
 material3DObject.h
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material3DObject.h
 
+/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.cpp
+bspline.h
+/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.h
+
+/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.h
+cmath
+-
+vector
+-
+map
+-
+string
+-
+iostream
+-
+fstream
+-
+glm/glm.hpp
+-
+
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/light.cpp
 light.h
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/light.h
@@ -1703,6 +1723,8 @@ scene.h
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/3DObjectParser/objparser.h
 ../Materials/Imported3DModel.h
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/Imported3DModel.h
+../Materials/bspline.h
+/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.h
 
 /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/camera.cpp
 camera.h

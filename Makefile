@@ -244,6 +244,33 @@ src/Materials/Imported3DModel.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.s
 .PHONY : src/Materials/Imported3DModel.cpp.s
 
+src/Materials/bspline.o: src/Materials/bspline.cpp.o
+
+.PHONY : src/Materials/bspline.o
+
+# target to build an object file
+src/Materials/bspline.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
+.PHONY : src/Materials/bspline.cpp.o
+
+src/Materials/bspline.i: src/Materials/bspline.cpp.i
+
+.PHONY : src/Materials/bspline.i
+
+# target to preprocess a source file
+src/Materials/bspline.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.i
+.PHONY : src/Materials/bspline.cpp.i
+
+src/Materials/bspline.s: src/Materials/bspline.cpp.s
+
+.PHONY : src/Materials/bspline.s
+
+# target to generate assembly for a file
+src/Materials/bspline.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.s
+.PHONY : src/Materials/bspline.cpp.s
+
 src/Materials/light.o: src/Materials/light.cpp.o
 
 .PHONY : src/Materials/light.o
@@ -671,6 +698,9 @@ help:
 	@echo "... src/Materials/Imported3DModel.o"
 	@echo "... src/Materials/Imported3DModel.i"
 	@echo "... src/Materials/Imported3DModel.s"
+	@echo "... src/Materials/bspline.o"
+	@echo "... src/Materials/bspline.i"
+	@echo "... src/Materials/bspline.s"
 	@echo "... src/Materials/light.o"
 	@echo "... src/Materials/light.i"
 	@echo "... src/Materials/light.s"

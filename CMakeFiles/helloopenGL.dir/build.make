@@ -133,9 +133,33 @@ CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o.provides: CMakeFi
 CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o
 
 
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o: src/Materials/bspline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.cpp
+
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.cpp > CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/bspline.cpp -o CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
+
+
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o: src/Materials/light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/light.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.i: cmake_force
@@ -159,7 +183,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o: src/Materials/material.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.i: cmake_force
@@ -183,7 +207,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o: src/Materials/material3DObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material3DObject.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.i: cmake_force
@@ -207,7 +231,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o.provides.build: 
 
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o: src/Materials/spheres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/spheres.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.i: cmake_force
@@ -231,7 +255,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o: src/ShaderManager/shaderloader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shaderloader.cpp
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.i: cmake_force
@@ -255,7 +279,7 @@ CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o.provides.build: 
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o: src/ShaderManager/shadermanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shadermanager.cpp
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.i: cmake_force
@@ -279,7 +303,7 @@ CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o.provides.build:
 
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/hello_3dObjScene/Scene3DObjects.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_3dObjScene/Scene3DObjects.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.i: cmake_force
@@ -303,7 +327,7 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o.provides.bu
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o: src/hello_camera/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/camera.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.i: cmake_force
@@ -327,7 +351,7 @@ CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o: src/hello_camera/hellocamera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/hellocamera.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.i: cmake_force
@@ -351,7 +375,7 @@ CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o.provides.build: CM
 
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o: src/hello_spheres/hellospheres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_spheres/hellospheres.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.i: cmake_force
@@ -375,7 +399,7 @@ CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o.provides.build: 
 
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o: src/hello_triangles/hellotriangles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_triangles/hellotriangles.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.i: cmake_force
@@ -399,7 +423,7 @@ CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o.provides.bui
 
 CMakeFiles/helloopenGL.dir/src/main.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/helloopenGL.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/helloopenGL.dir/src/main.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/main.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/main.cpp
 
 CMakeFiles/helloopenGL.dir/src/main.cpp.i: cmake_force
@@ -423,7 +447,7 @@ CMakeFiles/helloopenGL.dir/src/main.cpp.o.provides.build: CMakeFiles/helloopenGL
 
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o: src/mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/mainwindow.cpp
 
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.i: cmake_force
@@ -447,7 +471,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o.provides.build: CMakeFiles/hello
 
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o: src/myopenglwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/myopenglwidget.cpp
 
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.i: cmake_force
@@ -471,7 +495,7 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o.provides.build: CMakeFiles/h
 
 CMakeFiles/helloopenGL.dir/src/scene.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/scene.cpp.o: src/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/helloopenGL.dir/src/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/helloopenGL.dir/src/scene.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/scene.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/scene.cpp
 
 CMakeFiles/helloopenGL.dir/src/scene.cpp.i: cmake_force
@@ -495,7 +519,7 @@ CMakeFiles/helloopenGL.dir/src/scene.cpp.o.provides.build: CMakeFiles/helloopenG
 
 CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.o: helloopenGL_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.o"
 	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.o -c /winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/helloopenGL_autogen/mocs_compilation.cpp
 
 CMakeFiles/helloopenGL.dir/helloopenGL_autogen/mocs_compilation.cpp.i: cmake_force
@@ -522,6 +546,7 @@ helloopenGL_OBJECTS = \
 "CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o" \
@@ -545,6 +570,7 @@ helloopenGL_EXTERNAL_OBJECTS =
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o
@@ -569,7 +595,7 @@ bin/helloopenGL: /opt/anaconda3/lib/libQt5Widgets.so.5.6.2
 bin/helloopenGL: /opt/anaconda3/lib/libQt5Gui.so.5.6.2
 bin/helloopenGL: /opt/anaconda3/lib/libQt5Core.so.5.6.2
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable bin/helloopenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable bin/helloopenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helloopenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -580,6 +606,7 @@ CMakeFiles/helloopenGL.dir/build: bin/helloopenGL
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o.requires

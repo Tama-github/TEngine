@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o"
+  "CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"

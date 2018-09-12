@@ -5,31 +5,31 @@
 		<Option title="helloopenGL"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\anaconda3\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
+				<Option working_dir="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
+				<Option working_dir="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="helloopenGL">
-				<Option output="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/bin/helloopenGL" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/bin"/>
+				<Option output="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/bin/helloopenGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -39,10 +39,11 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_OPENGL_LIB"/>
 					<Add option="-DQT_NO_DEBUG"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/helloopenGL_autogen/include"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/glm"/>
+					<Add directory="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
+					<Add directory="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/helloopenGL_autogen/include"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/glm"/>
 					<Add directory="/opt/anaconda3/include/qt"/>
 					<Add directory="/opt/anaconda3/include/qt/QtWidgets"/>
 					<Add directory="/opt/anaconda3/include/qt/QtGui"/>
@@ -57,15 +58,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 helloopenGL"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 helloopenGL"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="helloopenGL/fast">
-				<Option output="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/bin/helloopenGL" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/bin"/>
+				<Option output="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/bin/helloopenGL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,10 +76,11 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_OPENGL_LIB"/>
 					<Add option="-DQT_NO_DEBUG"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/helloopenGL_autogen/include"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src"/>
-					<Add directory="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/glm"/>
+					<Add directory="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
+					<Add directory="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/helloopenGL_autogen/include"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src"/>
+					<Add directory="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/glm"/>
 					<Add directory="/opt/anaconda3/include/qt"/>
 					<Add directory="/opt/anaconda3/include/qt/QtWidgets"/>
 					<Add directory="/opt/anaconda3/include/qt/QtGui"/>
@@ -93,239 +95,251 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 helloopenGL/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 helloopenGL/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
+				<Option working_dir="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="helloopenGL_autogen">
-				<Option working_dir="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj"/>
+				<Option working_dir="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 helloopenGL_autogen"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 helloopenGL_autogen"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/helloopenGL_autogen/mocs_compilation.cpp">
+		<Unit filename="/home/brl1547a/Documents/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/helloopenGL_autogen/mocs_compilation.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/3DObjectParser/objparser.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/3DObjectParser/objparser.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/3DObjectParser/objparser.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/3DObjectParser/objparser.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/Imported3DModel.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Animation/Animation.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/Imported3DModel.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Animation/Animation.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/light.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/Imported3DModel.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/light.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/Imported3DModel.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/material.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/light.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/material.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/light.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/material3DObject.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/material3DObject.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/spheres.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material3DObject.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/Materials/spheres.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/material3DObject.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/ShaderManager/shaderloader.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/spheres.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/ShaderManager/shaderloader.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/Materials/spheres.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/ShaderManager/shadermanager.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shaderloader.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/ShaderManager/shadermanager.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shaderloader.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_camera/camera.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shadermanager.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_camera/camera.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/ShaderManager/shadermanager.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_camera/hellocamera.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_3dObjScene/Scene3DObjects.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_camera/hellocamera.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_3dObjScene/Scene3DObjects.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_spheres/hellospheres.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/camera.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_spheres/hellospheres.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/camera.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_triangles/hellotriangles.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/hellocamera.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/hello_triangles/hellotriangles.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_camera/hellocamera.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/main.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_spheres/hellospheres.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/mainwindow.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_spheres/hellospheres.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/mainwindow.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_triangles/hellotriangles.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/mainwindow.ui">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/hello_triangles/hellotriangles.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/myopenglwidget.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/main.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/myopenglwidget.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/mainwindow.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/opengl_stuff.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/mainwindow.h">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/scene.cpp">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/mainwindow.ui">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/src/scene.h">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/myopenglwidget.cpp">
 			<Option target="helloopenGL"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/CMakeLists.txt">
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/myopenglwidget.h">
+			<Option target="helloopenGL"/>
+		</Unit>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/opengl_stuff.h">
+			<Option target="helloopenGL"/>
+		</Unit>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/scene.cpp">
+			<Option target="helloopenGL"/>
+		</Unit>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/scene.h">
+			<Option target="helloopenGL"/>
+		</Unit>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QDDSPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QDDSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\"/>
 		</Unit>
-		<Unit filename="/home/brl1547a/Documents/brl1547a/IIG3D/PrjIIG3D_3DMultiObj/../../../../../../opt/anaconda3/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\"/>
+		<Unit filename="/winhomes/brl1547a/brl1547a/M2/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/../../../../../../../opt/anaconda3/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\anaconda3\lib\cmake\Qt5OpenGL\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

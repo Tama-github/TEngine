@@ -14,6 +14,7 @@
 #include "../Materials/material3DObject.h"
 #include "../3DObjectParser/objparser.h"
 #include "../Materials/Imported3DModel.h"
+#include "../Materials/bspline.h"
 
 
 /** Spheres : different ways of building and rendering spheres

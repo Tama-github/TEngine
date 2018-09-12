@@ -143,12 +143,27 @@ bool Scene3DObject::keyboard(unsigned char k) {
 void Scene3DObject::init3DObjects () {
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
-    ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
     /* Add animations to the added models */
     //_3DObjects[0].getAnimation().addTranslation(glm::vec3(0.001,0,0));
     //_3DObjects[0].getAnimation().addTranslation(glm::vec3(0,0,-0.01));
     //_3DObjects[0].getAnimation().addRotation(0.01,glm::vec3(0,1,1));
+
+    /*test sur les Bspline*/
+    std::vector<glm::vec3> pts = { glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0) };
+    std::vector<int> nodal = {0, 1, 2, 3, 4, 5, 6, 7};
+    Bspline test = Bspline(pts, 3, nodal);
+    std::cout << "polynome de controle : (0 0 0) / (1 1 0) / (0 2 0)" << std::endl << std::endl;
+    glm::vec3 v;
+    for (float i = 2.; i < 5.; i += 0.1) {
+        v = test.p(i);
+        std::cout << "p(" << i << ") = (" << v[0] << " " << v[1] << " " << v[2] << ")" << std::endl;
+    }
+    /*std::cout << "p(1.5)" << test.p(1.5) << std::endl;
+    std::cout << "p(2)" << test.p(2.) << std::endl;
+    std::cout << "p(2.5)" << test.p(2.5) << std::endl;
+    std::cout << "p(3)" << test.p(3.) << std::endl;*/
 
     _nb3DObjects = _3DObjects.size();
 }

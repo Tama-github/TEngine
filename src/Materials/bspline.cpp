@@ -10,7 +10,7 @@ glm::vec3 Bspline::p(float u) {
     std::vector<glm::vec3> pts;
     for (int i = 0; i < _ordre; i++){
         pts.push_back(_controlPts[decalage+i]);
-        std::cout << "pts in : " << pts[i][0] << " " << pts[i][1] << " " << pts[i][2] << std::endl;
+        //std::cout << "pts in : " << pts[i][0] << " " << pts[i][1] << " " << pts[i][2] << std::endl;
     }
 
     int k = _ordre;
@@ -30,4 +30,20 @@ glm::vec3 Bspline::p(float u) {
         }
     }
     return pts[0];
+}
+
+int Bspline::getOrdre() {
+    return _ordre;
+}
+
+int Bspline::getNbPoints() {
+    return _controlPts.size();
+}
+
+int Bspline::getMin() {
+    return _nodalVec[_ordre];
+}
+
+int Bspline::getMax() {
+    return _nodalVec[_controlPts.size()+1];
 }

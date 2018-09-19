@@ -7,13 +7,23 @@
 class BsplinePatch : public Material3DObject
 {
 public:
-    BsplinePatch(glm::vec3 color, glm::vec3 position): Material3DObject(color, position) {};
-    void addControlPoly (std::vector<glm::vec3> poly);
-    void eval (int du, int dv);
+    BsplinePatch(glm::vec3 color, glm::vec3 position, int ordre): _ordre{ordre}, _controlMesh{std::vector<Bspline>{}}, Material3DObject(color, position) {};
+    void addControlPoly (Bspline poly);
+    void eval (float du, float dv);
+
 
 private:
     glm::vec3 p(int u, int v);
-    std::vector<std::vector<glm::vec3>> controlMesh;
+    int getMinU();
+    int getMinV();
+    int getMaxU();
+    int getMaxV();
+    void makeTrianglesMesh();
+    void processNormals();
+    std::vector<Bspline> _controlMesh;
+    int _ordre;
+    int _n;
+    int _m;
 
 };
 

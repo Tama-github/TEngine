@@ -50,6 +50,7 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _lights.push_back(glm::vec3(scale,scale/2,0));
     _lights.push_back(glm::vec3(-scale,scale/2,0));
     _lights.push_back(glm::vec3(scale,scale,scale));
+    //_lights.push_back(glm::vec3(0,0,0));
 
     //GLSL program generation
     _activeshader = 0;
@@ -151,15 +152,15 @@ void Scene3DObject::init3DObjects () {
     //_3DObjects[0].getAnimation().addRotation(0.01,glm::vec3(0,1,1));
 
     /*test sur les Bspline*/
-    /*std::vector<glm::vec3> pts = { glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0) };
-    std::vector<int> nodal = {0, 1, 2, 3, 4, 5, 6, 7};
-    Bspline test = Bspline(pts, 3, nodal);
-    std::cout << "polynome de controle : (0 0 0) / (1 1 0) / (0 2 0)" << std::endl << std::endl;
+    Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0), glm::vec3(2,4,0), glm::vec3(1,5,0)},3);
+    //std::cout << "polynome de controle : (0 0 0) / (1 1 0) / (0 2 0)" << std::endl << std::endl;
     glm::vec3 v;
-    for (float i = 2.; i < 5.; i += 0.1) {
+    int xp = 0;
+    int tf = (test.getMax()-test.getMin())/0.1;
+    for (float i = test.getMin(); i < test.getMax(); i += 0.1) {
         v = test.p(i);
-        std::cout << "p(" << i << ") = (" << v[0] << " " << v[1] << " " << v[2] << ")" << std::endl;
-    }*/
+        std::cout << xp++ << "/" << tf << ": p(" << i << ") = (" << v[0] << " " << v[1] << " " << v[2] << ")" << std::endl;
+    }
 
     /*std::cout << "p(1.5)" << test.p(1.5) << std::endl;
     std::cout << "p(2)" << test.p(2.) << std::endl;
@@ -167,25 +168,15 @@ void Scene3DObject::init3DObjects () {
     std::cout << "p(3)" << test.p(3.) << std::endl;*/
 
     /*Test sur les patch Bspline*/
-    BsplinePatch test = BsplinePatch (glm::vec3(1,0.2,0.7),glm::vec3(0,0,0),3);
-    Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,-2), glm::vec3(1,1,-2), glm::vec3(0,2,-2), glm::vec3(2,3,-2)},3);
-    Bspline b2 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,-1), glm::vec3(1,1,-1), glm::vec3(0,2,-1), glm::vec3(2,3,-1)},3);
-    Bspline b3 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0)},3);
-    Bspline b4 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,1), glm::vec3(1,1,1), glm::vec3(0,2,1), glm::vec3(2,3,1)},3);
-    Bspline b5 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,2), glm::vec3(1,1,2), glm::vec3(0,2,2), glm::vec3(2,3,2)},3);
-    Bspline b6 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,3), glm::vec3(1,1,3), glm::vec3(0,2,3), glm::vec3(2,3,3)},3);
-    Bspline b7 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,4), glm::vec3(1,1,4), glm::vec3(0,2,4), glm::vec3(2,3,4)},3);
+    /*BsplinePatch test = BsplinePatch (glm::vec3(1,0.2,0.7),glm::vec3(0,0,0),3);
 
-    test.addControlPoly(b1);
-    test.addControlPoly(b2);
-    test.addControlPoly(b3);
-    test.addControlPoly(b4);
-    test.addControlPoly(b5);
-    test.addControlPoly(b6);
-    test.addControlPoly(b7);
+    for (int i = -2; i < 9; i ++ ) {
+        Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,i), glm::vec3(1,1,i), glm::vec3(0,2,i), glm::vec3(2,3,i), glm::vec3(2,4,i), glm::vec3(1,5,i)},3);
+        test.addControlPoly(b1);
+    }
 
-    test.eval(0.2,0.2);
-    _3DObjects.push_back(test);
+    test.eval(0.1,0.1);
+    _3DObjects.push_back(test);*/
 
     _nb3DObjects = _3DObjects.size();
 }

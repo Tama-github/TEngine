@@ -13,7 +13,7 @@ public:
 
 
 private:
-    glm::vec3 p(int u, int v);
+    glm::vec3 p(float u, float v);
     int getMinU();
     int getMinV();
     int getMaxU();

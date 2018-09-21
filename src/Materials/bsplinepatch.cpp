@@ -25,20 +25,20 @@ int BsplinePatch::getMaxU() {
 }
 
 int BsplinePatch::getMaxV() {
-    return _controlMesh.size()+1;
+    return _controlMesh.size();
 }
 
 void BsplinePatch::eval(float du, float dv) {
-    _n = (getMaxU()-getMinU())/du;
-    _m = (getMaxV()-getMinV())/dv;
-    int nbVertex = (getMaxU()-getMinU())/du + (getMaxV()-getMinV())/dv;
-    std::cout << "Compute mesh's vertexs ( nb vertex = "<< nbVertex <<") U(" << getMinU() << ", " << getMaxU() << ")  V(" << getMinV() << ", " << getMaxV() << ") ..." << std::endl;
+    _n = (1/du)*(getMaxU()-getMinU());
+    _m = (1/dv)*(getMaxV()-getMinV());
+    int nbVertex = _n * _m;
+    std::cout << "Compute mesh's vertexs ( nb vertex = "<< nbVertex <<", "<< _n <<" x "<< _m <<") U(" << getMinU() << ", " << getMaxU() << ")  V(" << getMinV() << ", " << getMaxV() << ") ..." << std::endl;
 
-
+    int xc = 0;
     for (float u = getMinU(); u < getMaxU(); u+=du) {
         for (float v = getMinV(); v < getMaxV(); v+=dv) {
             glm::vec3 tmp = p(u,v);
-            //std::cout << "Vertex number : " << u*v << std::endl;
+            //std::cout << "Add point indice "<< xc++ <<" : " << tmp[0] << " " << tmp[1] << " " << tmp[2] << std::endl;
             _vertices.push_back(tmp[0]);
             _vertices.push_back(tmp[1]);
             _vertices.push_back(tmp[2]);
@@ -52,23 +52,33 @@ void BsplinePatch::eval(float du, float dv) {
 }
 
 void BsplinePatch::makeTrianglesMesh() {
+    int xf = 0;
     for (int i = 0; i < _n-1; i++) {
         for (int j = 0; j < _m-1; j++) {
+            //std::cout << "boucle numero " << xf++ << std::endl;
             _indices.push_back(i*_m+j);
-            _indices.push_back((i+1)*_m+2+j);
             _indices.push_back((i+1)*_m+1+j);
+            _indices.push_back(i*_m+1+j);
 
             _indices.push_back(i*_m+j);
-            _indices.push_back(i*_m+1+j);
-            _indices.push_back((i+1)*_m+2+j);
+            _indices.push_back((i+1)*_m+j);
+            _indices.push_back((i+1)*_m+1+j);
         }
     }
+
+
+    //for (int i = 0 ; i < _indices.size()/3; i+=3)
+    //    std::cout <<  _indices[i] << " " << _indices[i+1] << " " << _indices[i+2] << std::endl;
 }
 
 void BsplinePatch::processNormals() {
     //std::cout << "Salut je cherche le problèlme :)" << std::endl;
     std::vector<glm::vec3> tmpNorm = std::vector<glm::vec3>(_vertices.size()/3, glm::vec3(0));
     //std::cout << "Ici c'est ok ?" << std::endl;
+    //std::cout << "Nb indices : " << _indices.size() << std::endl << "nb triangles : " << _indices.size()/3 << std::endl;
+    //std::cout << "2 premier triangles :" << std::endl;
+    //std::cout << _indices[0] << " " << _indices[1] << " " << _indices[2] << std::endl;
+    //std::cout << _indices[3] << " " << _indices[4] << " " << _indices[5] << std::endl;
     for (uint32_t i = 0; i < _indices.size()/3; i+=3) {
         //std::cout << "Ici c'est un peu chiant" << std::endl;
         int ind = _indices[i]*3;
@@ -99,7 +109,7 @@ void BsplinePatch::processNormals() {
     //std::cout << "TOUT EST OK :D" << std::endl;
 }
 
-glm::vec3 BsplinePatch::p(int u, int v) {
+glm::vec3 BsplinePatch::p(float u, float v) {
     std::vector<glm::vec3> tmp;
     for (unsigned int i = 0; i < _controlMesh.size(); i++) {
         tmp.push_back(_controlMesh[i].p(u));

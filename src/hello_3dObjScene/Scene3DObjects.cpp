@@ -152,7 +152,7 @@ void Scene3DObject::init3DObjects () {
     //_3DObjects[0].getAnimation().addRotation(0.01,glm::vec3(0,1,1));
 
     /*test sur les Bspline*/
-    Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0), glm::vec3(2,4,0), glm::vec3(1,5,0)},3);
+    /*Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0), glm::vec3(2,4,0), glm::vec3(1,5,0)},3);
     //std::cout << "polynome de controle : (0 0 0) / (1 1 0) / (0 2 0)" << std::endl << std::endl;
     glm::vec3 v;
     int xp = 0;
@@ -160,7 +160,8 @@ void Scene3DObject::init3DObjects () {
     for (float i = test.getMin(); i < test.getMax(); i += 0.1) {
         v = test.p(i);
         std::cout << xp++ << "/" << tf << ": p(" << i << ") = (" << v[0] << " " << v[1] << " " << v[2] << ")" << std::endl;
-    }
+        std::cout << "/////////////////////////////////////////////" << std::endl;
+    }*/
 
     /*std::cout << "p(1.5)" << test.p(1.5) << std::endl;
     std::cout << "p(2)" << test.p(2.) << std::endl;
@@ -168,15 +169,15 @@ void Scene3DObject::init3DObjects () {
     std::cout << "p(3)" << test.p(3.) << std::endl;*/
 
     /*Test sur les patch Bspline*/
-    /*BsplinePatch test = BsplinePatch (glm::vec3(1,0.2,0.7),glm::vec3(0,0,0),3);
+    BsplinePatch test = BsplinePatch (glm::vec3(1,0.2,0.7),glm::vec3(0,0,0),3);
 
-    for (int i = -2; i < 9; i ++ ) {
+    for (int i = 0; i < 11; i ++ ) {
         Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,i), glm::vec3(1,1,i), glm::vec3(0,2,i), glm::vec3(2,3,i), glm::vec3(2,4,i), glm::vec3(1,5,i)},3);
         test.addControlPoly(b1);
     }
 
     test.eval(0.1,0.1);
-    _3DObjects.push_back(test);*/
+    _3DObjects.push_back(test);
 
     _nb3DObjects = _3DObjects.size();
 }

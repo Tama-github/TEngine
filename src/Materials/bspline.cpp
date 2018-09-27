@@ -21,7 +21,7 @@ glm::vec3 Bspline::p(float u) {
 
     int k = _ordre;
     for (int i = 0; i < _ordre ; i++) {
-        for (int j = 0; j < k-i; j++) {
+        for (int j = 0; j < k-i-1; j++) {
             //std::cout << "decalage = " << decalage <<std::endl;
             //std::cout << "_nodalVec[decalage+1] = " << _nodalVec[decalage+1] << std::endl;
             //std::cout << "u = " << u << std::endl;

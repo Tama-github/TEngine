@@ -31,8 +31,8 @@ int BsplinePatch::getMaxV() {
 void BsplinePatch::eval(float du, float dv) {
     //_n = (1/du)*(getMaxU()-getMinU());
     //_m = (1/dv)*(getMaxV()-getMinV());
-    int nbVertex = _n * _m;
-    std::cout << "Compute mesh's vertexs ( nb vertex = "<< nbVertex <<", "<< _n <<" x "<< _m <<") U(" << getMinU() << ", " << getMaxU() << ")  V(" << getMinV() << ", " << getMaxV() << ") ..." << std::endl;
+    //int nbVertex = _n * _m;
+    //std::cout << "Compute mesh's vertexs ( nb vertex = "<< nbVertex <<", "<< _n <<" x "<< _m <<") U(" << getMinU() << ", " << getMaxU() << ")  V(" << getMinV() << ", " << getMaxV() << ") ..." << std::endl;
     _n = 0;
     _m = 0;
     int xc = 0;
@@ -53,6 +53,7 @@ void BsplinePatch::eval(float du, float dv) {
     makeTrianglesMesh();
     std::cout << "Compute normals ..." << std::endl;
     processNormals();
+    updateShiftedVertices();
 }
 
 void BsplinePatch::makeTrianglesMesh() {
@@ -87,8 +88,8 @@ void BsplinePatch::processNormals() {
     //std::cout << "        Indices size : " << _indices.size() << std::endl ;
     //std::cout << "v / 3 : " << _vertices.size()/3 << std::endl;
     //std::cout << "norm size : " << tmpNorm.size() << std::endl;
-    int imax = 0;
-    for (uint32_t i = 0; i < _indices.size(); i+=3*3) {
+    //int imax = 0;
+    for (uint32_t i = 0; i < _indices.size(); i+=3) {
         //std::cout << "Ici c'est un peu chiant" << std::endl;
         int ind = _indices[i]*3;
         glm::vec3 v1 = glm::vec3(_vertices[ind], _vertices[ind+1], _vertices[ind+2]);
@@ -96,13 +97,13 @@ void BsplinePatch::processNormals() {
         glm::vec3 v2 = glm::vec3(_vertices[ind], _vertices[ind+1], _vertices[ind+2]);
         ind = _indices[i+2]*3;
         glm::vec3 v3 = glm::vec3(_vertices[ind], _vertices[ind+1], _vertices[ind+2]);
-        glm::vec3 tmp = -glm::normalize(glm::cross(v2-v1, v2-v3));
+        glm::vec3 tmp = glm::cross(v2-v1, v2-v3);
         tmpNorm[_indices[i]] += tmp;
         tmpNorm[_indices[i+1]] += tmp;
         tmpNorm[_indices[i+2]] += tmp;
         //std::cout << "On test la grosse boucle" << std::endl;
     }
-    std::cout << "imax : " << imax << std::endl;
+    //std::cout << "imax : " << imax << std::endl;
 
     //std::cout << "La grosse boucle est passé !" << std::endl;
     for (uint32_t i = 0; i < tmpNorm.size(); i++)

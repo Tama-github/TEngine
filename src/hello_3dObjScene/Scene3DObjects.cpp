@@ -154,8 +154,8 @@ void Scene3DObject::init3DObjects () {
     /*test sur les Bspline*/
     //Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,0), glm::vec3(1,1,0), glm::vec3(0,2,0), glm::vec3(2,3,0), glm::vec3(2,4,0), glm::vec3(1,5,0)},3);
     //std::cout << "polynome de controle : (0 0 0) / (1 1 0) / (0 2 0)" << std::endl << std::endl;
-    //Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(-1, 0, 1), glm::vec3(0, 1, 1), glm::vec3(1, 0, 1), glm::vec3(2,1,1), glm::vec3(2, 2, 1)},3);
-    /*glm::vec3 v;
+    /*Bspline test = Bspline (std::vector<glm::vec3>{glm::vec3(-1, 0, 1.3), glm::vec3(0, 1, 1.3), glm::vec3(1, 0, 1.3), glm::vec3(2,1,1.3), glm::vec3(3, 1, 1.3)},3);
+    glm::vec3 v;
     int xp = 0;
     int tf = (test.getMax()-test.getMin())/0.1;
     for (float i = test.getMin(); i < test.getMax(); i += 0.1) {
@@ -170,10 +170,9 @@ void Scene3DObject::init3DObjects () {
     std::cout << "p(3)" << test.p(3.) << std::endl;*/
 
     /*Test sur les patch Bspline*/
-    BsplinePatch test = BsplinePatch (glm::vec3(-2,-4,-8),glm::vec3(0.1,0.4,0.8),3);
-
+    BsplinePatch test = BsplinePatch (glm::vec3(-2,-4,-8),glm::vec3(0.1,0.4,0.8),6);
     for (int i = 0; i < 11; i ++ ) {
-        Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,i), glm::vec3(1,1,i), glm::vec3(0,2,i), glm::vec3(2,3,i), glm::vec3(2,4,i), glm::vec3(1,5,i)},3);
+        Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,i), glm::vec3(1,1,i), glm::vec3(0,2,i), glm::vec3(2,3,i), glm::vec3(2,4,i), glm::vec3(1,5,i)},6);
         test.addControlPoly(b1);
     }
 

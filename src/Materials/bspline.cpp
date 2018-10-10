@@ -60,7 +60,7 @@ int Bspline::getNbPoints() {
 }
 
 int Bspline::getMin() {
-    return _nodalVec[_ordre];
+    return _nodalVec[_ordre/2];
 }
 
 int Bspline::getMax() {

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -DNDEBUG -DINCLUDE_TEMPLATES  -W  -Wall  -Wno-unused  -Wextra  -Wno-variadic-macros    CMakeFiles/mconvert.dir/mconvert.cc.o  -o ../../../../Build/bin/mconvert -rdynamic ../../../../Build/lib/libOpenMeshTools.so.7.1 ../../../../Build/lib/libOpenMeshCore.so.7.1 -Wl,-rpath,"\$ORIGIN/../lib" 

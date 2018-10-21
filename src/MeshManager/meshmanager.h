@@ -1,12 +1,24 @@
 #ifndef MESHMANAGER_H
 #define MESHMANAGER_H
 
-#include <OpenMesh/Core/Mesh/PolyMesh_ArrayKernelT.hh>
+#include <OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh>
+#include "../Materials/material3DObject.h"
 
-class MeshManager
-{
+typedef OpenMesh::TriMesh_ArrayKernelT<> OMesh;
+
+class MeshManager {
 public:
-    MeshManager();
+    MeshManager() :
+        _oMesh (OMesh())
+    {};
+
+    void useMaterial3DObject (Material3DObject inMesh);
+    void convertToMaterial3DObject (Material3DObject &inMesh);
+
+
+private:
+    OMesh _oMesh;
+
 };
 
 #endif // MESHMANAGER_H

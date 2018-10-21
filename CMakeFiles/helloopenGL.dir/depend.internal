@@ -1185,8 +1185,12 @@ CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o
  glm/vec4.hpp
  glm/vector_relational.hpp
 CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.cpp
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
@@ -1213,9 +1217,12 @@ CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyConnectivity.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.cc
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.hh
- ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMesh_ArrayKernelT.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Status.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Traits.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriConnectivity.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/OpenMeshDLLMacros.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/compiler.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/config.h
@@ -1231,6 +1238,107 @@ CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
  ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.cpp
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
@@ -1353,6 +1461,7 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
+ /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
  /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.cpp
@@ -1444,6 +1553,53 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT_inc.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_spec.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_bool.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_fundamentals.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_string.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_rbo.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_types.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/StoreRestore.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayItems.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayKernel.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayKernelT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/AttribKernelT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Attributes.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/BaseKernel.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/CirculatorsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/FinalMeshItemsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Handles.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/IteratorsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyConnectivity.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Status.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Traits.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriConnectivity.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/OpenMeshDLLMacros.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/compiler.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/config.h
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/mostream.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/omstream.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/BaseProperty.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/GenProg.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/Property.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/PropertyContainer.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_cast.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
  glm/common.hpp
  glm/detail/_fixes.hpp
  glm/detail/_swizzle.hpp
@@ -2469,6 +2625,7 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
+ /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
  /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.h
@@ -2612,6 +2769,53 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT_inc.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_spec.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_bool.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_fundamentals.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_binary_vector_of_string.inl
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_rbo.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/SR_types.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/IO/StoreRestore.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayItems.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayKernel.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/ArrayKernelT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/AttribKernelT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Attributes.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/BaseKernel.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/CirculatorsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/FinalMeshItemsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Handles.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/IteratorsT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyConnectivity.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Status.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Traits.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriConnectivity.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/OpenMeshDLLMacros.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/compiler.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/config.h
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/mostream.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/omstream.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/BaseProperty.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/GenProg.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/Property.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/PropertyContainer.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.cc
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_cast.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
+ ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
  glm/common.hpp
  glm/detail/_fixes.hpp
  glm/detail/_swizzle.hpp

@@ -170,14 +170,42 @@ void Scene3DObject::init3DObjects () {
     std::cout << "p(3)" << test.p(3.) << std::endl;*/
 
     /*Test sur les patch Bspline*/
-    BsplinePatch test = BsplinePatch (glm::vec3(-2,-4,-8),glm::vec3(0.1,0.4,0.8),3);
+    /*BsplinePatch test = BsplinePatch (glm::vec3(-2,-4,-8),glm::vec3(0.1,0.4,0.8),3);
     for (int i = 0; i < 11; i ++ ) {
         Bspline b1 = Bspline (std::vector<glm::vec3>{glm::vec3(0,0,i), glm::vec3(1,1,i), glm::vec3(0,2,i), glm::vec3(2,3,i), glm::vec3(2,4,i), glm::vec3(1,5,i)},3);
         test.addControlPoly(b1);
     }
 
     test.eval(0.02,0.02);
-    _3DObjects.push_back(test);
+    _3DObjects.push_back(test);*/
 
+
+    // Initialise geometric data
+    std::vector<GLfloat> vertices = {
+        0.5f,  0.5f, 0.0f,  // Top Right
+        0.5f, -0.5f, 0.0f,  // Bottom Right
+       -0.5f, -0.5f, 0.0f,  // Bottom Left
+       -0.5f,  0.5f, 0.0f   // Top Left
+    };
+    std::vector<GLfloat> normals = {
+        0.577350269189626f, 0.577350269189626f, 0.577350269189626f,
+        0.577350269189626f, -0.577350269189626f, 0.577350269189626f,
+        -0.577350269189626f, -0.577350269189626f, 0.577350269189626f,
+        -0.577350269189626f, 0.577350269189626f, 0.577350269189626f
+    };
+    std::vector<GLuint> indices = {
+        // Note that we start from 0!
+        0, 1, 3,   // First Triangle
+        1, 2, 3    // Second Triangle
+    };
+    Material3DObject simpleObject = Material3DObject(glm::vec3(-0.5,0,0),vertices,normals,indices,glm::vec3(0.1,0.7,0.4));
+    Material3DObject soc = Material3DObject(glm::vec3(0.5,0,0),vertices,normals,indices,glm::vec3(0.4,0.1,0.7));
+    MeshManager m = MeshManager ();
+    m.useMaterial3DObject(soc);
+    m.convertToMaterial3DObject(soc);
+    simpleObject.updateShiftedVertices();
+    soc.updateShiftedVertices();
+    _3DObjects.push_back(simpleObject);
+    _3DObjects.push_back(soc);
     _nb3DObjects = _3DObjects.size();
 }

@@ -155,8 +155,10 @@ meshmanager.h
 /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
 
 /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
-OpenMesh/Core/Mesh/PolyMesh_ArrayKernelT.hh
+OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh
 -
+../Materials/material3DObject.h
+/home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
 
 /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.cpp
 cstring
@@ -217,6 +219,8 @@ scene.h
 /home/tama/Moteure/animation/TEngine/src/Materials/bspline.h
 ../Materials/bsplinepatch.h
 /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.h
+../MeshManager/meshmanager.h
+/home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
 
 /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.cpp
 camera.h
@@ -2154,20 +2158,6 @@ vector
 PolyMeshT.cc
 ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMeshT.cc
 
-ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/PolyMesh_ArrayKernelT.hh
-OpenMesh/Core/System/config.h
--
-OpenMesh/Core/Mesh/PolyConnectivity.hh
--
-OpenMesh/Core/Mesh/Traits.hh
--
-OpenMesh/Core/Mesh/FinalMeshItemsT.hh
--
-OpenMesh/Core/Mesh/AttribKernelT.hh
--
-OpenMesh/Core/Mesh/PolyMeshT.hh
--
-
 ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/Status.hh
 OpenMesh/Core/System/config.h
 -
@@ -2180,6 +2170,42 @@ OpenMesh/Core/Geometry/VectorT.hh
 OpenMesh/Core/Mesh/Attributes.hh
 -
 OpenMesh/Core/Mesh/Handles.hh
+-
+
+ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriConnectivity.hh
+OpenMesh/Core/Mesh/PolyConnectivity.hh
+-
+
+ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.cc
+OpenMesh/Core/Mesh/TriMeshT.hh
+-
+OpenMesh/Core/System/omstream.hh
+-
+vector
+-
+
+ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.hh
+OpenMesh/Core/System/config.h
+-
+OpenMesh/Core/Mesh/PolyMeshT.hh
+-
+vector
+-
+TriMeshT.cc
+ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMeshT.cc
+
+ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh
+OpenMesh/Core/System/config.h
+-
+OpenMesh/Core/Mesh/TriConnectivity.hh
+-
+OpenMesh/Core/Mesh/Traits.hh
+-
+OpenMesh/Core/Mesh/FinalMeshItemsT.hh
+-
+OpenMesh/Core/Mesh/AttribKernelT.hh
+-
+OpenMesh/Core/Mesh/TriMeshT.hh
 -
 
 ExternalLibrarys/OpenMesh-7.1/build/B/include/OpenMesh/Core/System/OpenMeshDLLMacros.hh

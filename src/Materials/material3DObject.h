@@ -16,21 +16,22 @@ public:
         _normals(normals),
         _indices(indices),
         _color(color)
-    {}
+    {/*glm::translate(_model,position);*/}
 
     Material3DObject(glm::vec3 position, glm::vec3 color = glm::vec3(0,0,0)) :
         Material(position),
         _color(color)
-    {}
+    {/*glm::translate(_model,position);*/}
 
     std::vector<GLfloat>& getVertices();
     std::vector<GLfloat>& getNormals();
     std::vector<GLuint>& getIndices();
-    void updateShiftedVertices();
     glm::vec3 getColor();
+    /******** Depreciated *********/
     Animation& getAnimation();
-
+    void updateShiftedVertices();
     void playAnimation();
+    /******** *********** *********/
 
     glm::mat4 _model;
 

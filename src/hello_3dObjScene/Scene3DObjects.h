@@ -16,6 +16,7 @@
 #include "../Materials/Imported3DModel.h"
 #include "../Materials/bspline.h"
 #include "../Materials/bsplinepatch.h"
+#include "../MeshManager/meshmanager.h"
 
 
 /** Spheres : different ways of building and rendering spheres

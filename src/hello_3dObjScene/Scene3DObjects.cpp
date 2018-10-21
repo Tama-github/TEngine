@@ -200,11 +200,19 @@ void Scene3DObject::init3DObjects () {
     };
     Material3DObject simpleObject = Material3DObject(glm::vec3(-0.5,0,0),vertices,normals,indices,glm::vec3(0.1,0.7,0.4));
     Material3DObject soc = Material3DObject(glm::vec3(0.5,0,0),vertices,normals,indices,glm::vec3(0.4,0.1,0.7));
+    soc.updateShiftedVertices();
+    simpleObject.updateShiftedVertices();
     MeshManager m = MeshManager ();
     m.useMaterial3DObject(soc);
     m.convertToMaterial3DObject(soc);
-    simpleObject.updateShiftedVertices();
-    soc.updateShiftedVertices();
+    std::cout << "Vertices :" << std::endl;
+    for (unsigned int i = 0; i < soc.getVertices().size(); i+=3){
+        std::cout << soc.getVertices()[i] << " / " << soc.getVertices()[i+1] << " / " << soc.getVertices()[i+2] << std::endl;
+    }
+    std::cout << "Indices :" << std::endl;
+    for (unsigned int i = 0; i < soc.getIndices().size(); i+=3){
+        std::cout << soc.getIndices()[i] << " / " << soc.getIndices()[i+1] << " / " << soc.getIndices()[i+2] << std::endl;
+    }
     _3DObjects.push_back(simpleObject);
     _3DObjects.push_back(soc);
     _nb3DObjects = _3DObjects.size();

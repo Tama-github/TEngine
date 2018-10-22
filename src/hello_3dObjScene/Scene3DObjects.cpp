@@ -142,7 +142,7 @@ bool Scene3DObject::keyboard(unsigned char k) {
 }
 
 void Scene3DObject::init3DObjects () {
-    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
@@ -181,7 +181,7 @@ void Scene3DObject::init3DObjects () {
 
 
     // Initialise geometric data
-    std::vector<GLfloat> vertices = {
+    /*std::vector<GLfloat> vertices = {
         0.5f,  0.5f, 0.0f,  // Top Right
         0.5f, -0.5f, 0.0f,  // Bottom Right
        -0.5f, -0.5f, 0.0f,  // Bottom Left
@@ -213,7 +213,14 @@ void Scene3DObject::init3DObjects () {
     for (unsigned int i = 0; i < soc.getIndices().size(); i+=3){
         std::cout << soc.getIndices()[i] << " / " << soc.getIndices()[i+1] << " / " << soc.getIndices()[i+2] << std::endl;
     }
+    std::cout << "Normals :" << std::endl;
+    for (unsigned int i = 0; i < soc.getNormals().size(); i+=3){
+        std::cout << soc.getNormals()[i] << " / " << soc.getNormals()[i+1] << " / " << soc.getNormals()[i+2] << std::endl;
+    }
     _3DObjects.push_back(simpleObject);
-    _3DObjects.push_back(soc);
+    _3DObjects.push_back(soc);*/
+    MeshManager m = MeshManager ();
+    m.useMaterial3DObject(_3DObjects[0]);
+    m.convertToMaterial3DObject(_3DObjects[0]);
     _nb3DObjects = _3DObjects.size();
 }

@@ -14,7 +14,7 @@ public:
 
     void useMaterial3DObject (Material3DObject inMesh);
     void convertToMaterial3DObject (Material3DObject &inMesh);
-
+    void subdivide ();
 
 private:
     OMesh _oMesh;

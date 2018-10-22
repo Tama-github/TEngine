@@ -1,4 +1,12 @@
 #Compilation
+$ cd ExternalLibraries/OpenMesh-7.1
+$ mkdir build        # If it do not already exist
+$ cd build 
+$ cmake .. -DCMAKE_INSTALL_PREFIX="/home/tama/Moteure/animation/TEngine/ExternalLibrarys/OpenMesh-7.1/build/B"
+$ make install
+$ cd ../../..
+$ rm -rf CMakeCache
+$ rm -rf CMakeFiles
 $ cmake .
 $ make
 

@@ -1,1 +1,0 @@
-/usr/bin/c++   -O2 -DNDEBUG -DINCLUDE_TEMPLATES  -W  -Wall  -Wno-unused  -Wextra  -Wno-variadic-macros    CMakeFiles/Analyzer.dir/vdpmanalyzer.cc.o  -o ../../../../../Build/bin/Analyzer -rdynamic ../../../../../Build/lib/libOpenMeshTools.so.7.1 ../../../../../Build/lib/libOpenMeshCore.so.7.1 -Wl,-rpath,"\$ORIGIN/../lib" 

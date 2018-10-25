@@ -643,8 +643,8 @@ bin/helloopenGL: CMakeFiles/helloopenGL.dir/build.make
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.5.1
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libGL.so
-bin/helloopenGL: ExternalLibrarys/OpenMesh-7.1/build/B/lib/libOpenMeshCore.a
-bin/helloopenGL: ExternalLibrarys/OpenMesh-7.1/build/B/lib/libOpenMeshTools.a
+bin/helloopenGL: ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshCore.a
+bin/helloopenGL: ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshTools.a
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1

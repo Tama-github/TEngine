@@ -9,9 +9,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -pedantic -Wextra")
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
-set(OPENMESHCORE_LIBRARIES ${CMAKE_SOURCE_DIR}/ExternalLibrarys/OpenMesh-7.1/build/B/lib/libOpenMeshCore.a)
+set(OPENMESHCORE_LIBRARIES ${CMAKE_SOURCE_DIR}/ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshCore.a)
 
-set(OPENMESHTOOLS_LIBRARIES ${CMAKE_SOURCE_DIR}/ExternalLibrarys/OpenMesh-7.1/build/B/lib/libOpenMeshTools.a)
+set(OPENMESHTOOLS_LIBRARIES ${CMAKE_SOURCE_DIR}/ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshTools.a)
 
 find_package(OpenGL REQUIRED) # define OPENGL_LIBRARIES
 find_package(Qt5Widgets REQUIRED)
@@ -59,7 +59,7 @@ QT5_WRAP_UI( ui ${folder_ui})
 include_directories(
    ${Qt5Widgets_INCLUDES}
    ${Qt5OpenGL_INCLUDES}
-   ${CMAKE_SOURCE_DIR}/ExternalLibrarys/OpenMesh-7.1/build/B/include
+   ${CMAKE_SOURCE_DIR}/ExternalLibraries/OpenMesh-7.1/build/B/include
 )
 
 add_definitions(${Qt5Widgets_DEFINITIONS})

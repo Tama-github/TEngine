@@ -142,7 +142,7 @@ bool Scene3DObject::keyboard(unsigned char k) {
 }
 
 void Scene3DObject::init3DObjects () {
-    ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
@@ -181,46 +181,61 @@ void Scene3DObject::init3DObjects () {
 
 
     // Initialise geometric data
-    /*std::vector<GLfloat> vertices = {
-        0.5f,  0.5f, 0.0f,  // Top Right
-        0.5f, -0.5f, 0.0f,  // Bottom Right
-       -0.5f, -0.5f, 0.0f,  // Bottom Left
-       -0.5f,  0.5f, 0.0f   // Top Left
-    };
-    std::vector<GLfloat> normals = {
-        0.577350269189626f, 0.577350269189626f, 0.577350269189626f,
-        0.577350269189626f, -0.577350269189626f, 0.577350269189626f,
-        -0.577350269189626f, -0.577350269189626f, 0.577350269189626f,
-        -0.577350269189626f, 0.577350269189626f, 0.577350269189626f
+    std::vector<GLfloat> vertices = {
+        1.f, 1.f, 0.0f,     // 0
+        2.f, 1.f, 0.0f,     // 1
+        3.f, 1.f, 0.0f,     // 2
+        1.5f, 2.f, 0.0f,    // 3
+        2.5f, 2.f, 0.0f,    // 4
+        1.f, 3.f, 0.0f,     // 5
+        2.f, 3.f, 0.0f,     // 6
+        3.f, 3.f, 0.0f,     // 7
+        0.5f, 2.f, 0.0f,     // 8
+        3.5f, 2.f, 0.0f,     // 9
+        1.5f, 4.f, 0.0f,     // 10
+        2.5f, 4.f, 0.0f,     // 11
+
     };
     std::vector<GLuint> indices = {
         // Note that we start from 0!
-        0, 1, 3,   // First Triangle
-        1, 2, 3    // Second Triangle
+        0, 3, 1,    // 0
+        1, 3, 4,    // 1
+        1, 4, 2,    // 2
+        3, 5, 6,    // 3
+        3, 6, 4,    // 4
+        4, 6, 7,    // 5
+        0, 8, 3,    // 6
+        8, 5, 3,    // 7
+        2, 4, 9,    // 8
+        4, 7, 9,    // 9
+        5, 10, 6,    // 10
+        6, 10, 11,    // 11
+        6, 11, 7,    // 12
     };
-    Material3DObject simpleObject = Material3DObject(glm::vec3(-0.5,0,0),vertices,normals,indices,glm::vec3(0.1,0.7,0.4));
-    Material3DObject soc = Material3DObject(glm::vec3(0.5,0,0),vertices,normals,indices,glm::vec3(0.4,0.1,0.7));
-    soc.updateShiftedVertices();
-    simpleObject.updateShiftedVertices();
+    Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
     MeshManager m = MeshManager ();
-    m.useMaterial3DObject(soc);
-    m.convertToMaterial3DObject(soc);
+    so.getIndices() = indices;
+    so.getVertices() = vertices;
+    m.useMaterial3DObject(so);
+    m.subdivide();
+    std::cout << "strat converting" << std::endl;
+    m.convertToMaterial3DObject(so);
     std::cout << "Vertices :" << std::endl;
-    for (unsigned int i = 0; i < soc.getVertices().size(); i+=3){
-        std::cout << soc.getVertices()[i] << " / " << soc.getVertices()[i+1] << " / " << soc.getVertices()[i+2] << std::endl;
+    for (unsigned int i = 0; i < so.getVertices().size(); i+=3){
+        std::cout << so.getVertices()[i] << " / " << so.getVertices()[i+1] << " / " << so.getVertices()[i+2] << std::endl;
     }
     std::cout << "Indices :" << std::endl;
-    for (unsigned int i = 0; i < soc.getIndices().size(); i+=3){
-        std::cout << soc.getIndices()[i] << " / " << soc.getIndices()[i+1] << " / " << soc.getIndices()[i+2] << std::endl;
+    for (unsigned int i = 0; i < so.getIndices().size(); i+=3){
+        std::cout << so.getIndices()[i] << " / " << so.getIndices()[i+1] << " / " << so.getIndices()[i+2] << std::endl;
     }
     std::cout << "Normals :" << std::endl;
-    for (unsigned int i = 0; i < soc.getNormals().size(); i+=3){
-        std::cout << soc.getNormals()[i] << " / " << soc.getNormals()[i+1] << " / " << soc.getNormals()[i+2] << std::endl;
+    for (unsigned int i = 0; i < so.getNormals().size(); i+=3){
+        std::cout << so.getNormals()[i] << " / " << so.getNormals()[i+1] << " / " << so.getNormals()[i+2] << std::endl;
     }
-    _3DObjects.push_back(simpleObject);
-    _3DObjects.push_back(soc);*/
-    MeshManager m = MeshManager ();
+    _3DObjects.push_back(so);
+    /*MeshManager m = MeshManager ();
     m.useMaterial3DObject(_3DObjects[0]);
-    m.convertToMaterial3DObject(_3DObjects[0]);
+    m.subdivide();
+    m.convertToMaterial3DObject(_3DObjects[0]);*/
     _nb3DObjects = _3DObjects.size();
 }

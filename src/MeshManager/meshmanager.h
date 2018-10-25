@@ -18,6 +18,11 @@ public:
 
 private:
     OMesh _oMesh;
+    const std::vector<float> _subdivCoef = {1.f/16.f, 2.f/16.f, 4.f/16.f};
+
+    bool isPerfectConfig(OMesh::EdgeHandle eh);
+    OMesh::Point edgeNewPoint(OMesh::EdgeHandle eh);
+    OMesh::Point vertexNewPoint(OMesh::VertexHandle eh);
 
 };
 

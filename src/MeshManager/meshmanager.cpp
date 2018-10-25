@@ -21,6 +21,9 @@ void MeshManager::useMaterial3DObject (Material3DObject inMesh) {
     }
     _oMesh.request_vertex_normals();
     _oMesh.request_face_normals();
+    _oMesh.request_face_status();
+    _oMesh.request_edge_status();
+    _oMesh.request_vertex_status();
 }
 
 
@@ -60,23 +63,235 @@ void MeshManager::convertToMaterial3DObject (Material3DObject &inMesh) {
 
 }
 
+
+bool MeshManager::isPerfectConfig(OMesh::EdgeHandle eh) {
+    // Principal edge is boundary
+    if (_oMesh.is_boundary(eh))
+        return false;
+
+    OMesh::HalfedgeHandle heh0 = _oMesh.halfedge_handle(eh, 0);
+
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    //No first wing
+    if (_oMesh.is_boundary(_oMesh.edge_handle(heh0)))
+        return false;
+
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    //No second wing
+    if (_oMesh.is_boundary(_oMesh.edge_handle(heh0)))
+        return false;
+
+    heh0 = _oMesh.halfedge_handle(eh, 1);
+
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    //No third wing
+    if (_oMesh.is_boundary(_oMesh.edge_handle(heh0)))
+        return false;
+
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    //No fourth wing
+    if (_oMesh.is_boundary(_oMesh.edge_handle(heh0)))
+        return false;
+
+    return true;
+}
+
+OMesh::Point MeshManager::edgeNewPoint(OMesh::EdgeHandle eh) {
+    OMesh::Point res = {0,0,0};
+    //Next
+    OMesh::HalfedgeHandle heh0;
+    OMesh::HalfedgeHandle heh1;
+    //Oposite
+    OMesh::HalfedgeHandle hehOpo0;
+    OMesh::HalfedgeHandle hehOpo1;
+
+    //Vertex primaire
+    heh0 = _oMesh.halfedge_handle(eh, 0);
+    res += _oMesh.point(_oMesh.to_vertex_handle(heh0))*_subdivCoef[2];
+    heh1 = _oMesh.halfedge_handle(eh, 1);
+    res += _oMesh.point(_oMesh.to_vertex_handle(heh1))*_subdivCoef[2];
+
+    //Vertex secondaire
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    res += _oMesh.point(_oMesh.to_vertex_handle(heh0))*_subdivCoef[1];
+    heh1 = _oMesh.next_halfedge_handle(heh1);
+    res += _oMesh.point(_oMesh.to_vertex_handle(heh1))*_subdivCoef[1];
+
+    //Vertex tertiaire Première aile
+    hehOpo0 = _oMesh.next_halfedge_handle(_oMesh.opposite_halfedge_handle(heh0));
+    res += _oMesh.point(_oMesh.to_vertex_handle(hehOpo0))*_subdivCoef[0];
+    hehOpo1 = _oMesh.next_halfedge_handle(_oMesh.opposite_halfedge_handle(heh1));
+    res += _oMesh.point(_oMesh.to_vertex_handle(hehOpo1))*_subdivCoef[0];
+
+    //Vertex tertiaire Deuxième aile
+    heh0 = _oMesh.next_halfedge_handle(heh0);
+    hehOpo0 = _oMesh.next_halfedge_handle(_oMesh.opposite_halfedge_handle(heh0));
+    res += _oMesh.point(_oMesh.to_vertex_handle(hehOpo0))*_subdivCoef[0];
+    heh1 = _oMesh.next_halfedge_handle(heh1);
+    hehOpo1 = _oMesh.next_halfedge_handle(_oMesh.opposite_halfedge_handle(heh1));
+    res += _oMesh.point(_oMesh.to_vertex_handle(hehOpo1))*_subdivCoef[0];
+
+    std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+
+    return res;
+}
+
+OMesh::Point MeshManager::vertexNewPoint(OMesh::VertexHandle vh) {
+    OMesh::Point res = {0,0,0};
+    int valance = 0;
+    float alpha = 0.f;
+    for (OMesh::VertexVertexIter vv_it = _oMesh.vv_iter(vh); vv_it.is_valid(); ++vv_it) {
+        valance++;
+    }
+    if (valance == 3) {
+        alpha = 3.f/16.f;
+    } else if (valance > 3) {
+        alpha = 3.f/(8.f*valance);
+    }
+    std::cout << "valance = " << valance << " / alpha = " << alpha << std::endl;
+    for (OMesh::VertexVertexIter vv_it = _oMesh.vv_iter(vh); vv_it.is_valid(); ++vv_it) {
+        res += alpha*_oMesh.point(*vv_it);
+    }
+    res += _oMesh.point(vh)*(1-valance*alpha);
+    std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+    return res;
+}
+
 void MeshManager::subdivide () {
-    for (/*edge it*/;;) {
-        if () { /*Application du filtre config 1*/
+    //ADD PROPERTIES
+    std::cout << "ADD PROPERTIES" << std::endl;
+    OpenMesh::EPropHandleT<OMesh::Point> newVertexPosOnEdge;
+    OpenMesh::EPropHandleT<OMesh::VertexHandle> newHandleVertexPosOnEdge;
+    _oMesh.add_property(newVertexPosOnEdge);
+    _oMesh.add_property(newHandleVertexPosOnEdge);
 
-        } else if () { /*config 2*/
+    OpenMesh::VPropHandleT<OMesh::Point> newVertexPosOnVertex;
+    OpenMesh::VPropHandleT<OMesh::VertexHandle> newHandleVertexPosOnVertex;
 
-        } else if () { /*config 3*/
+    std::cout << "ici hein ?" << std::endl;
+    OpenMesh::VPropHandleT<bool> isOld;
+    std::cout << "oui" << std::endl;
+    _oMesh.add_property(newVertexPosOnVertex);
+    _oMesh.add_property(newHandleVertexPosOnVertex);
+    _oMesh.add_property(isOld);
 
-        } else if () { /*config 4*/
+    //Update all vertices
+    std::cout << "Update all vertices" << std::endl;
+    for (OMesh::VertexIter v_it = _oMesh.vertices_begin(); v_it != _oMesh.vertices_end(); ++v_it) {
+        _oMesh.property(isOld,*v_it) = true;
+    }
 
-        } else { /*config parfaite*/
-
+    OMesh::Point p;
+    OMesh::VertexHandle vh;
+    //Edges Treatment
+    std::cout << "Traitement des Edges" << std::endl;
+    for (OMesh::EdgeIter e_it = _oMesh.edges_begin(); e_it != _oMesh.edges_end(); ++e_it) {
+        if (isPerfectConfig(*e_it)) {
+            std::cout << "perfect" << std::endl;
+            p = edgeNewPoint(*e_it);
+            _oMesh.property(newVertexPosOnEdge,*e_it) = p;
+            vh = _oMesh.add_vertex(p);
+            _oMesh.property(newHandleVertexPosOnEdge,*e_it) = vh;
+            _oMesh.property(isOld,vh) = false;
         }
     }
-    for (/*sommet it*/;;) {
 
+    //Vertices Treatment
+    std::cout << "Traitement des Vertices" << std::endl;
+    for (OMesh::VertexIter v_it = _oMesh.vertices_begin(); v_it != _oMesh.vertices_end(); ++v_it) {
+        if (!_oMesh.is_boundary(*v_it) && _oMesh.property(isOld,*v_it)) {
+            p = vertexNewPoint(*v_it);
+            _oMesh.property(newVertexPosOnVertex,*v_it) = p;
+            vh = _oMesh.add_vertex(p);
+            _oMesh.property(newHandleVertexPosOnVertex,*v_it) = vh;
+            _oMesh.property(isOld,vh) = false;
+        }
     }
+
+    std::vector<std::vector<OMesh::VertexHandle>> newFaces;
+
+    //Create new Faces
+    std::cout << "Create new Faces" << std::endl;
+    for (OMesh::FaceIter f_it = _oMesh.faces_begin(); f_it != _oMesh.faces_end(); ++f_it) {
+        if(!_oMesh.is_boundary(*f_it, true)){
+            //Experimental
+            std::vector<OMesh::VertexHandle> t0;
+            std::vector<OMesh::VertexHandle> t1;
+            std::vector<OMesh::VertexHandle> t2;
+            std::vector<OMesh::VertexHandle> t3;
+            OMesh::FaceEdgeIter fe_it = _oMesh.fe_iter(*f_it);
+            OMesh::Point res = {0,0,0};
+            vh = _oMesh.property(newHandleVertexPosOnEdge, *fe_it);
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+
+            t0.push_back(vh);
+            t3.push_back(vh);
+            t2.push_back(vh);
+
+            vh = _oMesh.property(newHandleVertexPosOnVertex,_oMesh.to_vertex_handle(_oMesh.halfedge_handle(*fe_it, 0)));
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+            t0.push_back(vh);
+
+            fe_it++;
+            vh = _oMesh.property(newHandleVertexPosOnEdge, *fe_it);
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+            t0.push_back(vh);
+            t3.push_back(vh);
+            t1.push_back(vh);
+
+            vh = _oMesh.property(newHandleVertexPosOnVertex,_oMesh.to_vertex_handle(_oMesh.halfedge_handle(*fe_it, 0)));
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+            t1.push_back(vh);
+
+            fe_it++;
+            vh = _oMesh.property(newHandleVertexPosOnEdge, *fe_it);
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+            t2.push_back(vh);
+            t3.push_back(vh);
+            t1.push_back(vh);
+
+            vh = _oMesh.property(newHandleVertexPosOnVertex,_oMesh.to_vertex_handle(_oMesh.halfedge_handle(*fe_it, 0)));
+            res = _oMesh.point(vh);
+            std::cout << "new point = " << "( " << res[0] << " " << res[1] << " " << res[2] << " " << ")" << std::endl;
+            t2.push_back(vh);
+
+            newFaces.push_back(t0);
+            newFaces.push_back(t1);
+            newFaces.push_back(t2);
+            newFaces.push_back(t3);
+        }
+    }
+
+    //Delete old Faces
+    std::cout << "Delete old Faces" << std::endl;
+    for (OMesh::FaceIter f_it = _oMesh.faces_begin(); f_it != _oMesh.faces_end(); ++f_it) {
+        _oMesh.delete_face(*f_it,false);
+    }
+
+    //Delete old Vertices
+    std::cout << "Delete old Vertices" << std::endl;
+    for (OMesh::VertexIter v_it = _oMesh.vertices_begin(); v_it != _oMesh.vertices_end(); ++v_it) {
+        if (_oMesh.property(isOld,*v_it)) {
+            _oMesh.delete_vertex(*v_it);
+        }
+    }
+
+    //Add new Faces
+    std::cout << "Add new Faces" << std::endl;
+    for (unsigned int i = 0; i < newFaces.size(); i++) {
+        _oMesh.add_face(newFaces[i]);
+    }
+
+    _oMesh.garbage_collection();
+
+    std::cout << "end : " << _oMesh.n_vertices() << std::endl;
+
+
 }
 
 

@@ -43,7 +43,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "src"
   "glm"
-  "ExternalLibrarys/OpenMesh-7.1/build/B/include"
+  "ExternalLibraries/OpenMesh-7.1/build/B/include"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

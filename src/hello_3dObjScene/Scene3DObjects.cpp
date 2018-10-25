@@ -143,7 +143,7 @@ bool Scene3DObject::keyboard(unsigned char k) {
 
 void Scene3DObject::init3DObjects () {
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
-    //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
+    ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
     /* Add animations to the added models */
@@ -181,7 +181,7 @@ void Scene3DObject::init3DObjects () {
 
 
     // Initialise geometric data
-    std::vector<GLfloat> vertices = {
+    /*std::vector<GLfloat> vertices = {
         1.f, 1.f, 0.0f,     // 0
         2.f, 1.f, 0.0f,     // 1
         3.f, 1.f, 0.0f,     // 2
@@ -232,10 +232,13 @@ void Scene3DObject::init3DObjects () {
     for (unsigned int i = 0; i < so.getNormals().size(); i+=3){
         std::cout << so.getNormals()[i] << " / " << so.getNormals()[i+1] << " / " << so.getNormals()[i+2] << std::endl;
     }
-    _3DObjects.push_back(so);
-    /*MeshManager m = MeshManager ();
+    _3DObjects.push_back(so);*/
+    MeshManager m = MeshManager ();
     m.useMaterial3DObject(_3DObjects[0]);
     m.subdivide();
-    m.convertToMaterial3DObject(_3DObjects[0]);*/
+    m.subdivide();
+    //_3DObjects[1] = Material3DObject(glm::vec3(0,0,-2), glm::vec3(0.1,0.5,0.7));
+    m.convertToMaterial3DObject(_3DObjects[0]);
+    //_3DObjects[1].updateShiftedVertices();
     _nb3DObjects = _3DObjects.size();
 }

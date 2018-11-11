@@ -9,12 +9,30 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _camera(nullptr)
     //_screenShader(ShaderManager("Shaders/vertex_fbo_test.glsl", "Shaders/fragment_fbo_test.glsl"))
 {
+    _gBuff = GBuffer();
+    _ssaoBuff = SSAOBuffer();
+    _ssaoBlurBuff = SSAOBlurBuffer();
+
     init3DObjects();
     initQuad();
     _geometryPass = ShaderManager("Shaders/SSAO/vertex_ssao_geometry.glsl", "Shaders/SSAO/fragment_ssao_geometry.glsl");
     _lightingPass = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_lighting.glsl");
     _geometryPass.genProgram();
     _lightingPass.genProgram();
+    initSamples ();
+    initNoise ();
+    _lightingPass.use();
+    std::string p = "gPosition", n = "gNormal", a = "gAlbedo", s = "ssao";
+    _lightingPass.setInt(p.c_str() , 0);
+    _lightingPass.setInt(n.c_str(), 1);
+    _lightingPass.setInt(a.c_str(), 2);
+    _lightingPass.setInt(s.c_str(), 3);
+    _ssaoBuff.setUniforms();
+    _ssaoBlurBuff.setUniforms();
+
+
+    _tbuff = TestBuffer(_gBuff.getGAlbedo());
+    _tbuff.setUniform(0);
 
     std::cout << "there are " << _nb3DObjects << " objects loaded." << std::endl;
 
@@ -58,10 +76,13 @@ void Scene3DObject::resize(int width, int height) {
 
 
 void Scene3DObject::draw() {
+    //GLint qt_buffer;
+    //glGetIntegerv(GL_FRAMEBUFFER_BINDING, &qt_buffer);
+    //std::cout << qt_buffer << std::endl;
     Scene::draw();
-    drawScene();
+    //drawScene();
     //drawFrameBuffer();
-    //drawSSAO();
+    drawSSAO();
 }
 
 void Scene3DObject::drawScene() {
@@ -100,43 +121,57 @@ void Scene3DObject::drawFrameBuffer() {
     /*glBindFramebuffer(GL_FRAMEBUFFER, 0); // back to default
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);*/
-    _tbuff.clear();
 
     /*glUseProgram(_screenShader.getProgram());
     glBindVertexArray(quadVAO);
     glDisable(GL_DEPTH_TEST);
     glBindTexture(GL_TEXTURE_2D, _texColorBuffer);
     glDrawArrays(GL_TRIANGLES, 0, 6);*/
-    _tbuff.use(_quadVAO);
+    _tbuff.render();
 }
 
 void Scene3DObject::drawSSAO() {
+    //std::cout << "begin SSAO draw" << std::endl;
+    /* Geometry Pass */
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     /* config gBuffer */
+    //std::cout << "Config Gbuffer" << std::endl;
+    _gBuff.getProgram().use();
     _gBuff.bind();
     glUniformMatrix4fv( glGetUniformLocation(_geometryPass.getProgram(), "view"), 1, GL_FALSE, glm::value_ptr(_view));
     glUniformMatrix4fv( glGetUniformLocation(_geometryPass.getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
 
     /* draw objects */
+    //std::cout << "Draw objects" << std::endl;
     for (unsigned int i = 0; i < _nb3DObjects; i++) {
         _3DObjects[i].draw(_geometryPass);
     }
 
-    /* SSAO */
-    _ssaoBuff.bind();
+    /* gPosition display */
+    glBindFramebuffer(GL_FRAMEBUFFER, 0); // back to default
+    _tbuff.getProgram().use();
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGPosition());	// use the color attachment texture as the texture of the quad plane
+    glBindVertexArray(_quadVAO);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glBindVertexArray(0);
+
+    /* SSAO Pass */
+    //std::cout << "SSAO" << std::endl;
+    /*_ssaoBuff.bind();
     glClear(GL_COLOR_BUFFER_BIT);
 
     _ssaoBuff.getProgram().use();
 
-    for (unsigned int i = 0; i < 64; ++i) {
-        std::string c = "samples[" + std::to_string(i) + "]";
-        glProgramUniform3f( _ssaoBuff.getProgram().getProgram(),
-                            glGetUniformLocation( _ssaoBuff.getProgram().getProgram(), c.c_str()),
-                            _ssaoKernel[i][0], _ssaoKernel[i][1], _ssaoKernel[i][2]);
+    GLint samplesLocation = glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "samples");
+    glProgramUniform3fv(_ssaoBuff.getProgram().getProgram(), samplesLocation, 64,
+                                  glm::value_ptr(_lights[0]));
 
-    }
+    //std::cout << "Config tex" << std::endl;
     glUniformMatrix4fv( glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _gBuff.getGPosition());
@@ -144,8 +179,60 @@ void Scene3DObject::drawSSAO() {
     glBindTexture(GL_TEXTURE_2D, _gBuff.getGNormal());
     glActiveTexture(GL_TEXTURE2);
     glBindTexture(GL_TEXTURE_2D, _noiseTexture);
-    _ssaoBuff.renderQuad(_quadVAO);
+
+
+
+    renderQuad();*/
+    //std::cout << "render Quad" << std::endl;
+
+    /*_tbuff.clear();
+    _tbuff.getProgram().use();
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _tbuff.getTex());	// use the color attachment texture as the texture of the quad plane
+    glBindVertexArray(_quadVAO);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glBindVertexArray(0);*/
+
+    /* SSAO Blur Pass */
+    /*glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+    _ssaoBlurBuff.bind();
+    _ssaoBlurBuff.getProgram().use();
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _ssaoBuff.getSSAOColorBuffer());
+    renderQuad();
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);*/
+
+
+    /* Lighting Pass */
+    /*_lightingPass.use();
+    glUseProgram(_lightingPass.getProgram());
+
+    GLint nbLightsLocation = glGetUniformLocation(_lightingPass.getProgram(), "nbLights");
+    glProgramUniform1i(_lightingPass.getProgram(), nbLightsLocation, (GLint)_lights.size());
+
+    GLint lightsLocation = glGetUniformLocation(_lightingPass.getProgram(), "lights");
+    glProgramUniform3fv(_lightingPass.getProgram(), lightsLocation, _lights.size(),
+                                  glm::value_ptr(_lights[0]));
+
+    _view = _camera->viewmatrix();
+    glUniformMatrix4fv( glGetUniformLocation(_lightingPass.getProgram(), "view"), 1, GL_FALSE, glm::value_ptr(_view));
+    glUniformMatrix4fv( glGetUniformLocation(_lightingPass.getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
+
+    GLint cameraPositionLocation = glGetUniformLocation(_lightingPass.getProgram(), "cameraPosition");
+    glm::vec3 cp = _camera->position();
+    glProgramUniform3f(_lightingPass.getProgram(), cameraPositionLocation, cp[0], cp[1], cp[2]);
+
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGPosition());
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGNormal());
+    glActiveTexture(GL_TEXTURE2);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGAlbedo());
+    glActiveTexture(GL_TEXTURE3); // add extra SSAO texture to lighting pass
+    glBindTexture(GL_TEXTURE_2D, _ssaoBlurBuff.getSSAOColorBufferBlur());
+    renderQuad();*/
 
 }
 
@@ -175,7 +262,7 @@ bool Scene3DObject::keyboard(unsigned char k) {
 }
 
 void Scene3DObject::init3DObjects () {
-    ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
@@ -285,11 +372,11 @@ void Scene3DObject::init3DObjects () {
     _3DObjects[2].translate(glm::vec3(-3,0,0));
     _3DObjects[3].translate(glm::vec3(-3,-3,0));*/
 
-    /*ObjectLoader ol = ObjectLoader("Models/Sponza");
+    ObjectLoader ol = ObjectLoader("Models/Sponza");
     if (ol.objLoader("sponza2.dae")) {
         _3DObjects.push_back(ol.getObj());
         _3DObjects[0].setColor(glm::vec3(0.1f, 0.5f, 0.7f));
-    }*/
+    }
     /*for (unsigned int i = 0; i<_3DObjects[0].getMeshes().size(); i++) {
         MeshManager m = MeshManager ();
         m.useMaterial3DObject(_3DObjects[0].getMeshes()[i]);
@@ -299,9 +386,10 @@ void Scene3DObject::init3DObjects () {
     }
     _3DObjects[0].translate(glm::vec3(1,0,0));
     _3DObjects[1].translate(glm::vec3(-1,0,0));*/
-    MeshManager m = MeshManager();
+    /*MeshManager m = MeshManager();
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
-    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
+    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);*/
+
     _nb3DObjects = _3DObjects.size();
     for (unsigned int i = 0; i < _nb3DObjects; i++) {
         _3DObjects[i].setupGL();
@@ -309,26 +397,23 @@ void Scene3DObject::init3DObjects () {
 }
 
 void Scene3DObject::initQuad() {
-    float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
-        // positions   // texCoords
-        -1.0f,  1.0f,  0.0f, 1.0f,
-        -1.0f, -1.0f,  0.0f, 0.0f,
-         1.0f, -1.0f,  1.0f, 0.0f,
-
-        -1.0f,  1.0f,  0.0f, 1.0f,
-         1.0f, -1.0f,  1.0f, 0.0f,
-         1.0f,  1.0f,  1.0f, 1.0f
+    float quadVertices[] = {
+        // positions        // texture Coords
+        -1.0f,  1.0f, 0.0f, 0.0f, 1.0f,
+        -1.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+         1.0f,  1.0f, 0.0f, 1.0f, 1.0f,
+         1.0f, -1.0f, 0.0f, 1.0f, 0.0f,
     };
-    // screen quad VAO
+    // setup plane VAO
     glGenVertexArrays(1, &_quadVAO);
     glGenBuffers(1, &_quadVBO);
     glBindVertexArray(_quadVAO);
     glBindBuffer(GL_ARRAY_BUFFER, _quadVBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), &quadVertices, GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 }
 
 float lerp(float a, float b, float f)
@@ -370,5 +455,9 @@ void Scene3DObject::initNoise () {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 }
 
-
+void Scene3DObject::renderQuad () {
+    glBindVertexArray(_quadVAO);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glBindVertexArray(0);
+}
 

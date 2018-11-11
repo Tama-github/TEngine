@@ -33,6 +33,10 @@ MyOpenGLWidget::~MyOpenGLWidget() {
 
 void MyOpenGLWidget::initializeGL() {
     // Initialize OpenGL and all OpenGL dependent stuff below
+    //initializeOpenGLFunctions();
+
+    glEnable(GL_DEPTH_TEST);
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     _scene.reset(_democonstructors[0](width(), height()));
 }
 

@@ -11,6 +11,7 @@ public:
     unsigned int getGPosition();
     unsigned int getGNormal();
     unsigned int getGAlbedo();
+    ShaderManager getProgram();
 
 private:
     /* textures */

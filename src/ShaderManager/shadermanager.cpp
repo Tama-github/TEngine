@@ -84,7 +84,7 @@ void ShaderManager::use() {
     glUseProgram(_program);
 }
 
-void ShaderManager::setInt(GLchar* name, GLint o) {
+void ShaderManager::setInt(const char* name, GLint o) {
     glUniform1i(glGetUniformLocation(_program,name), o);
 }
 

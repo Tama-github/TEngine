@@ -10,6 +10,7 @@ public:
     void setUniforms();
     ShaderManager getProgram();
     void renderQuad(unsigned int quadVAO);
+    unsigned int getSSAOColorBuffer();
 
 private:
     unsigned int _ssaoColorBuffer;

@@ -2,6 +2,20 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QOpenGLWidget>
+
+#include <QtCore/QCoreApplication>
+#include <QtGui/QOpenGLContext>
+#include <QtGui/QOpenGLPaintDevice>
+#include <QtGui/QPainter>
+#include <QOpenGLWindow>
+
+
+#include <QMessageBox>
+
+#include <iostream>
+#include <sstream>
+#include <iomanip>
 
 namespace Ui {
     class MainWindow;
@@ -27,6 +41,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QSurfaceFormat format;
+    QWidget *parent;
+    QOpenGLContext *context;
+    QOpenGLFunctions *f;
 };
 
 #endif // MAINWINDOW_H

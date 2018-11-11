@@ -3,11 +3,28 @@
 
 #include <QGLWidget>
 #include <QKeyEvent>
+#include <QOpenGLFramebufferObject>
+#include <QOpenGLWidget>
+#include <QOpenGLFunctions>
+#include <QKeyEvent>
+#include <QOpenGLContext>
+
+#include <memory>
+#include <functional>
+#include <QtWidgets/QMenu>
+
+
+#include <QMessageBox>
+#include <QApplication>
+#include <QDateTime>
+#include <QTimer>
+#include <QOpenGLContext>
+#include <QOpenGLFunctions>
 
 #include <memory>
 
 #include "scene.h"
-
+#include "opengl_stuff.h"
 
 class MyOpenGLWidget : public QGLWidget{
 Q_OBJECT

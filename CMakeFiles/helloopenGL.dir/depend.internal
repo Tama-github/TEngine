@@ -11,6 +11,14 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /home/tama/Moteure/animation/TEngine/src/myopenglwidget.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  /home/tama/Moteure/animation/TEngine/src/scene.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -25,6 +33,7 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_unix.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_x86.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -32,9 +41,12 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
@@ -80,6 +92,7 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
@@ -87,8 +100,18 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFramebufferObject
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFunctions
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QWindow
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -96,14 +119,23 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
@@ -114,19 +146,34 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLWidget
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qgl.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglcolormap.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QOpenGLWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qopenglwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
@@ -3412,6 +3459,12 @@ CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o
 CMakeFiles/helloopenGL.dir/src/main.cpp.o
  /home/tama/Moteure/animation/TEngine/src/main.cpp
  /home/tama/Moteure/animation/TEngine/src/mainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -3481,6 +3534,7 @@ CMakeFiles/helloopenGL.dir/src/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
@@ -3489,6 +3543,15 @@ CMakeFiles/helloopenGL.dir/src/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QWindow
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -3502,30 +3565,58 @@ CMakeFiles/helloopenGL.dir/src/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QOpenGLWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qopenglwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /home/tama/Moteure/animation/TEngine/src/mainwindow.cpp
  /home/tama/Moteure/animation/TEngine/src/mainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -3542,6 +3633,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_unix.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_x86.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -3552,6 +3644,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
@@ -3601,6 +3694,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
@@ -3608,8 +3702,18 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFramebufferObject
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFunctions
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QWindow
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -3624,9 +3728,16 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
@@ -3637,12 +3748,14 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLWidget
@@ -3657,8 +3770,10 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QOpenGLWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QToolBar
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
@@ -3676,6 +3791,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qopenglwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
@@ -3910,6 +4026,9 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFramebufferObject
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLFunctions
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -3919,6 +4038,7 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
@@ -3927,6 +4047,7 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
@@ -3955,12 +4076,19 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QOpenGLWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qopenglwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Config.hh
@@ -4029,7 +4157,6 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/metadata.h
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/postprocess.h
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.h
- ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.inl
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/scene.h
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/texture.h
  ExternalLibraries/assimp-4.1.0/build/B/include/assimp/types.h
@@ -4111,6 +4238,8 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  glm/gtc/matrix_transform.hpp
  glm/gtc/matrix_transform.inl
  glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
  glm/gtc/type_ptr.hpp
  glm/gtc/type_ptr.inl
  glm/integer.hpp

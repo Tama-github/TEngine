@@ -25,7 +25,7 @@ public:
     GLuint getVertexshader();
     GLuint getFragmentshader();
     void use();
-    void setInt(GLchar* name, GLint o);
+    void setInt(const char* name, GLint o);
 
 private:
     const char* _vertex_filename;

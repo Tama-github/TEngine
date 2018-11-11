@@ -2,6 +2,8 @@
 
 SSAOBlurBuffer::SSAOBlurBuffer()
 {
+    RenderObject();
+
     _program = ShaderManager ("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_blur.glsl");
     // also create framebuffer to hold SSAO processing stage
     // -----------------------------------------------------
@@ -19,7 +21,21 @@ SSAOBlurBuffer::SSAOBlurBuffer()
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
+void SSAOBlurBuffer::bind() {
+    glBindFramebuffer(GL_FRAMEBUFFER, _fbo);
+    glClear(GL_COLOR_BUFFER_BIT);
+}
+
 void SSAOBlurBuffer::setUniforms() {
     _program.use();
-    _program.setInt("ssaoInput", 0);
+    std::string s = "ssaoInput";
+    _program.setInt(s.c_str(), 0);
+}
+
+ShaderManager SSAOBlurBuffer::getProgram() {
+    return _program;
+}
+
+unsigned int SSAOBlurBuffer::getSSAOColorBufferBlur() {
+    return _ssaoColorBufferBlur;
 }

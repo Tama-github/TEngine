@@ -98,9 +98,6 @@ void Material3DObject::setupGL() {
         glEnableVertexAttribArray(4);
 
 
-
-
-
         // 7. Copy our index array in a element buffer for OpenGL to use
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, _indices.size()*sizeof (GLfloat), _indices.data(), GL_STATIC_DRAW);
@@ -149,13 +146,13 @@ void Material3DObject::draw(ShaderManager shader) {
     glUniform3fv(glGetUniformLocation(shader.getProgram(), "material.specularColor"), 1, glm::value_ptr(_brdf.getSpecularColor()));
 
     glBindVertexArray(_vao);
+    glUniformMatrix4fv( glGetUniformLocation(shader.getProgram(), "model"), 1, GL_FALSE, glm::value_ptr(_model));
     glDrawElements(GL_TRIANGLES, _indices.size(), GL_UNSIGNED_INT, 0);
     //glDrawElementsInstanced(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0, models.size());
     glBindVertexArray(0);
 
     glActiveTexture(GL_TEXTURE0);
 
-    glUniformMatrix4fv( glGetUniformLocation(shader.getProgram(), "model"), 1, GL_FALSE, glm::value_ptr(_model));
     //printMatrix(models[j]);
 
     /*for (int i = 0; i < 4; i++) {

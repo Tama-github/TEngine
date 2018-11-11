@@ -62,3 +62,7 @@ unsigned int GBuffer::getGNormal() {
 unsigned int GBuffer::getGAlbedo() {
     return _gAlbedo;
 }
+
+ShaderManager GBuffer::getProgram() {
+    return _program;
+}

@@ -8,6 +8,9 @@ class SSAOBlurBuffer : public RenderObject
 public:
     SSAOBlurBuffer();
     void setUniforms();
+    void bind();
+    ShaderManager getProgram();
+    unsigned int getSSAOColorBufferBlur();
 
 private:
     unsigned int _ssaoColorBufferBlur;

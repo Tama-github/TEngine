@@ -2,6 +2,8 @@
 
 SSAOBuffer::SSAOBuffer()
 {
+    RenderObject();
+
     _program = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao.glsl");
     // also create framebuffer to hold SSAO processing stage
     // -----------------------------------------------------
@@ -24,17 +26,22 @@ SSAOBuffer::SSAOBuffer()
 
 void SSAOBuffer::setUniforms() {
     _program.use();
-    _program.setInt("gPosition", 0);
-    _program.setInt("gNormal", 1);
-    _program.setInt("texNoise", 2);
+    std::string p = "gPosition", n = "gNormal", t = "texNoise";
+    _program.setInt(p.c_str(), 0);
+    _program.setInt(n.c_str(), 1);
+    _program.setInt(t.c_str(), 2);
 }
 
 void SSAOBuffer::renderQuad(unsigned int quadVAO) {
     glUseProgram(_program.getProgram());
     glBindVertexArray(quadVAO);
-    glDisable(GL_DEPTH_TEST);
     glBindTexture(GL_TEXTURE_2D, _ssaoColorBuffer);
-    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glBindVertexArray(0);
+}
+
+unsigned int SSAOBuffer::getSSAOColorBuffer() {
+    return _ssaoColorBuffer;
 }
 
 ShaderManager SSAOBuffer::getProgram() {

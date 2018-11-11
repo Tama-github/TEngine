@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     format.setVersion(3, 3);
     format.setProfile(QGLFormat::CoreProfile);
     format.setDepthBufferSize(24);
+    format.setStencilBufferSize(8);
     QGLFormat::setDefaultFormat(format);
 
     ui->setupUi(this);

@@ -3,6 +3,8 @@
 
 #include <OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh>
 #include "../Materials/material3DObject.h"
+#include <OpenMesh/Core/Geometry/QuadricT.hh>
+#include <set>
 
 typedef OpenMesh::TriMesh_ArrayKernelT<> OMesh;
 
@@ -15,6 +17,7 @@ public:
     void useMaterial3DObject (Material3DObject inMesh);
     void convertToMaterial3DObject (Material3DObject &inMesh);
     void subdivide ();
+    void simplificationHEC (unsigned int nbMaxFaces);
 
 private:
     OMesh _oMesh;
@@ -23,6 +26,13 @@ private:
     bool isPerfectConfig(OMesh::EdgeHandle eh);
     OMesh::Point edgeNewPoint(OMesh::EdgeHandle eh);
     OMesh::Point vertexNewPoint(OMesh::VertexHandle eh);
+    OpenMesh::VPropHandleT<OpenMesh::Geometry::Quadricf> _Q;
+
+    void buildQuadric();
+    bool isCollapsable(OMesh::EdgeHandle edge);
+    float computeError (OMesh::HalfedgeHandle heh);
+    std::set<OMesh::VertexHandle> getVertexToUpdate(OMesh::HalfedgeHandle heh);
+    void simplificationHECInit(std::map<float,OMesh::HalfedgeHandle>& priority);
 
 };
 

@@ -1,6 +1,7 @@
 #include "meshmanager.h"
 
 void MeshManager::useMaterial3DObject (Material3DObject inMesh) {
+    _oMesh = OMesh();
     auto vertices = inMesh.getVertices();
     unsigned int n = vertices.size();
     std::vector<OMesh::VertexHandle> vhandle;
@@ -63,6 +64,12 @@ void MeshManager::convertToMaterial3DObject (Material3DObject &inMesh) {
 
 }
 
+
+/**********************************************
+ *                                            *
+ *                SUBDIVISION                 *
+ *                                            *
+ **********************************************/
 
 bool MeshManager::isPerfectConfig(OMesh::EdgeHandle eh) {
     // Principal edge is boundary
@@ -291,6 +298,94 @@ void MeshManager::subdivide () {
 
     //std::cout << "end : " << _oMesh.n_vertices() << std::endl;
 
+}
+
+
+/**********************************************
+ *                                            *
+ *              SIMPLIFICATION                *
+ *                                            *
+ **********************************************/
+
+
+bool MeshManager::isCollapsable(OMesh::EdgeHandle edge) {
+    if (_oMesh.is_boundary(edge)) return false;
+    return true;
+}
+
+float MeshManager::computeError (OMesh::HalfedgeHandle heh) {
+    OMesh::EdgeHandle eh = _oMesh.edge_handle(heh);
+    OMesh::VertexHandle vh = _oMesh.to_vertex_handle(heh);
+    OMesh::Point v = _oMesh.point(vh);
+
+    return _oMesh.property(_Q,vh)(v);
+}
+
+void MeshManager::buildQuadric() {
+    for (OMesh::FaceIter f_it = _oMesh.faces_begin(); f_it != _oMesh.faces_end(); ++f_it) {
+
+        OMesh::FaceVertexIter fv_it = _oMesh.fv_iter(*f_it);
+        OMesh::VertexHandle p1 = *fv_it;
+        ++fv_it;
+        OMesh::VertexHandle p2 = *fv_it;
+        ++fv_it;
+        OMesh::VertexHandle p3 = *fv_it;
+        OMesh::Point n = _oMesh.point(p1)-_oMesh.point(p2)%_oMesh.point(p3)-_oMesh.point(p2);
+        float aire = n.norm();
+        n /= aire;
+        OpenMesh::Geometry::Quadricf Qc = OpenMesh::Geometry::Quadricf(n,_oMesh.point(p1));
+        _oMesh.property(_Q,p1) += Qc;
+        _oMesh.property(_Q,p2) += Qc;
+        _oMesh.property(_Q,p3) += Qc;
+    }
+}
+
+void MeshManager::simplificationHECInit(std::map<float,OMesh::HalfedgeHandle>& priority) {
+    for (OMesh::EdgeIter e_it = _oMesh.edges_begin(); e_it != _oMesh.edges_end(); ++e_it) {
+        OMesh::HalfedgeHandle heh1 = _oMesh.halfedge_handle(*e_it, 0);
+        OMesh::HalfedgeHandle heh2 = _oMesh.halfedge_handle(*e_it, 1);
+        if (isCollapsable(*e_it) && _oMesh.is_collapse_ok(heh1) && _oMesh.is_collapse_ok(heh2)) {
+            float e1 = computeError(heh1);
+            float e2 = computeError(heh2);
+            if (e1>e2)
+                priority.insert(std::pair<float,OMesh::HalfedgeHandle>(e1,heh1));
+            else
+                priority.insert(std::pair<float,OMesh::HalfedgeHandle>(e2,heh2));
+
+        }
+    }
+}
+
+std::set<OMesh::VertexHandle> MeshManager::getVertexToUpdate(OMesh::HalfedgeHandle heh) {
+    //TODO for optimization
+}
+
+void MeshManager::simplificationHEC (unsigned int nbMaxFaces) {
+    _oMesh.add_property(_Q);
+    unsigned int currentNbFaces = _oMesh.n_faces();
+
+    if (currentNbFaces <= nbMaxFaces) return;
+
+    buildQuadric();
+
+    std::map<float,OMesh::HalfedgeHandle> priority;
+
+
+
+    do {
+        priority.clear();
+        simplificationHECInit(priority);
+        OMesh::HalfedgeHandle heh = priority.begin()->second;
+        float err = priority.begin()->first;
+        //OMesh::Point p = _oMesh.point(_oMesh.to_vertex_hendle(heh));
+
+        std::cout << "err = " << err << std::endl;
+        //std::set<Omesh::VertexHandle> toUpdateAfterCollapse = getVertexToUpdate(heh);
+        _oMesh.collapse(heh);
+        std::cout << "currentNbFaces = " << currentNbFaces  << std::endl;
+        currentNbFaces -= 2;
+        _oMesh.garbage_collection();
+    } while (currentNbFaces > nbMaxFaces);
 
 }
 

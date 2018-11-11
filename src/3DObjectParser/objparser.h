@@ -11,10 +11,11 @@
 #include <opengl_stuff.h>
 
 #include "../Materials/Imported3DModel.h"
+#include "../Materials/composed3dobject.h"
 
 class ObjParser {
 public:
-    static void parse(std::string fileName, std::vector<Material3DObject>* objects, bool comuputeNormals);
+    static void parse(std::string fileName, std::vector<Composed3DObject>* objects, bool comuputeNormals);
 };
 
 #endif

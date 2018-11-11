@@ -7,43 +7,16 @@
 Scene3DObject::Scene3DObject(int width, int height) :
     Scene(width, height),
     _camera(nullptr)
+    //_screenShader(ShaderManager("Shaders/vertex_fbo_test.glsl", "Shaders/fragment_fbo_test.glsl"))
 {
     init3DObjects();
+    initQuad();
+    _geometryPass = ShaderManager("Shaders/SSAO/vertex_ssao_geometry.glsl", "Shaders/SSAO/fragment_ssao_geometry.glsl");
+    _lightingPass = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_lighting.glsl");
+    _geometryPass.genProgram();
+    _lightingPass.genProgram();
 
     std::cout << "there are " << _nb3DObjects << " objects loaded." << std::endl;
-
-    _vao = std::vector<GLuint>(_nb3DObjects);
-    _vbo = std::vector<GLuint>(_nb3DObjects);
-    _nbo = std::vector<GLuint>(_nb3DObjects);
-    _ebo = std::vector<GLuint>(_nb3DObjects);
-
-    // Initialize the geometry
-    // 1. Generate geometry buffers
-    for (unsigned int i = 0; i < _nb3DObjects; i++) {
-        glGenBuffers(1, &_vbo[i]) ;
-        glGenBuffers(1, &_nbo[i]) ;
-        glGenBuffers(1, &_ebo[i]) ;
-        glGenVertexArrays(1, &_vao[i]) ;
-        // 2. Bind Vertex Array Object
-        glBindVertexArray(_vao[i]);
-            // 3. Copy our vertices array in a buffer for OpenGL to use
-            glBindBuffer(GL_ARRAY_BUFFER, _vbo[i]);
-            glBufferData(GL_ARRAY_BUFFER, _3DObjects[i].getVertices().size()*sizeof (GLfloat), _3DObjects[i].getVertices().data(), GL_STATIC_DRAW);
-            // 4. Then set our vertex attributes pointers
-            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
-            glEnableVertexAttribArray(0);
-            // 5. Copy our normals array in a buffer for OpenGL to use
-            glBindBuffer(GL_ARRAY_BUFFER, _nbo[i]);
-            glBufferData(GL_ARRAY_BUFFER, _3DObjects[i].getNormals().size()*sizeof (GLfloat), _3DObjects[i].getNormals().data(), GL_STATIC_DRAW);
-            // 6. Copy our vertices array in a buffer for OpenGL to use
-            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
-            glEnableVertexAttribArray(1);
-            // 7. Copy our index array in a element buffer for OpenGL to use
-            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo[i]);
-            glBufferData(GL_ELEMENT_ARRAY_BUFFER, _3DObjects[i].getIndices().size()*sizeof (GLfloat), _3DObjects[i].getIndices().data(), GL_STATIC_DRAW);
-        //6. Unbind the VAO
-        glBindVertexArray(0);
-    }
 
     //add some lights sources
     GLfloat scale = 10.0;
@@ -58,6 +31,11 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _shaderselector.back().genProgram();
     _shaderselector.push_back(ShaderManager("Shaders/vertex_phong_shader.glsl", "Shaders/fragment_phong_light_shader.glsl"));
     _shaderselector.back().genProgram();
+    _shaderselector.push_back(ShaderManager("Shaders/vertex_phong_shader_new.glsl", "Shaders/fragment_phong_light_shader_new.glsl"));
+    _shaderselector.back().genProgram();
+
+    //_screenShader.genProgram();
+
 
     _camera.reset(new EulerCamera(glm::vec3(0.f, 0.f, 4.f)));
     _camera->setviewport(glm::vec4(0.f, 0.f, width, height));
@@ -81,7 +59,12 @@ void Scene3DObject::resize(int width, int height) {
 
 void Scene3DObject::draw() {
     Scene::draw();
+    drawScene();
+    //drawFrameBuffer();
+    //drawSSAO();
+}
 
+void Scene3DObject::drawScene() {
     glUseProgram(_shaderselector[_activeshader].getProgram());
 
     GLint nbLightsLocation = glGetUniformLocation(_shaderselector[_activeshader].getProgram(), "nbLights");
@@ -100,19 +83,69 @@ void Scene3DObject::draw() {
     glProgramUniform3f(_shaderselector[_activeshader].getProgram(), cameraPositionLocation, cp[0], cp[1], cp[2]);
 
     for (unsigned int i = 0; i < _nb3DObjects; i++) {
-        _3DObjects[i].playAnimation();
-
-        glUniformMatrix4fv( glGetUniformLocation(_shaderselector[_activeshader].getProgram(), "model"), 1, GL_FALSE, glm::value_ptr(_3DObjects[i]._model));
-
-        glm::vec3 tmpColor = _3DObjects[i].getColor();
-        GLint objectColorLocation = glGetUniformLocation(_shaderselector[_activeshader].getProgram(), "objectColor");
-        glProgramUniform3f(_shaderselector[_activeshader].getProgram(), objectColorLocation,
-                           (GLfloat) tmpColor[0], (GLfloat) tmpColor[1], (GLfloat) tmpColor[2]);
-
-        glBindVertexArray(_vao[i]);
-        glDrawElements(GL_TRIANGLES, _3DObjects[i].getIndices().size(), GL_UNSIGNED_INT, 0);
-        glBindVertexArray(0);
+        _3DObjects[i].draw(_shaderselector[_activeshader]);
     }
+}
+
+void Scene3DObject::drawFrameBuffer() {
+    // first pass
+    /*glBindFramebuffer(GL_FRAMEBUFFER, _fbo);
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // we're not using the stencil buffer now
+    glEnable(GL_DEPTH_TEST);*/
+    _tbuff.bind();
+    drawScene();
+
+    // second pass
+    /*glBindFramebuffer(GL_FRAMEBUFFER, 0); // back to default
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);*/
+    _tbuff.clear();
+
+    /*glUseProgram(_screenShader.getProgram());
+    glBindVertexArray(quadVAO);
+    glDisable(GL_DEPTH_TEST);
+    glBindTexture(GL_TEXTURE_2D, _texColorBuffer);
+    glDrawArrays(GL_TRIANGLES, 0, 6);*/
+    _tbuff.use(_quadVAO);
+}
+
+void Scene3DObject::drawSSAO() {
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    /* config gBuffer */
+    _gBuff.bind();
+    glUniformMatrix4fv( glGetUniformLocation(_geometryPass.getProgram(), "view"), 1, GL_FALSE, glm::value_ptr(_view));
+    glUniformMatrix4fv( glGetUniformLocation(_geometryPass.getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
+
+    /* draw objects */
+    for (unsigned int i = 0; i < _nb3DObjects; i++) {
+        _3DObjects[i].draw(_geometryPass);
+    }
+
+    /* SSAO */
+    _ssaoBuff.bind();
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    _ssaoBuff.getProgram().use();
+
+    for (unsigned int i = 0; i < 64; ++i) {
+        std::string c = "samples[" + std::to_string(i) + "]";
+        glProgramUniform3f( _ssaoBuff.getProgram().getProgram(),
+                            glGetUniformLocation( _ssaoBuff.getProgram().getProgram(), c.c_str()),
+                            _ssaoKernel[i][0], _ssaoKernel[i][1], _ssaoKernel[i][2]);
+
+    }
+    glUniformMatrix4fv( glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGPosition());
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, _gBuff.getGNormal());
+    glActiveTexture(GL_TEXTURE2);
+    glBindTexture(GL_TEXTURE_2D, _noiseTexture);
+    _ssaoBuff.renderQuad(_quadVAO);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 }
 
@@ -142,8 +175,12 @@ bool Scene3DObject::keyboard(unsigned char k) {
 }
 
 void Scene3DObject::init3DObjects () {
+    ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
-    ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
     //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
     /* Add animations to the added models */
@@ -233,12 +270,105 @@ void Scene3DObject::init3DObjects () {
         std::cout << so.getNormals()[i] << " / " << so.getNormals()[i+1] << " / " << so.getNormals()[i+2] << std::endl;
     }
     _3DObjects.push_back(so);*/
-    MeshManager m = MeshManager ();
-    m.useMaterial3DObject(_3DObjects[0]);
+    /*MeshManager m = MeshManager ();
+    m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.subdivide();
+    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.subdivide();
-    //_3DObjects[1] = Material3DObject(glm::vec3(0,0,-2), glm::vec3(0.1,0.5,0.7));
-    m.convertToMaterial3DObject(_3DObjects[0]);
-    //_3DObjects[1].updateShiftedVertices();
+    m.convertToMaterial3DObject(_3DObjects[2].getMeshes()[0]);
+    m.useMaterial3DObject(_3DObjects[3].getMeshes()[0]);
+    m.subdivide();
+    m.simplificationHEC(5000);
+    m.convertToMaterial3DObject(_3DObjects[3].getMeshes()[0]);
+
+    _3DObjects[1].translate(glm::vec3(3,0,0));
+    _3DObjects[2].translate(glm::vec3(-3,0,0));
+    _3DObjects[3].translate(glm::vec3(-3,-3,0));*/
+
+    /*ObjectLoader ol = ObjectLoader("Models/Sponza");
+    if (ol.objLoader("sponza2.dae")) {
+        _3DObjects.push_back(ol.getObj());
+        _3DObjects[0].setColor(glm::vec3(0.1f, 0.5f, 0.7f));
+    }*/
+    /*for (unsigned int i = 0; i<_3DObjects[0].getMeshes().size(); i++) {
+        MeshManager m = MeshManager ();
+        m.useMaterial3DObject(_3DObjects[0].getMeshes()[i]);
+        m.subdivide();
+        m.simplificationHEC(5000);
+        m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[i]);
+    }
+    _3DObjects[0].translate(glm::vec3(1,0,0));
+    _3DObjects[1].translate(glm::vec3(-1,0,0));*/
+    MeshManager m = MeshManager();
+    m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
+    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     _nb3DObjects = _3DObjects.size();
+    for (unsigned int i = 0; i < _nb3DObjects; i++) {
+        _3DObjects[i].setupGL();
+    }
 }
+
+void Scene3DObject::initQuad() {
+    float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
+        // positions   // texCoords
+        -1.0f,  1.0f,  0.0f, 1.0f,
+        -1.0f, -1.0f,  0.0f, 0.0f,
+         1.0f, -1.0f,  1.0f, 0.0f,
+
+        -1.0f,  1.0f,  0.0f, 1.0f,
+         1.0f, -1.0f,  1.0f, 0.0f,
+         1.0f,  1.0f,  1.0f, 1.0f
+    };
+    // screen quad VAO
+    glGenVertexArrays(1, &_quadVAO);
+    glGenBuffers(1, &_quadVBO);
+    glBindVertexArray(_quadVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, _quadVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), &quadVertices, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
+}
+
+float lerp(float a, float b, float f)
+{
+    return a + f * (b - a);
+}
+
+void Scene3DObject::initSamples () {
+    std::uniform_real_distribution<GLfloat> randomFloats(0.0, 1.0); // generates random floats between 0.0 and 1.0
+    std::default_random_engine generator;
+    for (unsigned int i = 0; i < 64; ++i)
+    {
+        glm::vec3 sample(randomFloats(generator) * 2.0 - 1.0, randomFloats(generator) * 2.0 - 1.0, randomFloats(generator));
+        sample = glm::normalize(sample);
+        sample *= randomFloats(generator);
+        float scale = float(i) / 64.0;
+
+        // scale samples s.t. they're more aligned to center of kernel
+        scale = lerp(0.1f, 1.0f, scale * scale);
+        sample *= scale;
+        _ssaoKernel.push_back(sample);
+    }
+}
+
+void Scene3DObject::initNoise () {
+    std::uniform_real_distribution<GLfloat> randomFloats(0.0, 1.0); // generates random floats between 0.0 and 1.0
+    std::default_random_engine generator;
+    for (unsigned int i = 0; i < 16; i++)
+    {
+        glm::vec3 noise(randomFloats(generator) * 2.0 - 1.0, randomFloats(generator) * 2.0 - 1.0, 0.0f); // rotate around z-axis (in tangent space)
+        _ssaoNoise.push_back(noise);
+    }
+    glGenTextures(1, &_noiseTexture);
+    glBindTexture(GL_TEXTURE_2D, _noiseTexture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB32F, 4, 4, 0, GL_RGB, GL_FLOAT, &_ssaoNoise[0]);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+}
+
+
+

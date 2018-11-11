@@ -163,6 +163,33 @@ helloopenGL_automoc.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.s
 .PHONY : helloopenGL_automoc.cpp.s
 
+src/3DObjectParser/objectloader.o: src/3DObjectParser/objectloader.cpp.o
+
+.PHONY : src/3DObjectParser/objectloader.o
+
+# target to build an object file
+src/3DObjectParser/objectloader.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o
+.PHONY : src/3DObjectParser/objectloader.cpp.o
+
+src/3DObjectParser/objectloader.i: src/3DObjectParser/objectloader.cpp.i
+
+.PHONY : src/3DObjectParser/objectloader.i
+
+# target to preprocess a source file
+src/3DObjectParser/objectloader.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.i
+.PHONY : src/3DObjectParser/objectloader.cpp.i
+
+src/3DObjectParser/objectloader.s: src/3DObjectParser/objectloader.cpp.s
+
+.PHONY : src/3DObjectParser/objectloader.s
+
+# target to generate assembly for a file
+src/3DObjectParser/objectloader.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.s
+.PHONY : src/3DObjectParser/objectloader.cpp.s
+
 src/3DObjectParser/objparser.o: src/3DObjectParser/objparser.cpp.o
 
 .PHONY : src/3DObjectParser/objparser.o
@@ -216,6 +243,33 @@ src/Animation/Animation.s: src/Animation/Animation.cpp.s
 src/Animation/Animation.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.s
 .PHONY : src/Animation/Animation.cpp.s
+
+src/BRDF/brdf.o: src/BRDF/brdf.cpp.o
+
+.PHONY : src/BRDF/brdf.o
+
+# target to build an object file
+src/BRDF/brdf.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o
+.PHONY : src/BRDF/brdf.cpp.o
+
+src/BRDF/brdf.i: src/BRDF/brdf.cpp.i
+
+.PHONY : src/BRDF/brdf.i
+
+# target to preprocess a source file
+src/BRDF/brdf.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.i
+.PHONY : src/BRDF/brdf.cpp.i
+
+src/BRDF/brdf.s: src/BRDF/brdf.cpp.s
+
+.PHONY : src/BRDF/brdf.s
+
+# target to generate assembly for a file
+src/BRDF/brdf.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.s
+.PHONY : src/BRDF/brdf.cpp.s
 
 src/Materials/Imported3DModel.o: src/Materials/Imported3DModel.cpp.o
 
@@ -297,6 +351,33 @@ src/Materials/bsplinepatch.s: src/Materials/bsplinepatch.cpp.s
 src/Materials/bsplinepatch.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.s
 .PHONY : src/Materials/bsplinepatch.cpp.s
+
+src/Materials/composed3dobject.o: src/Materials/composed3dobject.cpp.o
+
+.PHONY : src/Materials/composed3dobject.o
+
+# target to build an object file
+src/Materials/composed3dobject.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o
+.PHONY : src/Materials/composed3dobject.cpp.o
+
+src/Materials/composed3dobject.i: src/Materials/composed3dobject.cpp.i
+
+.PHONY : src/Materials/composed3dobject.i
+
+# target to preprocess a source file
+src/Materials/composed3dobject.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.i
+.PHONY : src/Materials/composed3dobject.cpp.i
+
+src/Materials/composed3dobject.s: src/Materials/composed3dobject.cpp.s
+
+.PHONY : src/Materials/composed3dobject.s
+
+# target to generate assembly for a file
+src/Materials/composed3dobject.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.s
+.PHONY : src/Materials/composed3dobject.cpp.s
 
 src/Materials/light.o: src/Materials/light.cpp.o
 
@@ -433,6 +514,141 @@ src/MeshManager/meshmanager.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.s
 .PHONY : src/MeshManager/meshmanager.cpp.s
 
+src/RenderObject/gbuffer.o: src/RenderObject/gbuffer.cpp.o
+
+.PHONY : src/RenderObject/gbuffer.o
+
+# target to build an object file
+src/RenderObject/gbuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o
+.PHONY : src/RenderObject/gbuffer.cpp.o
+
+src/RenderObject/gbuffer.i: src/RenderObject/gbuffer.cpp.i
+
+.PHONY : src/RenderObject/gbuffer.i
+
+# target to preprocess a source file
+src/RenderObject/gbuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.i
+.PHONY : src/RenderObject/gbuffer.cpp.i
+
+src/RenderObject/gbuffer.s: src/RenderObject/gbuffer.cpp.s
+
+.PHONY : src/RenderObject/gbuffer.s
+
+# target to generate assembly for a file
+src/RenderObject/gbuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.s
+.PHONY : src/RenderObject/gbuffer.cpp.s
+
+src/RenderObject/renderobject.o: src/RenderObject/renderobject.cpp.o
+
+.PHONY : src/RenderObject/renderobject.o
+
+# target to build an object file
+src/RenderObject/renderobject.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o
+.PHONY : src/RenderObject/renderobject.cpp.o
+
+src/RenderObject/renderobject.i: src/RenderObject/renderobject.cpp.i
+
+.PHONY : src/RenderObject/renderobject.i
+
+# target to preprocess a source file
+src/RenderObject/renderobject.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.i
+.PHONY : src/RenderObject/renderobject.cpp.i
+
+src/RenderObject/renderobject.s: src/RenderObject/renderobject.cpp.s
+
+.PHONY : src/RenderObject/renderobject.s
+
+# target to generate assembly for a file
+src/RenderObject/renderobject.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.s
+.PHONY : src/RenderObject/renderobject.cpp.s
+
+src/RenderObject/ssaoblurbuffer.o: src/RenderObject/ssaoblurbuffer.cpp.o
+
+.PHONY : src/RenderObject/ssaoblurbuffer.o
+
+# target to build an object file
+src/RenderObject/ssaoblurbuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o
+.PHONY : src/RenderObject/ssaoblurbuffer.cpp.o
+
+src/RenderObject/ssaoblurbuffer.i: src/RenderObject/ssaoblurbuffer.cpp.i
+
+.PHONY : src/RenderObject/ssaoblurbuffer.i
+
+# target to preprocess a source file
+src/RenderObject/ssaoblurbuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.i
+.PHONY : src/RenderObject/ssaoblurbuffer.cpp.i
+
+src/RenderObject/ssaoblurbuffer.s: src/RenderObject/ssaoblurbuffer.cpp.s
+
+.PHONY : src/RenderObject/ssaoblurbuffer.s
+
+# target to generate assembly for a file
+src/RenderObject/ssaoblurbuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.s
+.PHONY : src/RenderObject/ssaoblurbuffer.cpp.s
+
+src/RenderObject/ssaobuffer.o: src/RenderObject/ssaobuffer.cpp.o
+
+.PHONY : src/RenderObject/ssaobuffer.o
+
+# target to build an object file
+src/RenderObject/ssaobuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o
+.PHONY : src/RenderObject/ssaobuffer.cpp.o
+
+src/RenderObject/ssaobuffer.i: src/RenderObject/ssaobuffer.cpp.i
+
+.PHONY : src/RenderObject/ssaobuffer.i
+
+# target to preprocess a source file
+src/RenderObject/ssaobuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.i
+.PHONY : src/RenderObject/ssaobuffer.cpp.i
+
+src/RenderObject/ssaobuffer.s: src/RenderObject/ssaobuffer.cpp.s
+
+.PHONY : src/RenderObject/ssaobuffer.s
+
+# target to generate assembly for a file
+src/RenderObject/ssaobuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.s
+.PHONY : src/RenderObject/ssaobuffer.cpp.s
+
+src/RenderObject/testbuffer.o: src/RenderObject/testbuffer.cpp.o
+
+.PHONY : src/RenderObject/testbuffer.o
+
+# target to build an object file
+src/RenderObject/testbuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o
+.PHONY : src/RenderObject/testbuffer.cpp.o
+
+src/RenderObject/testbuffer.i: src/RenderObject/testbuffer.cpp.i
+
+.PHONY : src/RenderObject/testbuffer.i
+
+# target to preprocess a source file
+src/RenderObject/testbuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.i
+.PHONY : src/RenderObject/testbuffer.cpp.i
+
+src/RenderObject/testbuffer.s: src/RenderObject/testbuffer.cpp.s
+
+.PHONY : src/RenderObject/testbuffer.s
+
+# target to generate assembly for a file
+src/RenderObject/testbuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.s
+.PHONY : src/RenderObject/testbuffer.cpp.s
+
 src/ShaderManager/shaderloader.o: src/ShaderManager/shaderloader.cpp.o
 
 .PHONY : src/ShaderManager/shaderloader.o
@@ -486,6 +702,33 @@ src/ShaderManager/shadermanager.s: src/ShaderManager/shadermanager.cpp.s
 src/ShaderManager/shadermanager.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.s
 .PHONY : src/ShaderManager/shadermanager.cpp.s
+
+src/Texture/texture.o: src/Texture/texture.cpp.o
+
+.PHONY : src/Texture/texture.o
+
+# target to build an object file
+src/Texture/texture.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o
+.PHONY : src/Texture/texture.cpp.o
+
+src/Texture/texture.i: src/Texture/texture.cpp.i
+
+.PHONY : src/Texture/texture.i
+
+# target to preprocess a source file
+src/Texture/texture.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.i
+.PHONY : src/Texture/texture.cpp.i
+
+src/Texture/texture.s: src/Texture/texture.cpp.s
+
+.PHONY : src/Texture/texture.s
+
+# target to generate assembly for a file
+src/Texture/texture.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.s
+.PHONY : src/Texture/texture.cpp.s
 
 src/hello_3dObjScene/Scene3DObjects.o: src/hello_3dObjScene/Scene3DObjects.cpp.o
 
@@ -743,12 +986,18 @@ help:
 	@echo "... helloopenGL_automoc.o"
 	@echo "... helloopenGL_automoc.i"
 	@echo "... helloopenGL_automoc.s"
+	@echo "... src/3DObjectParser/objectloader.o"
+	@echo "... src/3DObjectParser/objectloader.i"
+	@echo "... src/3DObjectParser/objectloader.s"
 	@echo "... src/3DObjectParser/objparser.o"
 	@echo "... src/3DObjectParser/objparser.i"
 	@echo "... src/3DObjectParser/objparser.s"
 	@echo "... src/Animation/Animation.o"
 	@echo "... src/Animation/Animation.i"
 	@echo "... src/Animation/Animation.s"
+	@echo "... src/BRDF/brdf.o"
+	@echo "... src/BRDF/brdf.i"
+	@echo "... src/BRDF/brdf.s"
 	@echo "... src/Materials/Imported3DModel.o"
 	@echo "... src/Materials/Imported3DModel.i"
 	@echo "... src/Materials/Imported3DModel.s"
@@ -758,6 +1007,9 @@ help:
 	@echo "... src/Materials/bsplinepatch.o"
 	@echo "... src/Materials/bsplinepatch.i"
 	@echo "... src/Materials/bsplinepatch.s"
+	@echo "... src/Materials/composed3dobject.o"
+	@echo "... src/Materials/composed3dobject.i"
+	@echo "... src/Materials/composed3dobject.s"
 	@echo "... src/Materials/light.o"
 	@echo "... src/Materials/light.i"
 	@echo "... src/Materials/light.s"
@@ -773,12 +1025,30 @@ help:
 	@echo "... src/MeshManager/meshmanager.o"
 	@echo "... src/MeshManager/meshmanager.i"
 	@echo "... src/MeshManager/meshmanager.s"
+	@echo "... src/RenderObject/gbuffer.o"
+	@echo "... src/RenderObject/gbuffer.i"
+	@echo "... src/RenderObject/gbuffer.s"
+	@echo "... src/RenderObject/renderobject.o"
+	@echo "... src/RenderObject/renderobject.i"
+	@echo "... src/RenderObject/renderobject.s"
+	@echo "... src/RenderObject/ssaoblurbuffer.o"
+	@echo "... src/RenderObject/ssaoblurbuffer.i"
+	@echo "... src/RenderObject/ssaoblurbuffer.s"
+	@echo "... src/RenderObject/ssaobuffer.o"
+	@echo "... src/RenderObject/ssaobuffer.i"
+	@echo "... src/RenderObject/ssaobuffer.s"
+	@echo "... src/RenderObject/testbuffer.o"
+	@echo "... src/RenderObject/testbuffer.i"
+	@echo "... src/RenderObject/testbuffer.s"
 	@echo "... src/ShaderManager/shaderloader.o"
 	@echo "... src/ShaderManager/shaderloader.i"
 	@echo "... src/ShaderManager/shaderloader.s"
 	@echo "... src/ShaderManager/shadermanager.o"
 	@echo "... src/ShaderManager/shadermanager.i"
 	@echo "... src/ShaderManager/shadermanager.s"
+	@echo "... src/Texture/texture.o"
+	@echo "... src/Texture/texture.i"
+	@echo "... src/Texture/texture.s"
 	@echo "... src/hello_3dObjScene/Scene3DObjects.o"
 	@echo "... src/hello_3dObjScene/Scene3DObjects.i"
 	@echo "... src/hello_3dObjScene/Scene3DObjects.s"

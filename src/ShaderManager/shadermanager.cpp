@@ -79,3 +79,17 @@ GLuint ShaderManager::getVertexshader() {
 GLuint ShaderManager::getFragmentshader() {
     return _fragmentshader;
 }
+
+void ShaderManager::use() {
+    glUseProgram(_program);
+}
+
+void ShaderManager::setInt(GLchar* name, GLint o) {
+    glUniform1i(glGetUniformLocation(_program,name), o);
+}
+
+
+
+
+
+

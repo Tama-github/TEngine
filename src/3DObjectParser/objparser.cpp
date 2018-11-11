@@ -29,7 +29,7 @@ std::vector<float> splitToGetValues(std::string line) {
     return res;
 }
 
-void ObjParser::parse(std::string fileName, std::vector<Material3DObject>* objects, bool comuputeNormals)
+void ObjParser::parse(std::string fileName, std::vector<Composed3DObject>* objects, bool comuputeNormals)
 {
     if (fileName == "") {
         std::cerr << "ERROR::LOADING SHADER::NO_NAME" << std::endl;
@@ -138,8 +138,10 @@ void ObjParser::parse(std::string fileName, std::vector<Material3DObject>* objec
 
 
         Imported3DModel myobj (vertices, normals, indices, glm::vec3(0.5,0.5,0.5));
+        Composed3DObject c3do = Composed3DObject (glm::vec3 (0,0,0));
         myobj.updateShiftedVertices();
-        objects->push_back(myobj);
+        c3do.addObject(myobj);
+        objects->push_back(c3do);
 
         obj.close();
 

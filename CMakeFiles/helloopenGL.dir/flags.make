@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -Wall -pedantic -Wextra   -fPIC
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/tama/Moteure/animation/TEngine -I/home/tama/Moteure/animation/TEngine/src -I/home/tama/Moteure/animation/TEngine/glm -I/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/build/B/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -isystem /usr/include/x86_64-linux-gnu/qt5/QtOpenGL 
+CXX_INCLUDES = -I/home/tama/Moteure/animation/TEngine -I/home/tama/Moteure/animation/TEngine/src -I/home/tama/Moteure/animation/TEngine/glm -I/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/build/B/include -I/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/B/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -isystem /usr/include/x86_64-linux-gnu/qt5/QtOpenGL 
 

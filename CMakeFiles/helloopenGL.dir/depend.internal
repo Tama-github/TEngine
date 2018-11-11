@@ -231,13 +231,282 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.cpp
+ /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.h
+ /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv5.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv6.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_armv7.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_bootstrap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_gcc.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_ia64.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_msvc.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_unix.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_x86.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qisenum.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLFunctions
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qgl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglcolormap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/poppack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/pushpack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Compiler/pstdint.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Importer.hpp
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/anim.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/camera.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/config.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/defs.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/light.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/mesh.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/metadata.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/postprocess.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/scene.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/texture.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/types.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.inl
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
+ src/stb_image.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o
  /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.cpp
  /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.h
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -340,7 +609,9 @@ CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
  src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.cpp
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
@@ -446,12 +717,122 @@ CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.cpp
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/opengl_stuff.h
 CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -554,6 +935,9 @@ CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Materials/bspline.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/bspline.h
@@ -651,11 +1035,16 @@ CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
  glm/vector_relational.hpp
 CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bspline.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -758,6 +1147,125 @@ CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.cpp
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Materials/light.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/light.h
@@ -971,9 +1479,14 @@ CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o
  glm/vector_relational.hpp
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -1076,12 +1589,20 @@ CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.cpp
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -1184,15 +1705,25 @@ CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.cpp
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/QuadricT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT_inc.hh
@@ -1236,7 +1767,6 @@ CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_cast.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
- ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
  glm/common.hpp
  glm/detail/_fixes.hpp
@@ -1339,6 +1869,573 @@ CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
  glm/vec3.hpp
  glm/vec4.hpp
  glm/vector_relational.hpp
+ src/Materials/light.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.cpp
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/Materials/material.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.cpp
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/Materials/material.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.cpp
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/Materials/material.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.cpp
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/Materials/material.h
+ src/opengl_stuff.h
+ src/scene.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.cpp
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
+ /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
+ /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ glm/common.hpp
+ glm/detail/_fixes.hpp
+ glm/detail/_swizzle.hpp
+ glm/detail/_swizzle_func.hpp
+ glm/detail/_vectorize.hpp
+ glm/detail/func_common.hpp
+ glm/detail/func_common.inl
+ glm/detail/func_common_simd.inl
+ glm/detail/func_exponential.hpp
+ glm/detail/func_exponential.inl
+ glm/detail/func_exponential_simd.inl
+ glm/detail/func_geometric.hpp
+ glm/detail/func_geometric.inl
+ glm/detail/func_geometric_simd.inl
+ glm/detail/func_integer.hpp
+ glm/detail/func_integer.inl
+ glm/detail/func_integer_simd.inl
+ glm/detail/func_matrix.hpp
+ glm/detail/func_matrix.inl
+ glm/detail/func_matrix_simd.inl
+ glm/detail/func_packing.hpp
+ glm/detail/func_packing.inl
+ glm/detail/func_packing_simd.inl
+ glm/detail/func_trigonometric.hpp
+ glm/detail/func_trigonometric.inl
+ glm/detail/func_trigonometric_simd.inl
+ glm/detail/func_vector_relational.hpp
+ glm/detail/func_vector_relational.inl
+ glm/detail/func_vector_relational_simd.inl
+ glm/detail/precision.hpp
+ glm/detail/setup.hpp
+ glm/detail/type_float.hpp
+ glm/detail/type_half.hpp
+ glm/detail/type_half.inl
+ glm/detail/type_int.hpp
+ glm/detail/type_mat.hpp
+ glm/detail/type_mat2x2.hpp
+ glm/detail/type_mat2x2.inl
+ glm/detail/type_mat2x3.hpp
+ glm/detail/type_mat2x3.inl
+ glm/detail/type_mat2x4.hpp
+ glm/detail/type_mat2x4.inl
+ glm/detail/type_mat3x2.hpp
+ glm/detail/type_mat3x2.inl
+ glm/detail/type_mat3x3.hpp
+ glm/detail/type_mat3x3.inl
+ glm/detail/type_mat3x4.hpp
+ glm/detail/type_mat3x4.inl
+ glm/detail/type_mat4x2.hpp
+ glm/detail/type_mat4x2.inl
+ glm/detail/type_mat4x3.hpp
+ glm/detail/type_mat4x3.inl
+ glm/detail/type_mat4x4.hpp
+ glm/detail/type_mat4x4.inl
+ glm/detail/type_mat4x4_simd.inl
+ glm/detail/type_vec.hpp
+ glm/detail/type_vec1.hpp
+ glm/detail/type_vec1.inl
+ glm/detail/type_vec2.hpp
+ glm/detail/type_vec2.inl
+ glm/detail/type_vec3.hpp
+ glm/detail/type_vec3.inl
+ glm/detail/type_vec4.hpp
+ glm/detail/type_vec4.inl
+ glm/detail/type_vec4_simd.inl
+ glm/exponential.hpp
+ glm/fwd.hpp
+ glm/geometric.hpp
+ glm/glm.hpp
+ glm/gtc/constants.hpp
+ glm/gtc/constants.inl
+ glm/gtc/matrix_transform.hpp
+ glm/gtc/matrix_transform.inl
+ glm/gtc/quaternion.hpp
+ glm/gtc/quaternion.inl
+ glm/gtc/quaternion_simd.inl
+ glm/gtc/type_ptr.hpp
+ glm/gtc/type_ptr.inl
+ glm/integer.hpp
+ glm/mat2x2.hpp
+ glm/mat2x3.hpp
+ glm/mat2x4.hpp
+ glm/mat3x2.hpp
+ glm/mat3x3.hpp
+ glm/mat3x4.hpp
+ glm/mat4x2.hpp
+ glm/mat4x3.hpp
+ glm/mat4x4.hpp
+ glm/matrix.hpp
+ glm/packing.hpp
+ glm/simd/common.h
+ glm/simd/exponential.h
+ glm/simd/geometric.h
+ glm/simd/integer.h
+ glm/simd/matrix.h
+ glm/simd/platform.h
+ glm/trigonometric.hpp
+ glm/vec2.hpp
+ glm/vec3.hpp
+ glm/vec4.hpp
+ glm/vector_relational.hpp
+ src/Materials/light.h
+ src/Materials/material.h
+ src/opengl_stuff.h
+ src/scene.h
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.cpp
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
@@ -1452,22 +2549,36 @@ CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o
  src/Materials/material.h
  src/opengl_stuff.h
  src/scene.h
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.cpp
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.h
  /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.h
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bspline.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
  /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.cpp
  /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.h
  /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -1490,9 +2601,13 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -1503,7 +2618,9 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -1520,6 +2637,7 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -1530,31 +2648,64 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qt_windows.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QSurfaceFormat
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLFunctions
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qgl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglcolormap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/QuadricT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT_inc.hh
@@ -1598,8 +2749,34 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_cast.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
- ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/poppack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/pushpack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Compiler/pstdint.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Importer.hpp
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/anim.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/camera.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/config.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/defs.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/light.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/mesh.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/metadata.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/postprocess.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/scene.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/texture.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/types.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.inl
  glm/common.hpp
  glm/detail/_fixes.hpp
  glm/detail/_swizzle.hpp
@@ -1674,8 +2851,6 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
  glm/gtc/matrix_transform.hpp
  glm/gtc/matrix_transform.inl
  glm/gtc/quaternion.hpp
- glm/gtc/quaternion.inl
- glm/gtc/quaternion_simd.inl
  glm/gtc/type_ptr.hpp
  glm/gtc/type_ptr.inl
  glm/integer.hpp
@@ -1924,12 +3099,15 @@ CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o
  /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.h
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
  /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/hello_spheres/hellospheres.cpp
  /home/tama/Moteure/animation/TEngine/src/hello_spheres/hellospheres.h
@@ -2616,18 +3794,27 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
  src/scene.h
  ui_mainwindow.h
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
+ /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.h
  /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.h
  /home/tama/Moteure/animation/TEngine/src/Animation/Animation.h
+ /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.h
  /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bspline.h
  /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.h
+ /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/light.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material.h
  /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.h
  /home/tama/Moteure/animation/TEngine/src/Materials/spheres.h
  /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
+ /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/Texture/texture.h
  /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.h
  /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/hello_camera/hellocamera.h
@@ -2638,6 +3825,8 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  /home/tama/Moteure/animation/TEngine/src/scene.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -2735,8 +3924,11 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengles2ext.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglext.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
@@ -2755,9 +3947,11 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLFunctions
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/QGLWidget
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qgl.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglcolormap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qglfunctions.h
  /usr/include/x86_64-linux-gnu/qt5/QtOpenGL/qtopenglglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
@@ -2769,8 +3963,10 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/LoopSchemeMaskT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/MathDefs.hh
+ ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/QuadricT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/Vector11T.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Geometry/VectorT_inc.hh
@@ -2814,8 +4010,33 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/SingletonT.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_cast.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Core/Utils/vector_traits.hh
- ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/Config.hh
  ExternalLibraries/OpenMesh-7.1/build/B/include/OpenMesh/Tools/Utils/NumLimitsT.hh
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/poppack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/./Compiler/pushpack1.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Compiler/pstdint.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/Importer.hpp
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/anim.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/color4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/config.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/defs.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/light.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix3x3.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/matrix4x4.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/mesh.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/metadata.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/postprocess.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/quaternion.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/scene.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/texture.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/types.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector2.inl
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.h
+ ExternalLibraries/assimp-4.1.0/build/B/include/assimp/vector3.inl
  glm/common.hpp
  glm/detail/_fixes.hpp
  glm/detail/_swizzle.hpp
@@ -2890,8 +4111,6 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o
  glm/gtc/matrix_transform.hpp
  glm/gtc/matrix_transform.inl
  glm/gtc/quaternion.hpp
- glm/gtc/quaternion.inl
- glm/gtc/quaternion_simd.inl
  glm/gtc/type_ptr.hpp
  glm/gtc/type_ptr.inl
  glm/integer.hpp

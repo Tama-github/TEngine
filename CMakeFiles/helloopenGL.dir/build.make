@@ -61,9 +61,129 @@ ui_mainwindow.h: src/mainwindow.ui
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
 	/usr/lib/x86_64-linux-gnu/qt5/bin/uic -o /home/tama/Moteure/animation/TEngine/ui_mainwindow.h /home/tama/Moteure/animation/TEngine/src/mainwindow.ui
 
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/RenderObject/ssaobuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o -c /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.cpp
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.cpp > CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.cpp -o CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o
+
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o: src/RenderObject/testbuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o -c /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.cpp
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.cpp > CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.cpp -o CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o
+
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/RenderObject/ssaoblurbuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o -c /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.cpp
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.cpp > CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaoblurbuffer.cpp -o CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o
+
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o: src/RenderObject/renderobject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o -c /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.cpp
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.cpp > CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.cpp -o CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o
+
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o: src/RenderObject/gbuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o -c /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.cpp
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.cpp > CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/RenderObject/gbuffer.cpp -o CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o
+
+
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o: src/hello_spheres/hellospheres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o -c /home/tama/Moteure/animation/TEngine/src/hello_spheres/hellospheres.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.i: cmake_force
@@ -87,7 +207,7 @@ CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o.provides.build: 
 
 CMakeFiles/helloopenGL.dir/src/scene.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/scene.cpp.o: src/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/helloopenGL.dir/src/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/helloopenGL.dir/src/scene.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/scene.cpp.o -c /home/tama/Moteure/animation/TEngine/src/scene.cpp
 
 CMakeFiles/helloopenGL.dir/src/scene.cpp.i: cmake_force
@@ -111,7 +231,7 @@ CMakeFiles/helloopenGL.dir/src/scene.cpp.o.provides.build: CMakeFiles/helloopenG
 
 CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o: src/Materials/Imported3DModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/Imported3DModel.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.i: cmake_force
@@ -135,7 +255,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o.provides.build: C
 
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o: src/Materials/material3DObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/material3DObject.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.i: cmake_force
@@ -157,9 +277,33 @@ CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o.provides: CMakeF
 CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o
 
 
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o: src/Materials/composed3dobject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.cpp
+
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.cpp > CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/Materials/composed3dobject.cpp -o CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o
+
+
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o: src/Materials/material.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/material.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.i: cmake_force
@@ -183,7 +327,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o: src/Materials/spheres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/spheres.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.i: cmake_force
@@ -207,7 +351,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o: src/Materials/light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/light.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.i: cmake_force
@@ -231,7 +375,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o: src/Materials/bspline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/bspline.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.i: cmake_force
@@ -255,7 +399,7 @@ CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o: src/Materials/bsplinepatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Materials/bsplinepatch.cpp
 
 CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.i: cmake_force
@@ -277,9 +421,33 @@ CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o.provides: CMakeFiles
 CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o
 
 
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o: src/BRDF/brdf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o -c /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.cpp
+
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.cpp > CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/BRDF/brdf.cpp -o CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o
+
+
 CMakeFiles/helloopenGL.dir/src/main.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/helloopenGL.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/helloopenGL.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/main.cpp.o -c /home/tama/Moteure/animation/TEngine/src/main.cpp
 
 CMakeFiles/helloopenGL.dir/src/main.cpp.i: cmake_force
@@ -303,7 +471,7 @@ CMakeFiles/helloopenGL.dir/src/main.cpp.o.provides.build: CMakeFiles/helloopenGL
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o: src/ShaderManager/shaderloader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o -c /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.cpp
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.i: cmake_force
@@ -327,7 +495,7 @@ CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o.provides.build: 
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o: src/ShaderManager/shadermanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o -c /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.cpp
 
 CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.i: cmake_force
@@ -351,7 +519,7 @@ CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o.provides.build:
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o: src/hello_camera/hellocamera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o -c /home/tama/Moteure/animation/TEngine/src/hello_camera/hellocamera.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.i: cmake_force
@@ -375,7 +543,7 @@ CMakeFiles/helloopenGL.dir/src/hello_camera/hellocamera.cpp.o.provides.build: CM
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o: src/hello_camera/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o -c /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.i: cmake_force
@@ -399,7 +567,7 @@ CMakeFiles/helloopenGL.dir/src/hello_camera/camera.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o: src/myopenglwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o -c /home/tama/Moteure/animation/TEngine/src/myopenglwidget.cpp
 
 CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.i: cmake_force
@@ -423,7 +591,7 @@ CMakeFiles/helloopenGL.dir/src/myopenglwidget.cpp.o.provides.build: CMakeFiles/h
 
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o: src/mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o -c /home/tama/Moteure/animation/TEngine/src/mainwindow.cpp
 
 CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.i: cmake_force
@@ -447,7 +615,7 @@ CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o.provides.build: CMakeFiles/hello
 
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o: src/hello_triangles/hellotriangles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o -c /home/tama/Moteure/animation/TEngine/src/hello_triangles/hellotriangles.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.i: cmake_force
@@ -471,7 +639,7 @@ CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o.provides.bui
 
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/hello_3dObjScene/Scene3DObjects.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o -c /home/tama/Moteure/animation/TEngine/src/hello_3dObjScene/Scene3DObjects.cpp
 
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.i: cmake_force
@@ -495,7 +663,7 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o.provides.bu
 
 CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o: src/Animation/Animation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Animation/Animation.cpp
 
 CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.i: cmake_force
@@ -517,9 +685,57 @@ CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o.provides: CMakeFiles/he
 CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o
 
 
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o: src/Texture/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o -c /home/tama/Moteure/animation/TEngine/src/Texture/texture.cpp
+
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/Texture/texture.cpp > CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/Texture/texture.cpp -o CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o
+
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/3DObjectParser/objectloader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o -c /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.cpp
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.cpp > CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.i
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objectloader.cpp -o CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.s
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.requires
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.provides: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.provides.build
+.PHONY : CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.provides
+
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.provides.build: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o
+
+
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o: src/3DObjectParser/objparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o -c /home/tama/Moteure/animation/TEngine/src/3DObjectParser/objparser.cpp
 
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.i: cmake_force
@@ -543,7 +759,7 @@ CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o.provides.build: CM
 
 CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o: src/MeshManager/meshmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o -c /home/tama/Moteure/animation/TEngine/src/MeshManager/meshmanager.cpp
 
 CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.i: cmake_force
@@ -567,7 +783,7 @@ CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o.provides.build: CMa
 
 CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o: CMakeFiles/helloopenGL.dir/flags.make
 CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o: helloopenGL_automoc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o -c /home/tama/Moteure/animation/TEngine/helloopenGL_automoc.cpp
 
 CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.i: cmake_force
@@ -591,15 +807,22 @@ CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o.provides.build: CMakeFiles/
 
 # Object files for target helloopenGL
 helloopenGL_OBJECTS = \
+"CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/scene.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/main.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o" \
@@ -610,6 +833,8 @@ helloopenGL_OBJECTS = \
 "CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o" \
+"CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o" \
 "CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o" \
 "CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o"
@@ -617,15 +842,22 @@ helloopenGL_OBJECTS = \
 # External object files for target helloopenGL
 helloopenGL_EXTERNAL_OBJECTS =
 
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/scene.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/main.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o
@@ -636,6 +868,8 @@ bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/mainwindow.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o
+bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o
@@ -645,11 +879,12 @@ bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libGL.so
 bin/helloopenGL: ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshCore.a
 bin/helloopenGL: ExternalLibraries/OpenMesh-7.1/build/B/lib/libOpenMeshTools.a
+bin/helloopenGL: ExternalLibraries/assimp-4.1.0/build/B/lib/libassimp.so
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1
 bin/helloopenGL: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1
 bin/helloopenGL: CMakeFiles/helloopenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable bin/helloopenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tama/Moteure/animation/TEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable bin/helloopenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helloopenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -657,15 +892,22 @@ CMakeFiles/helloopenGL.dir/build: bin/helloopenGL
 
 .PHONY : CMakeFiles/helloopenGL.dir/build
 
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/RenderObject/testbuffer.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/RenderObject/renderobject.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/RenderObject/gbuffer.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/hello_spheres/hellospheres.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/scene.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/Imported3DModel.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/spheres.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/BRDF/brdf.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/main.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/ShaderManager/shaderloader.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/ShaderManager/shadermanager.cpp.o.requires
@@ -676,6 +918,8 @@ CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/mainwindow.c
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/hello_triangles/hellotriangles.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Animation/Animation.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/Texture/texture.cpp.o.requires
+CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/3DObjectParser/objparser.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/src/MeshManager/meshmanager.cpp.o.requires
 CMakeFiles/helloopenGL.dir/requires: CMakeFiles/helloopenGL.dir/helloopenGL_automoc.cpp.o.requires

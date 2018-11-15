@@ -26,6 +26,8 @@ public:
     GLuint getFragmentshader();
     void use();
     void setInt(const char* name, GLint o);
+    void setFloat(const char* name, GLfloat o);
+    void setVec3(const char* name, glm::vec3 v);
 
 private:
     const char* _vertex_filename;

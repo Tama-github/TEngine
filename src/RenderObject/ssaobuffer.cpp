@@ -3,8 +3,15 @@
 SSAOBuffer::SSAOBuffer()
 {
     RenderObject();
+}
+
+
+SSAOBuffer::SSAOBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT)
+{
+    RenderObject();
 
     _program = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao.glsl");
+    _program.genProgram();
     // also create framebuffer to hold SSAO processing stage
     // -----------------------------------------------------
     glGenFramebuffers(1, &_fbo);

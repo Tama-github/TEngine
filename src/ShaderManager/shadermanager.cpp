@@ -88,8 +88,12 @@ void ShaderManager::setInt(const char* name, GLint o) {
     glUniform1i(glGetUniformLocation(_program,name), o);
 }
 
+void ShaderManager::setFloat(const char* name, GLfloat o) {
+    glUniform1f(glGetUniformLocation(_program,name), o);
+}
 
-
-
+void ShaderManager::setVec3(const char* name, glm::vec3 v) {
+    glUniform3f(glGetUniformLocation(_program,name), v[0], v[1], v[2]);
+}
 
 

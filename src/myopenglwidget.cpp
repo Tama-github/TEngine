@@ -24,7 +24,7 @@ MyOpenGLWidget::MyOpenGLWidget(QWidget *parent) :QGLWidget(parent), _scene(nullp
     _animation_timer = new QTimer(this);
     //start animation loop
     connect(_animation_timer, SIGNAL(timeout()), this, SLOT(on_animation_timer()));
-    _animation_timer->start(1000.0/60.0);
+    _animation_timer->start(1000.0/60.0); //60fps~
 }
 
 MyOpenGLWidget::~MyOpenGLWidget() {

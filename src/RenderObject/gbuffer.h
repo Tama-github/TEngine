@@ -7,6 +7,7 @@ class GBuffer : public RenderObject
 {
 public:
     GBuffer();
+    GBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT);
     void bind();
     unsigned int getGPosition();
     unsigned int getGNormal();

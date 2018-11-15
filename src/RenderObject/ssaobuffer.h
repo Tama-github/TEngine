@@ -7,6 +7,7 @@ class SSAOBuffer : public RenderObject
 {
 public:
     SSAOBuffer();
+    SSAOBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT);
     void setUniforms();
     ShaderManager getProgram();
     void renderQuad(unsigned int quadVAO);

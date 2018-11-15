@@ -288,6 +288,7 @@ CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/Materials/
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/ShaderManager/shaderloader.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/ShaderManager/shadermanager.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/Texture/texture.h
+CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/glassert.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/hello_camera/camera.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: src/opengl_stuff.h
 CMakeFiles/helloopenGL.dir/src/3DObjectParser/objectloader.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
@@ -2149,6 +2150,7 @@ CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/RenderObje
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/RenderObject/ssaoblurbuffer.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/ShaderManager/shaderloader.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/ShaderManager/shadermanager.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/glassert.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/hello_camera/camera.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: src/opengl_stuff.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaoblurbuffer.cpp.o: glm/common.hpp
@@ -2619,6 +2621,7 @@ CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/Render
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/ShaderManager/shaderloader.h
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/ShaderManager/shadermanager.h
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/Texture/texture.h
+CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/glassert.h
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/hello_3dObjScene/Scene3DObjects.cpp
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/hello_3dObjScene/Scene3DObjects.h
 CMakeFiles/helloopenGL.dir/src/hello_3dObjScene/Scene3DObjects.cpp.o: src/hello_camera/camera.h

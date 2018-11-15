@@ -1,6 +1,7 @@
 #version 330 core
 in vec2 TexCoords;
 
+
 uniform sampler2D gPosition;
 uniform sampler2D gNormal;
 uniform sampler2D gAlbedo;
@@ -30,6 +31,7 @@ BRDF brdf;
 uniform sampler2D texture_diffuse1;
 uniform sampler2D texture_specular1;
 uniform sampler2D texture_normal1;
+
 
 void main()
 {
@@ -65,4 +67,5 @@ void main()
     }
 
     color = vec4(lighting, 1.0);
+    //color = vec4(AmbientOcclusion,AmbientOcclusion,AmbientOcclusion,0.1);
 }

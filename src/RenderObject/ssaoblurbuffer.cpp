@@ -1,10 +1,17 @@
 #include "ssaoblurbuffer.h"
+#include "../glassert.h"
 
 SSAOBlurBuffer::SSAOBlurBuffer()
 {
     RenderObject();
+}
+
+SSAOBlurBuffer::SSAOBlurBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT)
+{
+    RenderObject();
 
     _program = ShaderManager ("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_blur.glsl");
+    _program.genProgram();
     // also create framebuffer to hold SSAO processing stage
     // -----------------------------------------------------
     glGenFramebuffers(1, &_fbo);
@@ -27,9 +34,13 @@ void SSAOBlurBuffer::bind() {
 }
 
 void SSAOBlurBuffer::setUniforms() {
+    GL_CHECK_ERROR
     _program.use();
+    GL_CHECK_ERROR
     std::string s = "ssaoInput";
+    GL_CHECK_ERROR
     _program.setInt(s.c_str(), 0);
+    GL_CHECK_ERROR
 }
 
 ShaderManager SSAOBlurBuffer::getProgram() {

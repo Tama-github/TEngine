@@ -11,6 +11,7 @@
 #include "src/stb_image.h"
 //#include <FreeImage.h>
 //#include <FreeImage/Source/FreeImage.h>
+#include "../glassert.h"
 
 ObjectLoader::ObjectLoader(std::string path) {
     this->path = path;
@@ -76,7 +77,7 @@ bool ObjectLoader::objLoader(std::string name) {
     Assimp::Importer importer;
 
     /*aiProcess_Triangulate | aiProcess_JoinenticalVertices | aiProcess_FlipUVs | aiProcess_SortByPType | aiProcess_OptimizeMeshes;*/
-    unsigned int flag = aiProcess_FlipWindingOrder | aiProcess_GenUVCoords | aiProcess_GenSmoothNormals | aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace | aiProcess_GlobalScale;
+    unsigned int flag = aiProcess_JoinIdenticalVertices | aiProcess_FlipWindingOrder | aiProcess_GenUVCoords | aiProcess_GenSmoothNormals | aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace | aiProcess_GlobalScale;
     const aiScene* scene = importer.ReadFile(fileName, flag);
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
@@ -452,21 +453,23 @@ unsigned int ObjectLoader::TextureFromFile(const char *path, const std::string &
             format = GL_SRGB;
             break;
         }
-
+        GL_CHECK_ERROR
         glBindTexture(GL_TEXTURE_2D, textureID);
-
+        GL_CHECK_ERROR
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
-        glTexParameteri(GL_TEXTURE_2D, GL_GENERATE_MIPMAP, GL_TRUE);
+        GL_CHECK_ERROR
         glGenerateMipmap(GL_TEXTURE_2D);
-        //QOpenGLFunctions *glFuncs = QOpenGLContext::currentContext()->functions();
-        //glFuncs->glGenerateMipmap(GL_TEXTURE_2D);
+        GL_CHECK_ERROR
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        GL_CHECK_ERROR
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        GL_CHECK_ERROR
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-
+        GL_CHECK_ERROR
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        GL_CHECK_ERROR
         glBindTexture(GL_TEXTURE_2D, 0);
+        GL_CHECK_ERROR
 
 
     }

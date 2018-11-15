@@ -27,6 +27,7 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _lightingPass = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_lighting.glsl");
     _geometryPass.genProgram();
     _lightingPass.genProgram();
+    glB
     glGenTextures(1, &_noiseTexture);
     initSamples ();
     initNoise ();

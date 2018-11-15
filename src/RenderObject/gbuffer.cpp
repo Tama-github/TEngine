@@ -3,6 +3,11 @@
 GBuffer::GBuffer()
 {
     RenderObject();
+}
+
+GBuffer::GBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT)
+{
+    RenderObject();
     // configure g-buffer framebuffer
     // ------------------------------
     glGenFramebuffers(1, &_fbo);

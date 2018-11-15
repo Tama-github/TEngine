@@ -109,6 +109,7 @@ private:
     GBuffer _gBuff;
     SSAOBuffer _ssaoBuff;
     SSAOBlurBuffer _ssaoBlurBuff;
+    float _rayon;
     std::vector<glm::vec3> _ssaoKernel;
     std::vector<glm::vec3> _ssaoNoise;
     unsigned int _noiseTexture;

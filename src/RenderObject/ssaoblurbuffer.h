@@ -7,6 +7,7 @@ class SSAOBlurBuffer : public RenderObject
 {
 public:
     SSAOBlurBuffer();
+    SSAOBlurBuffer(unsigned int SCR_WIDTH, unsigned int SCR_HEIGHT);
     void setUniforms();
     void bind();
     ShaderManager getProgram();

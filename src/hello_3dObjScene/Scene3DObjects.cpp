@@ -27,9 +27,10 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _lightingPass = ShaderManager("Shaders/SSAO/vertex_ssao.glsl", "Shaders/SSAO/fragment_ssao_lighting.glsl");
     _geometryPass.genProgram();
     _lightingPass.genProgram();
-    glGenTextures(1, &_noiseTexture);
-    initSamples ();
-    initNoise ();
+
+    //glGenTextures(1, &_noiseTexture);
+    //initSamples ();
+    //initNoise ();
 
 
 
@@ -160,6 +161,7 @@ void Scene3DObject::drawSSAO() {
     /* Geometry Pass */
     //glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     _gBuff.bind();
+    glEnable(GL_DEPTH_TEST);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     /*std::cout << "View : " << std::endl;
@@ -181,6 +183,7 @@ void Scene3DObject::drawSSAO() {
     for (unsigned int i = 0; i < _nb3DObjects; i++) {
         _3DObjects[i].draw(_geometryPass);
     }
+    glBindFramebuffer(GL_FRAMEBUFFER, currentFB);
 
     /* gPosition display */
     /*glBindFramebuffer(GL_FRAMEBUFFER, currentFB); // back to default
@@ -193,36 +196,43 @@ void Scene3DObject::drawSSAO() {
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     glBindVertexArray(0);*/
 
+
+
     /* SSAO Pass */
     //std::cout << "SSAO" << std::endl;
     _ssaoBuff.bind();
-    glClear(GL_COLOR_BUFFER_BIT);
 
+    glDisable(GL_DEPTH_TEST);
+    glClear(GL_COLOR_BUFFER_BIT);
     _ssaoBuff.getProgram().use();
+
+    for (unsigned int i = 0; i < 64; i++) {
+        std::string name = "samples[" + std::to_string(i) + "]";
+        glUniform3fv(glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), name.c_str()), sizeof(glm::vec3),  glm::value_ptr(_ssaoBuff.getKernel()[i]));
+    }
+
+    glUniformMatrix4fv( glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "view"), 1, GL_FALSE, glm::value_ptr(_view));
+    glUniformMatrix4fv( glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
 
     _ssaoBuff.getProgram().setInt("width", _width);
     _ssaoBuff.getProgram().setInt("height", _height);
-    _ssaoBuff.getProgram().setFloat("radius", _rayon);
-    GL_CHECK_ERROR
-    for (unsigned int i = 0; i < _ssaoKernel.size(); ++i) {
-        GL_CHECK_ERROR
-        std::string n = "samples[" + std::to_string(i) + "]";
-        _ssaoBuff.getProgram().setVec3(n.c_str(), _ssaoKernel[i]);
-    }
+    _ssaoBuff.getProgram().setFloat("radius", 0.1);
     GL_CHECK_ERROR
     //std::cout << "Config tex" << std::endl;
+
     glUniformMatrix4fv( glGetUniformLocation(_ssaoBuff.getProgram().getProgram(), "projection"), 1, GL_FALSE, glm::value_ptr(_projection));
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _gBuff.getGPosition());
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, _gBuff.getGNormal());
     glActiveTexture(GL_TEXTURE2);
-    glBindTexture(GL_TEXTURE_2D, _noiseTexture);
+    glBindTexture(GL_TEXTURE_2D, _ssaoBuff.getNoise());
     GL_CHECK_ERROR
 
     renderQuad();
 
-    GL_CHECK_ERROR
+
+    /*GL_CHECK_ERROR
     glBindFramebuffer(GL_FRAMEBUFFER, currentFB); // back to default
     _tbuff.getProgram().use();
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -232,17 +242,17 @@ void Scene3DObject::drawSSAO() {
     glBindVertexArray(_quadVAO);
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     glBindVertexArray(0);
-    GL_CHECK_ERROR
+    GL_CHECK_ERROR*/
 
     /* SSAO Blur Pass */
-    /*glBindFramebuffer(GL_FRAMEBUFFER, currentFB);
+    glBindFramebuffer(GL_FRAMEBUFFER, currentFB);
 
     _ssaoBlurBuff.bind();
     _ssaoBlurBuff.getProgram().use();
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _ssaoBuff.getSSAOColorBuffer());
 
-    renderQuad();*/
+    renderQuad();
 
 
     /*glBindFramebuffer(GL_FRAMEBUFFER, currentFB); // back to default
@@ -258,7 +268,7 @@ void Scene3DObject::drawSSAO() {
 
     /* Lighting Pass */
 
-    /*glBindFramebuffer(GL_FRAMEBUFFER, currentFB);
+    glBindFramebuffer(GL_FRAMEBUFFER, currentFB);
 
     _lightingPass.use();
     glUseProgram(_lightingPass.getProgram());
@@ -286,7 +296,7 @@ void Scene3DObject::drawSSAO() {
     glBindTexture(GL_TEXTURE_2D, _gBuff.getGAlbedo());
     glActiveTexture(GL_TEXTURE3); // add extra SSAO texture to lighting pass
     glBindTexture(GL_TEXTURE_2D, _ssaoBlurBuff.getSSAOColorBufferBlur());
-    renderQuad();*/
+    renderQuad();
 
 }
 
@@ -474,47 +484,44 @@ void Scene3DObject::initQuad() {
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 }
 
-float lerp(float a, float b, float f)
+/*float lerp(float a, float b, float f)
 {
     return a + f * (b - a);
-}
+}*/
 
-void Scene3DObject::initSamples () {
-    std::uniform_real_distribution<GLfloat> randomFloats(0.0, 1.f); // generates random floats between 0.0 and rayon
+/*void Scene3DObject::initSamples () {
+    std::uniform_real_distribution<GLfloat> randomFloats(0.f, 1.f);
     std::default_random_engine generator;
-    for (unsigned int i = 0; i < 64; ++i)
-    {
-        glm::vec3 sample(randomFloats(generator) * 2.0 - 1.0, randomFloats(generator) * 2.0 - 1.0, randomFloats(generator));
+
+    for (unsigned int i = 0; i < 64; i++) {
+        glm::vec3 sample(randomFloats(generator) * 2.f - 1.f, randomFloats(generator) * 2.f - 1.f, randomFloats(generator));
         sample = glm::normalize(sample);
         sample *= randomFloats(generator);
+
         float scale = float(i) / 64.0;
 
-        // scale samples s.t. they're more aligned to center of kernel
         scale = lerp(0.1f, 1.0f, scale * scale);
         sample *= scale;
-        _ssaoKernel.push_back(sample);
+        _ssaoKernel.emplace_back(sample);
     }
-}
+}*/
 
-void Scene3DObject::initNoise () {
-    GL_CHECK_ERROR
-    std::uniform_real_distribution<GLfloat> randomFloats(0.0, 1.f); // generates random floats between 0.0 and rayon
+/*void Scene3DObject::initNoise () {
+    std::uniform_real_distribution<GLfloat> randomFloats(0.f, 1.f);
     std::default_random_engine generator;
 
     for (unsigned int i=0; i < 16; i++) {
         glm::vec3 noise(randomFloats(generator) * 2.f - 1.f, randomFloats(generator) * 2.f - 1.f, 0.f);
         _ssaoNoise.emplace_back(noise);
     }
-    GL_CHECK_ERROR
-    //glGenTextures(1, &_noiseTexture);
+
     glBindTexture(GL_TEXTURE_2D, _noiseTexture);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F, 4, 4, 0, GL_RGB, GL_FLOAT, &_ssaoNoise[0]);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    GL_CHECK_ERROR
-}
+}*/
 
 void Scene3DObject::renderQuad () {
     glBindVertexArray(_quadVAO);

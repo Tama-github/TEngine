@@ -3,6 +3,8 @@
 
 #include "renderobject.h"
 
+#include <random>
+
 class SSAOBuffer : public RenderObject
 {
 public:
@@ -12,9 +14,13 @@ public:
     ShaderManager getProgram();
     void renderQuad(unsigned int quadVAO);
     unsigned int getSSAOColorBuffer();
+    std::vector<glm::vec3> getKernel();
+    unsigned int getNoise();
 
 private:
     unsigned int _ssaoColorBuffer;
+    unsigned int _noiseTexture;
+    std::vector<glm::vec3> _kernel;
 
 };
 

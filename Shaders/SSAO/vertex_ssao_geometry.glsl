@@ -1,38 +1,14 @@
 #version 330 core
-/*layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aNormal;
-layout (location = 2) in vec2 aTexCoords;
 
-out vec3 FragPos;
-out vec2 TexCoords;
-out vec3 Normal;
-
-uniform mat4 model;
-uniform mat4 view;
-uniform mat4 projection;
-
-void main()
-{
-    vec4 viewPos = view * model * vec4(aPos, 1.0);
-    FragPos = viewPos.xyz;
-    TexCoords = aTexCoords;
-
-    mat3 normalMatrix = transpose(inverse(mat3(view * model)));
-    Normal = normalMatrix * aNormal;
-
-    gl_Position = projection * viewPos;
-}*/
-
-
-layout (location = 0) in vec3 position;
+/*layout (location = 0) in vec3 position;
 layout (location = 1) in vec3 inormal;
 layout (location = 2) in vec3 tangent;
 layout (location = 3) in vec3 bitan;
 layout (location = 4) in vec2 texCoord;
 
-/*layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aNormal;
-layout (location = 2) in vec2 aTexCoords;*/
+//layout (location = 0) in vec3 aPos;
+//layout (location = 1) in vec3 aNormal;
+//layout (location = 2) in vec2 aTexCoords;
 
 uniform mat4 model;
 uniform mat4 view;
@@ -57,4 +33,34 @@ void main() {
     TBN[0] = vec3(t[0],bt[0],normal[0]);
     TBN[1] = vec3(t[1],bt[1],normal[1]);
     TBN[2] = vec3(t[2],bt[2],normal[2]);
+}*/
+
+
+
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aNormal;
+layout (location = 2) in vec3 tangent;
+layout (location = 3) in vec3 bitan;
+layout (location = 4) in vec2 aTexCoords;
+
+out vec3 FragPos;
+out vec2 TexCoords;
+out vec3 Normal;
+
+uniform bool invertedNormals;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
+void main()
+{
+    vec4 viewPos = view * model * vec4(aPos, 1.0);
+    FragPos = viewPos.xyz;
+    TexCoords = aTexCoords;
+
+    mat3 normalMatrix = transpose(inverse(mat3(view * model)));
+    Normal = normalMatrix * aNormal;
+
+    gl_Position = projection * viewPos;
 }

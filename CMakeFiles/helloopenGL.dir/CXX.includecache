@@ -275,10 +275,14 @@ renderobject.h
 /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.cpp
 ssaobuffer.h
 /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
+../glassert.h
+/home/tama/Moteure/animation/TEngine/src/glassert.h
 
 /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
 renderobject.h
 /home/tama/Moteure/animation/TEngine/src/RenderObject/renderobject.h
+random
+-
 
 /home/tama/Moteure/animation/TEngine/src/RenderObject/testbuffer.cpp
 testbuffer.h

@@ -110,17 +110,17 @@ private:
     SSAOBuffer _ssaoBuff;
     SSAOBlurBuffer _ssaoBlurBuff;
     float _rayon;
-    std::vector<glm::vec3> _ssaoKernel;
-    std::vector<glm::vec3> _ssaoNoise;
-    unsigned int _noiseTexture;
+    //std::vector<glm::vec3> _ssaoKernel;
+    //std::vector<glm::vec3> _ssaoNoise;
+    //unsigned int _noiseTexture;
     ShaderManager _geometryPass;
     ShaderManager _lightingPass;
 
     // Initilizations
     void init3DObjects ();
     void initQuad ();
-    void initSamples ();
-    void initNoise ();
+    //void initSamples ();
+    //void initNoise ();
 
 
     void drawScene ();

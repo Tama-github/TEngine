@@ -2265,6 +2265,7 @@ CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o
  /home/tama/Moteure/animation/TEngine/src/RenderObject/ssaobuffer.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shaderloader.h
  /home/tama/Moteure/animation/TEngine/src/ShaderManager/shadermanager.h
+ /home/tama/Moteure/animation/TEngine/src/glassert.h
  /home/tama/Moteure/animation/TEngine/src/hello_camera/camera.h
  /home/tama/Moteure/animation/TEngine/src/opengl_stuff.h
  glm/common.hpp

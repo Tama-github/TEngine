@@ -2264,6 +2264,7 @@ CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/RenderObject/s
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/RenderObject/ssaobuffer.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/ShaderManager/shaderloader.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/ShaderManager/shadermanager.h
+CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/glassert.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/hello_camera/camera.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: src/opengl_stuff.h
 CMakeFiles/helloopenGL.dir/src/RenderObject/ssaobuffer.cpp.o: glm/common.hpp

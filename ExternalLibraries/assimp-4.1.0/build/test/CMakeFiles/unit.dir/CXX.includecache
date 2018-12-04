@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -1454,43 +1454,43 @@ sys/types.h
 src/gtest-internal-inl.h
 ../test/../contrib/gtest/src/src/gtest-internal-inl.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/ScenePrivate.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/ScenePrivate.h
 assimp/scene.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/Version.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/Version.cpp
 assimp/version.h
 -
 assimp/scene.h
 -
 ScenePrivate.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/ScenePrivate.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/ScenePrivate.h
 revision.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/revision.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/revision.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/gtest-all.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/gtest-all.cc
 gtest/gtest.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/gtest/gtest.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/gtest/gtest.h
 src/gtest.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest.cc
 src/gtest-death-test.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-death-test.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-death-test.cc
 src/gtest-filepath.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-filepath.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-filepath.cc
 src/gtest-port.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-port.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-port.cc
 src/gtest-printers.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-printers.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-printers.cc
 src/gtest-test-part.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-test-part.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-test-part.cc
 src/gtest-typed-test.cc
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-typed-test.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/gtest/src/src/gtest-typed-test.cc
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Compiler/pstdint.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Compiler/pstdint.h
 stddef.h
 -
 limits.h
@@ -1510,75 +1510,75 @@ stdio.h
 string.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/DefaultLogger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/DefaultLogger.hpp
 Logger.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
 LogStream.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/LogStream.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/LogStream.hpp
 NullLogger.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/NullLogger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/NullLogger.hpp
 vector
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/LogStream.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/LogStream.hpp
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/NullLogger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/NullLogger.hpp
 Logger.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Logger.hpp
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/anim.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/anim.h
 assimp/types.h
 -
 assimp/quaternion.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/camera.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/camera.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.inl
 color4.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 assimp/config.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/light.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/light.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 ./Compiler/pushpack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
 ./Compiler/poppack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
 material.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.inl
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.inl
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.inl
 matrix3x3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
 matrix4x4.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
 algorithm
 -
 cmath
@@ -1586,19 +1586,19 @@ cmath
 limits
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
 vector3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.inl
 matrix4x4.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
 matrix3x3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
 quaternion.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
 algorithm
 -
 limits
@@ -1606,59 +1606,59 @@ limits
 cmath
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/metadata.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/metadata.h
 Compiler/pstdint.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Compiler/pstdint.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/Compiler/pstdint.h
 stdint.h
 -
 string
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/postprocess.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/postprocess.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.inl
 quaternion.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
 cmath
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/scene.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/scene.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 texture.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/texture.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/texture.h
 mesh.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
 light.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/light.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/light.h
 camera.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/camera.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/camera.h
 material.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/material.h
 anim.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/anim.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/anim.h
 metadata.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/metadata.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/metadata.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/texture.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/texture.h
 types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 ./Compiler/pushpack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
 ./Compiler/poppack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/types.h
 sys/types.h
 -
 stddef.h
@@ -1668,19 +1668,19 @@ string.h
 limits.h
 -
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 vector3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
 vector2.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
 color4.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.h
 matrix3x3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.h
 matrix4x4.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.h
 quaternion.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.h
 cstring
 -
 new
@@ -1688,77 +1688,77 @@ new
 string
 -
 vector2.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.inl
 vector3.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.inl
 color4.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/color4.inl
 quaternion.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/quaternion.inl
 matrix3x3.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix3x3.inl
 matrix4x4.inl
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/matrix4x4.inl
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
 cmath
 -
 math.h
 -
 ./Compiler/pushpack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/pushpack1.h
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 ./Compiler/poppack1.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/./Compiler/poppack1.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.inl
 vector2.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector2.h
 cmath
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
 cmath
 -
 math.h
 -
 defs.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.inl
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.inl
 vector3.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/vector3.h
 cmath
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.cpp
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AssimpAPITest.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AssimpAPITest.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/importerdesc.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/Main.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/Main.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 ../../include/assimp/DefaultLogger.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/DefaultLogger.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/DefaultLogger.hpp
 math.h
 -
 time.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.cpp
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 assimp/scene.h
 -
 assimp/mesh.h
@@ -1768,9 +1768,9 @@ assimp/material.h
 sstream
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 fast_atof.h
 -
 vector
@@ -1778,19 +1778,19 @@ vector
 string
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
 assimp/DefaultIOStream.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/IOSystem.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 assimp/mesh.h
@@ -1798,11 +1798,11 @@ assimp/mesh.h
 assimp/material.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
 assimp/LogStream.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
 cstdio
 -
 cstdlib
@@ -1812,7 +1812,7 @@ gtest/gtest.h
 io.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/cimport.h
 -
 gtest/gtest.h
@@ -1822,107 +1822,107 @@ memory
 math.h
 -
 UTLogStream.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ut3DImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ut3DImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ut3DSImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ut3DSImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utACImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utACImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utAMFImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utAMFImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utASEImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utASEImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utAnim.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utAnim.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/anim.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utB3DImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utB3DImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBVHImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBVHImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBatchLoader.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBatchLoader.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 Importer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/Importer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/Importer.h
 TestIOSystem.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlendImportAreaLight.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlendImportAreaLight.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/cexport.h
 -
 assimp/Exporter.hpp
@@ -1934,9 +1934,9 @@ assimp/scene.h
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlendImportMaterials.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlendImportMaterials.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/cexport.h
 -
 assimp/Importer.hpp
@@ -1946,43 +1946,43 @@ assimp/scene.h
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlenderImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlenderImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlenderIntermediate.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utBlenderIntermediate.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 BlenderIntermediate.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/BlenderIntermediate.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/BlenderIntermediate.h
 ./../include/assimp/camera.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/camera.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/camera.h
 ./../include/assimp/light.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/light.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/light.h
 ./../include/assimp/mesh.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/mesh.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/mesh.h
 ./../include/assimp/texture.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/texture.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/./../include/assimp/texture.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utCSMImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utCSMImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaExportCamera.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaExportCamera.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/cexport.h
 -
 assimp/Exporter.hpp
@@ -1994,9 +1994,9 @@ assimp/scene.h
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaExportLight.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaExportLight.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/cexport.h
 -
 assimp/Exporter.hpp
@@ -2008,21 +2008,21 @@ assimp/scene.h
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utColladaImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utD3MFImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utD3MFImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/Exporter.hpp
@@ -2032,27 +2032,27 @@ assimp/scene.h
 assimp/postprocess.h
 -
 D3MFExporter.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/D3MFExporter.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/D3MFExporter.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utDXFImporterExporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utDXFImporterExporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utDefaultIOStream.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utDefaultIOStream.cpp
 gtest/gtest.h
 -
 TestIOStream.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
 UnitTestFileGenerator.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
 cstdio
 -
 cstdlib
@@ -2060,109 +2060,109 @@ cstdlib
 string
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFBXImporterExporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFBXImporterExporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFastAtof.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFastAtof.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 fast_atof.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFindDegenerates.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFindDegenerates.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 FindDegenerates.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFindInvalidData.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFindInvalidData.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 FindInvalidDataProcess.h
 -
 ../../include/assimp/mesh.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/mesh.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFixInfacingNormals.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utFixInfacingNormals.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utGenNormals.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utGenNormals.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 GenVertexNormalsProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utHMPImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utHMPImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIFCImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIFCImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIOStreamBuffer.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIOStreamBuffer.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 IOStreamBuffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/IOStreamBuffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/IOStreamBuffer.h
 TestIOStream.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOStream.h
 UnitTestFileGenerator.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestFileGenerator.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIOSystem.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIOSystem.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 TestIOSystem.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
 assimp/IOSystem.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utImporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utImporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 ../../include/assimp/postprocess.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/postprocess.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/postprocess.h
 ../../include/assimp/scene.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/scene.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/scene.h
 assimp/Importer.hpp
 -
 BaseImporter.h
 -
 TestIOSystem.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestIOSystem.h
 assimp/DefaultIOSystem.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utImproveCacheLocality.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utImproveCacheLocality.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIssues.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utIssues.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 assimp/Importer.hpp
@@ -2172,63 +2172,63 @@ assimp/Exporter.hpp
 assimp/postprocess.h
 -
 TestModelFactory.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utJoinVertices.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utJoinVertices.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 JoinVerticesProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utLWSImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utLWSImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utLimitBoneWeights.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utLimitBoneWeights.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 LimitBoneWeightsProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMaterialSystem.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMaterialSystem.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 MaterialSystem.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMatrix3x3.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMatrix3x3.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 iostream
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMatrix4x4.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMatrix4x4.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMetadata.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utMetadata.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/metadata.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utObjImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utObjImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/scene.h
 -
 assimp/Importer.hpp
@@ -2238,25 +2238,25 @@ assimp/Exporter.hpp
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utObjTools.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utObjTools.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 ObjTools.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ObjTools.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ObjTools.h
 ObjFileParser.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ObjFileParser.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ObjFileParser.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utOpenGEXImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utOpenGEXImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPLYImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPLYImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/Importer.hpp
 -
 assimp/Exporter.hpp
@@ -2264,57 +2264,57 @@ assimp/Exporter.hpp
 assimp/scene.h
 -
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPMXImporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPMXImporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 MMDImporter.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/MMDImporter.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/MMDImporter.h
 assimp/Importer.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPretransformVertices.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utPretransformVertices.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 PretransformVertices.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utProfiler.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utProfiler.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 UTLogStream.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UTLogStream.h
 code/Profiler.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/code/Profiler.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/code/Profiler.h
 assimp/DefaultLogger.hpp
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utQ3DImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utQ3DImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveComments.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveComments.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 RemoveComments.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveComponent.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveComponent.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 RemoveVCProcess.h
@@ -2322,9 +2322,9 @@ RemoveVCProcess.h
 MaterialSystem.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveRedundantMaterials.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveRedundantMaterials.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 RemoveRedundantMaterials.h
@@ -2332,63 +2332,63 @@ RemoveRedundantMaterials.h
 MaterialSystem.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveVCProcess.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utRemoveVCProcess.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 code/RemoveVCProcess.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/code/RemoveVCProcess.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/code/RemoveVCProcess.h
 assimp/mesh.h
 -
 assimp/scene.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSIBImporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSIBImporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SIBImporter.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SIBImporter.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SIBImporter.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSMDImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSMDImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SMDLoader.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SMDLoader.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SMDLoader.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSTLImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSTLImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utScaleProcess.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utScaleProcess.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 ScaleProcess.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ScaleProcess.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/ScaleProcess.h
 TestModelFactory.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/TestModelFactory.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSceneCombiner.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSceneCombiner.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/SceneCombiner.h
 -
 assimp/mesh.h
@@ -2396,9 +2396,9 @@ assimp/mesh.h
 memory
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utScenePreprocessor.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utScenePreprocessor.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/mesh.h
 -
 assimp/scene.h
@@ -2408,17 +2408,17 @@ assimp/Importer.hpp
 ScenePreprocessor.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSharedPPData.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSharedPPData.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 BaseProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSortByPType.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSortByPType.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 ScenePreprocessor.h
@@ -2426,93 +2426,93 @@ ScenePreprocessor.h
 SortByPTypeProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSplitLargeMeshes.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utSplitLargeMeshes.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 SplitLargeMeshes.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utStringUtils.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utStringUtils.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 StringUtils.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/StringUtils.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/StringUtils.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTargetAnimation.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTargetAnimation.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTextureTransform.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTextureTransform.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTriangulate.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTriangulate.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/scene.h
 -
 TriangulateProcess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTypes.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utTypes.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/types.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVector3.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVector3.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/vector3.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVersion.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVersion.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/version.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVertexTriangleAdjacency.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utVertexTriangleAdjacency.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 assimp/types.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/assimp/types.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/assimp/types.h
 assimp/mesh.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/assimp/mesh.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/assimp/mesh.h
 VertexTriangleAdjacency.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utX3DImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utX3DImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utXImporterExporter.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utXImporterExporter.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 SceneDiffer.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/SceneDiffer.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utglTF2ImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utglTF2ImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/Exporter.hpp
@@ -2520,11 +2520,11 @@ assimp/Exporter.hpp
 assimp/postprocess.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utglTFImportExport.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/utglTFImportExport.cpp
 UnitTestPCH.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/UnitTestPCH.h
 AbstractImportExportBase.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/AbstractImportExportBase.h
 assimp/Importer.hpp
 -
 assimp/postprocess.h

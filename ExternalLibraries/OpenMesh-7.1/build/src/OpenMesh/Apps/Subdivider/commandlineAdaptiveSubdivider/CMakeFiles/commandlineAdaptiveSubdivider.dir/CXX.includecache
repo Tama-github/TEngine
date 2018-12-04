@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -916,7 +916,7 @@ unistd.h
 getopt.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Subdivider/adaptive_subdivider.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Subdivider/adaptive_subdivider.cc
 OpenMesh/Core/IO/MeshIO.hh
 -
 OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh

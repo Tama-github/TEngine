@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../../../../../../../../winhomes/brl1547a/brl1547a/M2/Moteur/animation/Ludovic_burg_IIG3D/PrjIIG3D_latest/src/myopenglwidget.h"
+#include "../../src/myopenglwidget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

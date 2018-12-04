@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -856,7 +856,7 @@ unistd.h
 getopt.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/mconvert/mconvert.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/mconvert/mconvert.cc
 iostream
 -
 iterator

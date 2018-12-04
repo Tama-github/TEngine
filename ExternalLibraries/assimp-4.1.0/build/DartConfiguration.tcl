@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0
-BuildDirectory: /home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build
+SourceDirectory: /home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0
+BuildDirectory: /home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: tama-ub
+Site: u3-112-17l.ens.fsi
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -33,7 +33,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0"
+ConfigureCommand: "/usr/bin/cmake" "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -52,6 +52,7 @@ SVNUpdateOptions:
 
 # Git options
 GITCommand: /usr/bin/git
+GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
 
@@ -68,8 +69,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/c++
-CompilerVersion: 5.4.0
+Compiler: /usr/lib64/ccache/c++
+CompilerVersion: 7.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -77,7 +78,7 @@ ValgrindCommand:
 ValgrindCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: /usr/bin/valgrind
+MemoryCheckCommand: /opt/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

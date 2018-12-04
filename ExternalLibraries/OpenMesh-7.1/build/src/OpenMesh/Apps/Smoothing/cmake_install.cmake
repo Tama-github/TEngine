@@ -1,8 +1,8 @@
-# Install script for directory: /home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Smoothing
+# Install script for directory: /home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Smoothing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/build/B")
+  set(CMAKE_INSTALL_PREFIX "/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/build/B")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,11 +29,11 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/build/Build/bin/Smoothing")
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/build/Build/bin/Smoothing")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Smoothing" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Smoothing")
     if(CMAKE_INSTALL_DO_STRIP)

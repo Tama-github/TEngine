@@ -201,8 +201,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/assimp.dir/__/contrib/Open3DGC/o3dgcTriangleFans.cpp.o"
   "CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.o"
   "libassimp.pdb"
-  "libassimp.so"
   "libassimp.so.4.1.0"
+  "libassimp.so"
   "libassimp.so.4"
 )
 

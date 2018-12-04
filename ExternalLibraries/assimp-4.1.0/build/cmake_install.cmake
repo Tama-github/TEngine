@@ -1,8 +1,8 @@
-# Install script for directory: /home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0
+# Install script for directory: /home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/B")
+  set(CMAKE_INSTALL_PREFIX "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/B")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,26 +29,26 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp4.1.0-dev")
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp4.1.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/assimp-4.1" TYPE FILE FILES
-    "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp-config.cmake"
-    "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp-config-version.cmake"
+    "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp-config.cmake"
+    "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp-config-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp4.1.0-dev")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp.pc")
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp4.1.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/assimp.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/contrib/cmake_install.cmake")
-  include("/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/code/cmake_install.cmake")
-  include("/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/tools/assimp_cmd/cmake_install.cmake")
-  include("/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/test/cmake_install.cmake")
+  include("/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/contrib/cmake_install.cmake")
+  include("/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/code/cmake_install.cmake")
+  include("/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/tools/assimp_cmd/cmake_install.cmake")
+  include("/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/test/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

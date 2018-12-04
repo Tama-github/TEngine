@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -188,11 +188,11 @@ vector3.h
 cmath
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
 assimp/ai_assert.h
 -
 StringComparison.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
 string.h
 -
 stdint.h
@@ -200,7 +200,7 @@ stdint.h
 string
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/fast_atof.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/fast_atof.h
 cmath
 -
 limits
@@ -212,7 +212,7 @@ stdexcept
 assimp/defs.h
 -
 StringComparison.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/StringComparison.h
 assimp/DefaultLogger.hpp
 -
 stdint.h
@@ -220,43 +220,43 @@ stdint.h
 assimp/Compiler/pstdint.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/CXMLReaderImpl.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/CXMLReaderImpl.h
 irrXML.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
 irrString.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
 irrArray.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/heapsort.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/heapsort.h
 irrTypes.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
 irrTypes.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
 heapsort.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/heapsort.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/heapsort.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
 irrTypes.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrTypes.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.cpp
 irrXML.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
 irrString.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrString.h
 irrArray.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrArray.h
 ./../../code/fast_atof.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/fast_atof.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/./../../code/fast_atof.h
 CXMLReaderImpl.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/CXMLReaderImpl.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/CXMLReaderImpl.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/irrXML/irrXML.h
 stdio.h
 -
 irrXML.h

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -900,7 +900,7 @@ OpenMesh/Core/Geometry/VectorT.hh
 OpenMesh/Core/Geometry/Plane3d.hh
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/VDProgMesh/Analyzer/vdpmanalyzer.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/VDProgMesh/Analyzer/vdpmanalyzer.cc
 OpenMesh/Core/System/config.h
 -
 iostream

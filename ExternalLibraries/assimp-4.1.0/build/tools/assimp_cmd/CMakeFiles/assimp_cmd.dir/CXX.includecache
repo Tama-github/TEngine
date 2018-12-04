@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -380,19 +380,19 @@ cmath
 defs.h
 ../include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/ai_assert.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/ai_assert.h
 assert.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/CompareDump.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/CompareDump.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 ../../code/assbin_chunks.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
 generic_inserter.hpp
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/generic_inserter.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/generic_inserter.hpp
 map
 -
 deque
@@ -404,15 +404,15 @@ sstream
 iostream
 -
 ../../include/assimp/ai_assert.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/ai_assert.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/include/assimp/ai_assert.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Export.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Export.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/ImageExtractor.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/ImageExtractor.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 ../code/fast_atof.h
 -
 ../code/StringComparison.h
@@ -422,15 +422,15 @@ assimp/Compiler/pushpack1.h
 assimp/Compiler/poppack1.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Info.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Info.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 stdio.h
 -
 string.h
@@ -456,15 +456,15 @@ zlib.h
 ../contrib/zlib/zlib.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/WriteDumb.cpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/WriteDumb.cpp
 Main.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/Main.h
 ../code/ProcessHelper.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/code/ProcessHelper.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/code/ProcessHelper.h
 ../../code/assbin_chunks.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/code/assbin_chunks.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/generic_inserter.hpp
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/tools/assimp_cmd/generic_inserter.hpp
 ostream
 -
 new

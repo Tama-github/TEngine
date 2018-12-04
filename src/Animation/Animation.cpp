@@ -1,8 +1,7 @@
 #include "Animation.h"
 
-Animation::Animation () {
-
-}
+Animation::Animation ()
+{}
 
 Animation::~Animation () {
 
@@ -22,6 +21,8 @@ void Animation::addScaling (const glm::vec3& scale) {
 
 glm::mat4 Animation::playAnimation (const glm::mat4& model) {
     glm::mat4 res = model;
+
+    std::cout << "nb d'anim ? : " << _animations.size() << std::endl;
     for (unsigned int i = 0; i < _animations.size(); i++) {
         res = _animations[i](res);
     }

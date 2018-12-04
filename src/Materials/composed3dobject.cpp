@@ -40,3 +40,4 @@ void Composed3DObject::setColor(glm::vec3 color) {
     for (unsigned int i = 0; i < _meshes.size(); i++)
         _meshes[i].setColor(color);
 }
+// TODO : Créer un objet dans la scène pour tester les os

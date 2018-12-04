@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -246,7 +246,7 @@ cmath
 defs.h
 ../include/assimp/defs.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/CCompilerTest.c
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/test/unit/CCompilerTest.c
 assimp/postprocess.h
 -
 assimp/scene.h

@@ -10,6 +10,7 @@
 #include "../Texture/texture.h"
 #include "../ShaderManager/shadermanager.h"
 #include "../BRDF/brdf.h"
+#include "../Bone/bone.h"
 
 
 
@@ -64,15 +65,25 @@ public:
 
     void setupGL();
     void draw(ShaderManager shader);
+
+    void setupSkeleton (Bone* skeleton);
+    Bone* getSkeleton();
+
     /******** Depreciated *********/
     Animation& getAnimation();
     void updateShiftedVertices();
     void playAnimation();
     /******** *********** *********/
 
+    //void moveBones ();
+
+    void updateVertices();
+
+
     glm::mat4 _model;
 
 protected:
+    /* Gl handles */
     GLuint _vao;
     GLuint _vbo;
     GLuint _nbo;
@@ -82,22 +93,27 @@ protected:
 
     GLuint _ebo;
 
+    /* Vertices */
     std::vector<GLfloat> _vertices;
     std::vector<GLfloat> _normals;
     std::vector<GLfloat> _tangentes;
     std::vector<GLfloat> _bitangentes;
     std::vector<GLfloat> _texCoords;
-    std::vector<GLuint> _indices;
     std::vector<Texture> _textures;
+    std::vector<std::vector<GLfloat>> _bonesWeight;
 
+    /* Triangles */
+    std::vector<GLuint> _indices;
+
+    /* Is this mesh have a texture ? */
     bool _isTextured;
 
-    //std::vector<GLfloat> _shifted_vertices;
-
+    /* Object color things */
     glm::vec3 _color;
-
     BRDF _brdf;
 
+    /* Animation things */
+    Bone* _skeleton;
     Animation _animation;
 
 

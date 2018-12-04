@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/crypt.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/crypt.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.c
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.c
 stdio.h
 -
 stdlib.h
@@ -16,13 +16,13 @@ stdlib.h
 string.h
 -
 zlib.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
 ioapi.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.c
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.c
 stdio.h
 -
 stdlib.h
@@ -30,9 +30,9 @@ stdlib.h
 string.h
 -
 zlib.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
 unzip.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.h
 stddef.h
 -
 string.h
@@ -42,15 +42,15 @@ stdlib.h
 errno.h
 -
 crypt.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/crypt.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/crypt.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/unzip.h
 zlib.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/zlib.h
 ioapi.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/unzip/ioapi.h
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/miniz.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/miniz.h
 stdlib.h
 -
 time.h
@@ -74,11 +74,11 @@ utime.h
 utime.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.c
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.c
 zip.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.h
 miniz.h
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/miniz.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/miniz.h
 errno.h
 -
 sys/stat.h
@@ -88,7 +88,7 @@ time.h
 direct.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.h
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/contrib/zip/src/zip.h
 string.h
 -
 

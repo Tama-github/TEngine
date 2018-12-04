@@ -101,9 +101,9 @@ void Scene3DObject::draw() {
     //glGetIntegerv(GL_FRAMEBUFFER_BINDING, &qt_buffer);
     //std::cout << qt_buffer << std::endl;
     Scene::draw();
-    //drawScene();
+    drawScene();
     //drawFrameBuffer();
-    drawSSAO();
+    //drawSSAO();
 }
 
 void Scene3DObject::drawScene() {
@@ -131,23 +131,10 @@ void Scene3DObject::drawScene() {
 
 void Scene3DObject::drawFrameBuffer() {
     // first pass
-    /*glBindFramebuffer(GL_FRAMEBUFFER, _fbo);
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // we're not using the stencil buffer now
-    glEnable(GL_DEPTH_TEST);*/
     _tbuff.bind();
     drawScene();
 
     // second pass
-    /*glBindFramebuffer(GL_FRAMEBUFFER, 0); // back to default
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);*/
-
-    /*glUseProgram(_screenShader.getProgram());
-    glBindVertexArray(quadVAO);
-    glDisable(GL_DEPTH_TEST);
-    glBindTexture(GL_TEXTURE_2D, _texColorBuffer);
-    glDrawArrays(GL_TRIANGLES, 0, 6);*/
     _tbuff.render();
 }
 
@@ -401,7 +388,11 @@ void Scene3DObject::init3DObjects () {
         6, 11, 7,    // 12
     };
     Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
-    MeshManager m = MeshManager ();
+    std::vector<Material3DObject> meshes = std::vector<Material3DObject>{};
+    meshes.push_back(so);
+    Composed3DObject c = Composed3DObject(meshes);
+    _3DObjects.push_back(c);*/
+    /*MeshManager m = MeshManager ();
     so.getIndices() = indices;
     so.getVertices() = vertices;
     m.useMaterial3DObject(so);
@@ -424,9 +415,9 @@ void Scene3DObject::init3DObjects () {
     /*MeshManager m = MeshManager ();
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.subdivide();
-    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
-    m.subdivide();
-    m.convertToMaterial3DObject(_3DObjects[2].getMeshes()[0]);
+    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);*/
+    //m.subdivide();
+    /*m.convertToMaterial3DObject(_3DObjects[2].getMeshes()[0]);
     m.useMaterial3DObject(_3DObjects[3].getMeshes()[0]);
     m.subdivide();
     m.simplificationHEC(5000);
@@ -435,6 +426,7 @@ void Scene3DObject::init3DObjects () {
     _3DObjects[1].translate(glm::vec3(3,0,0));
     _3DObjects[2].translate(glm::vec3(-3,0,0));
     _3DObjects[3].translate(glm::vec3(-3,-3,0));*/
+    /* Grosse scene
     GL_CHECK_ERROR
     ObjectLoader ol = ObjectLoader("Models/Sponza");
     if (ol.objLoader("sponza2.dae")) {
@@ -443,7 +435,7 @@ void Scene3DObject::init3DObjects () {
         GL_CHECK_ERROR
         _3DObjects[0].setColor(glm::vec3(0.1f, 0.5f, 0.7f));
     }
-    GL_CHECK_ERROR
+    GL_CHECK_ERROR*/
     /*for (unsigned int i = 0; i<_3DObjects[0].getMeshes().size(); i++) {
         MeshManager m = MeshManager ();
         m.useMaterial3DObject(_3DObjects[0].getMeshes()[i]);
@@ -456,12 +448,128 @@ void Scene3DObject::init3DObjects () {
     /*MeshManager m = MeshManager();
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);*/
+
+    std::vector<GLfloat> vertices = {
+        -1.5f, 0.f, 0.f,
+        -1.5f, 0.f, 1.0f,     // 0
+        -1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        -1.5f, 1.f, 0.0f,    // 4
+        -1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        -1.5f, 0.f, -1.f,     // 5
+        -1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        -1.5f, -1.f, 0.0f,    // 4
+        -1.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        -0.5f, 0.f, 1.0f,     // 0
+        -0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        -0.5f, 1.f, 0.0f,    // 4
+        -0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        -0.5f, 0.f, -1.f,     // 5
+        -0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        -0.5f, -1.f, 0.0f,    // 4
+        -0.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        0.5f, 0.f, 1.0f,     // 0
+        0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        0.5f, 1.f, 0.0f,    // 4
+        0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        0.5f, 0.f, -1.f,     // 5
+        0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        0.5f, -1.f, 0.0f,    // 4
+        0.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        1.5f, 0.f, 1.0f,     // 0
+        1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
+        1.5f, 1.f, 0.0f,    // 4
+        1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        1.5f, 0.f, -1.f,     // 5
+        1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
+        1.5f, -1.f, 0.0f,    // 4
+        1.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        1.5f, 0.f, 0.f,
+    };
+    std::vector<GLuint> indices = {
+        1,  9, 10,
+        1, 10,  2,
+        2, 10, 11,
+        2, 11,  3,
+        3, 11, 12,
+        3, 12,  4,
+        4, 12, 13,
+        4, 13,  5,
+        5, 13, 14,
+        5, 14,  6,
+        6, 14, 15,
+        6, 15,  7,
+        7, 15, 16,
+        7, 16,  8,
+        8,  9,  1,
+        8, 16,  9
+    };
+
+    auto tmp = indices;
+    unsigned int t = indices.size();
+    for (unsigned int i = 0; i < t; i++) {
+        indices.push_back(tmp[i]+8);
+    }
+    for (unsigned int i = 0; i < t; i++) {
+        indices.push_back(tmp[i]+16);
+    }
+    t = indices.size();
+    /*for (unsigned int i = 1; i <= 7; i++) {
+        indices.push_back(i);
+        indices.push_back(0);
+        indices.push_back(i+1);
+
+        indices.push_back(t-2-i);
+        indices.push_back(t-1);
+        indices.push_back(t-1-i);
+
+        std::cout << "i+1 = " << i+1 << std::endl << "t-2-i = " << t-2-i << std::endl << "t-1 = " << t-1 << std::endl << "ind size =  " << t << std::endl ;
+
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;*/
+
+    Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
+    so.getIndices() = indices;
+    so.getVertices() = vertices;
+    Composed3DObject c = Composed3DObject({so});
+    _3DObjects.push_back(c);
+    MeshManager m = MeshManager ();
+    m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
+    m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
+
+    Bone first = Bone(glm::vec3(-1.5f, 0.f, 0.f));
+    Bone second = Bone(&first, glm::vec3(0.f, 0.f, 0.f));
+    Bone third = Bone(&second, glm::vec3(1.5f, 0.f, 0.f));
+
+    std::cout << "first id : " << first.getIdx() << std::endl;
+    std::cout << "second id : " << second.getIdx() << std::endl;
+    std::cout << "third id : " << third.getIdx() << std::endl;
+    _3DObjects[0].getMeshes()[0].setupSkeleton(&first);
+
+    /*std::vector<GLfloat> vertices = {
+        -1.f, -1.f, 0.f,
+        -1.f, 1.f, 0.f,
+        1.f, 1.f, 0.f,
+        1.f, -1.f, 0.f
+    };
+    std::vector<GLuint> indices = {
+        0,1,2,
+        0,2,3
+    };
+    Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f),glm::vec3(0.2,0.7,0.3));
+    so.getIndices() = indices;
+    so.getVertices() = vertices;
+    std::vector<Material3DObject> meshes = std::vector<Material3DObject>();
+    meshes.push_back(so);
+    Composed3DObject co = Composed3DObject(meshes);
+    _3DObjects.push_back(co);*/
     GL_CHECK_ERROR
     _nb3DObjects = _3DObjects.size();
     for (unsigned int i = 0; i < _nb3DObjects; i++) {
         _3DObjects[i].setupGL();
     }
     GL_CHECK_ERROR
+    std::cout << "fin d'initialisation" << std::endl;
 }
 
 void Scene3DObject::initQuad() {

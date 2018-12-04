@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -896,7 +896,7 @@ unistd.h
 getopt.h
 -
 
-/home/tama/Moteure/animation/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Smoothing/smooth.cc
+/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/src/OpenMesh/Apps/Smoothing/smooth.cc
 iostream
 -
 OpenMesh/Core/IO/MeshIO.hh

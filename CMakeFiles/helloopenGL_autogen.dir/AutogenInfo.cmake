@@ -1,0 +1,33 @@
+# Directories and files
+set(AM_CMAKE_BINARY_DIR "/home/brl1547a/TEngine/TEngine/")
+set(AM_CMAKE_SOURCE_DIR "/home/brl1547a/TEngine/TEngine/")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "/home/brl1547a/TEngine/TEngine/")
+set(AM_CMAKE_CURRENT_BINARY_DIR "/home/brl1547a/TEngine/TEngine/")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "/home/brl1547a/TEngine/TEngine/helloopenGL_autogen")
+set(AM_SOURCES "/home/brl1547a/TEngine/TEngine/src/3DObjectParser/objectloader.cpp;/home/brl1547a/TEngine/TEngine/src/3DObjectParser/objparser.cpp;/home/brl1547a/TEngine/TEngine/src/Animation/Animation.cpp;/home/brl1547a/TEngine/TEngine/src/BRDF/brdf.cpp;/home/brl1547a/TEngine/TEngine/src/Bone/bone.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/Imported3DModel.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/bspline.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/bsplinepatch.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/composed3dobject.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/light.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/material.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/material3DObject.cpp;/home/brl1547a/TEngine/TEngine/src/Materials/spheres.cpp;/home/brl1547a/TEngine/TEngine/src/MeshManager/meshmanager.cpp;/home/brl1547a/TEngine/TEngine/src/RenderObject/gbuffer.cpp;/home/brl1547a/TEngine/TEngine/src/RenderObject/renderobject.cpp;/home/brl1547a/TEngine/TEngine/src/RenderObject/ssaoblurbuffer.cpp;/home/brl1547a/TEngine/TEngine/src/RenderObject/ssaobuffer.cpp;/home/brl1547a/TEngine/TEngine/src/RenderObject/testbuffer.cpp;/home/brl1547a/TEngine/TEngine/src/ShaderManager/shaderloader.cpp;/home/brl1547a/TEngine/TEngine/src/ShaderManager/shadermanager.cpp;/home/brl1547a/TEngine/TEngine/src/Texture/texture.cpp;/home/brl1547a/TEngine/TEngine/src/hello_3dObjScene/Scene3DObjects.cpp;/home/brl1547a/TEngine/TEngine/src/hello_camera/camera.cpp;/home/brl1547a/TEngine/TEngine/src/hello_camera/hellocamera.cpp;/home/brl1547a/TEngine/TEngine/src/hello_spheres/hellospheres.cpp;/home/brl1547a/TEngine/TEngine/src/hello_triangles/hellotriangles.cpp;/home/brl1547a/TEngine/TEngine/src/main.cpp;/home/brl1547a/TEngine/TEngine/src/mainwindow.cpp;/home/brl1547a/TEngine/TEngine/src/myopenglwidget.cpp;/home/brl1547a/TEngine/TEngine/src/scene.cpp")
+set(AM_HEADERS "/home/brl1547a/TEngine/TEngine/src/3DObjectParser/objectloader.h;/home/brl1547a/TEngine/TEngine/src/3DObjectParser/objparser.h;/home/brl1547a/TEngine/TEngine/src/Animation/Animation.h;/home/brl1547a/TEngine/TEngine/src/BRDF/brdf.h;/home/brl1547a/TEngine/TEngine/src/Bone/bone.h;/home/brl1547a/TEngine/TEngine/src/Materials/Imported3DModel.h;/home/brl1547a/TEngine/TEngine/src/Materials/bspline.h;/home/brl1547a/TEngine/TEngine/src/Materials/bsplinepatch.h;/home/brl1547a/TEngine/TEngine/src/Materials/composed3dobject.h;/home/brl1547a/TEngine/TEngine/src/Materials/light.h;/home/brl1547a/TEngine/TEngine/src/Materials/material.h;/home/brl1547a/TEngine/TEngine/src/Materials/material3DObject.h;/home/brl1547a/TEngine/TEngine/src/Materials/spheres.h;/home/brl1547a/TEngine/TEngine/src/MeshManager/meshmanager.h;/home/brl1547a/TEngine/TEngine/src/RenderObject/gbuffer.h;/home/brl1547a/TEngine/TEngine/src/RenderObject/renderobject.h;/home/brl1547a/TEngine/TEngine/src/RenderObject/ssaoblurbuffer.h;/home/brl1547a/TEngine/TEngine/src/RenderObject/ssaobuffer.h;/home/brl1547a/TEngine/TEngine/src/RenderObject/testbuffer.h;/home/brl1547a/TEngine/TEngine/src/ShaderManager/shaderloader.h;/home/brl1547a/TEngine/TEngine/src/ShaderManager/shadermanager.h;/home/brl1547a/TEngine/TEngine/src/Texture/texture.h;/home/brl1547a/TEngine/TEngine/src/glassert.h;/home/brl1547a/TEngine/TEngine/src/hello_3dObjScene/Scene3DObjects.h;/home/brl1547a/TEngine/TEngine/src/hello_camera/camera.h;/home/brl1547a/TEngine/TEngine/src/hello_camera/hellocamera.h;/home/brl1547a/TEngine/TEngine/src/hello_spheres/hellospheres.h;/home/brl1547a/TEngine/TEngine/src/hello_triangles/hellotriangles.h;/home/brl1547a/TEngine/TEngine/src/mainwindow.h;/home/brl1547a/TEngine/TEngine/src/myopenglwidget.h;/home/brl1547a/TEngine/TEngine/src/opengl_stuff.h;/home/brl1547a/TEngine/TEngine/src/scene.h;/home/brl1547a/TEngine/TEngine/src/stb_image.h")
+# Qt environment
+set(AM_QT_VERSION_MAJOR "5")
+set(AM_QT_MOC_EXECUTABLE "/opt/anaconda3/bin/moc")
+set(AM_QT_UIC_EXECUTABLE "/opt/anaconda3/bin/uic")
+set(AM_QT_RCC_EXECUTABLE )
+# MOC settings
+set(AM_MOC_SKIP "")
+set(AM_MOC_DEFINITIONS "QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB")
+set(AM_MOC_INCLUDES "/home/brl1547a/TEngine/TEngine;/home/brl1547a/TEngine/TEngine/helloopenGL_autogen/include;/home/brl1547a/TEngine/TEngine/src;/home/brl1547a/TEngine/TEngine/glm;/home/brl1547a/TEngine/TEngine/ExternalLibraries/OpenMesh-7.1/build/B/include;/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/B/include;/opt/anaconda3/include/qt;/opt/anaconda3/include/qt/QtWidgets;/opt/anaconda3/include/qt/QtGui;/opt/anaconda3/include/qt/QtCore;/opt/anaconda3/./mkspecs/linux-g++;/opt/anaconda3/include/qt/QtOpenGL")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "FALSE")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD )
+# UIC settings
+set(AM_UIC_SKIP "")
+set(AM_UIC_TARGET_OPTIONS "")
+set(AM_UIC_OPTIONS_FILES "")
+set(AM_UIC_OPTIONS_OPTIONS "")
+set(AM_UIC_SEARCH_PATHS "")
+# RCC settings
+set(AM_RCC_SOURCES  )
+set(AM_RCC_INPUTS )
+set(AM_RCC_OPTIONS_FILES )
+set(AM_RCC_OPTIONS_OPTIONS )

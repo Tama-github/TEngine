@@ -55,6 +55,20 @@ Animation& Material3DObject::getAnimation() {
 
 void Material3DObject::playAnimation() {
     _model = _animation.playAnimation(_model);
+    std::cout << "ALO ? anim" << std::endl;
+    for (unsigned int i = 0; i < _bonesWeight.size(); i++) {
+        if (Bone * b = _skeleton->ith(i)) {
+            std::cout << "Material3DObject::setupSkeleton current " << b->getIdx() << " :" << std::endl;
+            glm::mat4 model =  b->getTransform();
+            std::cout << model[0][0] << " " << model[0][1] << " " << model[0][2] << " " << model[0][3] << std::endl;
+            std::cout << model[1][0] << " " << model[1][1] << " " << model[1][2] << " " << model[1][3] << std::endl;
+            std::cout << model[2][0] << " " << model[2][1] << " " << model[2][2] << " " << model[2][3] << std::endl;
+            std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;
+            _skeleton->ith(i)->rotate(0.01,glm::vec3(1,1,0));
+        } else {
+            std::cout << "ha d'accord" << std::endl;
+        }
+    }
 }
 
 void Material3DObject::setupGL() {
@@ -108,7 +122,6 @@ void Material3DObject::setupGL() {
 void Material3DObject::draw(ShaderManager shader) {
     playAnimation();
 
-
     glm::vec3 tmpColor = _color;
     GLint objectColorLocation = glGetUniformLocation(shader.getProgram(), "objectColor");
     glProgramUniform3f(shader.getProgram(), objectColorLocation,
@@ -146,7 +159,9 @@ void Material3DObject::draw(ShaderManager shader) {
     glUniform3fv(glGetUniformLocation(shader.getProgram(), "material.specularColor"), 1, glm::value_ptr(_brdf.getSpecularColor()));
 
     glBindVertexArray(_vao);
+
     glUniformMatrix4fv( glGetUniformLocation(shader.getProgram(), "model"), 1, GL_FALSE, glm::value_ptr(_model));
+
     glDrawElements(GL_TRIANGLES, _indices.size(), GL_UNSIGNED_INT, 0);
     //glDrawElementsInstanced(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0, models.size());
     glBindVertexArray(0);
@@ -167,3 +182,63 @@ void Material3DObject::draw(ShaderManager shader) {
     //glDrawElements(GL_TRIANGLES, _indices.size(), GL_UNSIGNED_INT, 0);
     //glBindVertexArray(0);
 }
+
+void Material3DObject::setupSkeleton (Bone* skeleton) {
+    _skeleton = skeleton;
+    unsigned int i = 0;
+    Bone* current = _skeleton;
+    /* Computing weight for each vertex */
+    while (current != nullptr) {
+        Bone* b = current;
+        std::cout << "Material3DObject::setupSkeleton current " << b->getIdx() << " :" << std::endl;
+        glm::mat4 model =  b->getTransform();
+        std::cout << model[0][0] << " " << model[0][1] << " " << model[0][2] << " " << model[0][3] << std::endl;
+        std::cout << model[1][0] << " " << model[1][1] << " " << model[1][2] << " " << model[1][3] << std::endl;
+        std::cout << model[2][0] << " " << model[2][1] << " " << model[2][2] << " " << model[2][3] << std::endl;
+        std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;
+        _bonesWeight.emplace_back(current->wheightComputing(_vertices));
+        i++;
+        current = _skeleton->ith(i);
+    }
+
+    /* Nomalization of each weights */
+    std::cout << "nb wheight per vertex : " << _bonesWeight.size() << std::endl;
+    std::cout << "Starting normalization" << std::endl;
+
+    for (i = 0; i < _vertices.size()/3; i++) {
+        float norm = 0;
+        std::cout << "i : " << i << std::endl;
+        for (unsigned int j = 0; j < _bonesWeight.size(); j++) {
+            //std::cout << "_bonesWeight[" << j << "][" << i << "] = " << _bonesWeight[j][i] << std::endl;
+            norm += _bonesWeight[j][i] * _bonesWeight[j][i];
+        }
+        norm = sqrt(norm);
+        //std::cout << "norm = " << norm << std::endl;
+        if (norm != 0)
+            for (unsigned int j = 0; j < _bonesWeight.size(); j++)
+                _bonesWeight[j][i] /= norm;
+
+    }
+    std::cout << "nb wheight : " << _bonesWeight.size() << std::endl;
+}
+
+Bone* Material3DObject::getSkeleton() {
+    return _skeleton;
+}
+
+void Material3DObject::updateVertices() {
+    for (unsigned int i = 0; i < _vertices.size(); i+=3) {
+        glm::vec3 p = glm::vec3(_vertices[i], _vertices[i+1], _vertices[i+2]);
+        glm::vec4 res = glm::vec4(0.f,0.f,0.f,0.f);
+        for (unsigned int j = 0; j < _bonesWeight.size(); j++) {
+            Bone* btmp = _skeleton->ith(i);
+            res += _bonesWeight[j][i/3] * btmp->getTransform() * btmp->getRestPositionInv() * glm::vec4(p,1);
+        }
+        _vertices[i] = res[0];
+        _vertices[i+1] = res[1];
+        _vertices[i+2] = res[2];
+    }
+}
+
+
+

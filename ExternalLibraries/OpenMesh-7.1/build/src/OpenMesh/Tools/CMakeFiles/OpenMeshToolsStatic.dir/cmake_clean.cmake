@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OpenMeshToolsStatic.dir/Decimater/Observer.cc.o"
-  "CMakeFiles/OpenMeshToolsStatic.dir/Utils/conio.cc.o"
   "CMakeFiles/OpenMeshToolsStatic.dir/Utils/Gnuplot.cc.o"
   "CMakeFiles/OpenMeshToolsStatic.dir/Utils/Timer.cc.o"
-  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/ViewingParameters.cc.o"
+  "CMakeFiles/OpenMeshToolsStatic.dir/Utils/conio.cc.o"
+  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VFront.cc.o"
+  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VHierarchy.cc.o"
   "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VHierarchyNodeIndex.cc.o"
   "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VHierarchyWindow.cc.o"
-  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VHierarchy.cc.o"
-  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/VFront.cc.o"
+  "CMakeFiles/OpenMeshToolsStatic.dir/VDPM/ViewingParameters.cc.o"
   "libOpenMeshTools.pdb"
   "libOpenMeshTools.a"
 )

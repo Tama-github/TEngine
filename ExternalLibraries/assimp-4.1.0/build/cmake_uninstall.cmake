@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt")
+IF(NOT EXISTS "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt")
 
-FILE(READ "/home/tama/Moteure/animation/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt" files)
+FILE(READ "/home/brl1547a/TEngine/TEngine/ExternalLibraries/assimp-4.1.0/build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

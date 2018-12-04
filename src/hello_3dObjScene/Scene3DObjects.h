@@ -16,6 +16,9 @@
 #include "../Materials/material3DObject.h"
 #include "../Materials/composed3dobject.h"
 
+/* Bones/Skeletaon/Animation */
+#include "../Bone/bone.h"
+
 /* Import 3D Models */
 #include "../3DObjectParser/objparser.h"
 #include "../3DObjectParser/objectloader.h"
@@ -50,8 +53,6 @@ public:
     void mousemove(float xpos, float ypos) override;
     void keyboardmove(int key, double time) override;
     bool keyboard(unsigned char k) override;
-
-
 
 private:
     //Objects
@@ -121,7 +122,6 @@ private:
     void initQuad ();
     //void initSamples ();
     //void initNoise ();
-
 
     void drawScene ();
     void drawFrameBuffer ();

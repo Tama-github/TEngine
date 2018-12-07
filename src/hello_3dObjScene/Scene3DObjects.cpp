@@ -537,14 +537,14 @@ void Scene3DObject::init3DObjects () {
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
 
-    Bone first = Bone(glm::vec3(-1.5f, 0.f, 0.f));
-    Bone second = Bone(&first, glm::vec3(0.f, 0.f, 0.f));
-    Bone third = Bone(&second, glm::vec3(1.5f, 0.f, 0.f));
+    Bone* first =  new Bone(glm::vec3(-1.5f, 0.f, 0.f));
+    Bone* second = new Bone(first, glm::vec3(0.f, 0.f, 0.f));
+    Bone* third =  new Bone(second, glm::vec3(1.5f, 0.f, 0.f));
 
-    std::cout << "first id : " << first.getIdx() << std::endl;
-    std::cout << "second id : " << second.getIdx() << std::endl;
-    std::cout << "third id : " << third.getIdx() << std::endl;
-    _3DObjects[0].getMeshes()[0].setupSkeleton(&first);
+    std::cout << "first id : " << first->getIdx() << std::endl;
+    std::cout << "second id : " << second->getIdx() << std::endl;
+    std::cout << "third id : " << third->getIdx() << std::endl;
+    _3DObjects[0].getMeshes()[0].setupSkeleton(first);
 
     /*std::vector<GLfloat> vertices = {
         -1.f, -1.f, 0.f,

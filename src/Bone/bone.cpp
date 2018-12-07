@@ -81,16 +81,23 @@ glm::mat4 Bone::getTransform() {
     return _transform;
 }
 
+glm::vec3 Bone::getPosition() {
+    return _position;
+}
+
 std::vector<GLfloat> Bone::wheightComputing(std::vector<GLfloat> vertices) {
     std::vector<GLfloat> res {};
     //std::cout << "Bone::wheightComputing : Bone " << _idx << "   _position = " << _position[0] << " " << _position[1] << " " << _position[2] << std::endl;
     for (unsigned int i = 0; i < vertices.size(); i+=3) {
-        glm::vec3 p = glm::vec3(vertices[i], vertices[i+1], vertices[i+2]);
-        float d = glm::distance(p, _position);
-        if (d < 1 && d > -1)
-            res.push_back(1-(exp(-1.f/(1.f-d*d))));
-        else
-            res.push_back(0.f);
+        if (_parent) {
+            glm::vec3 p = glm::vec3(vertices[i], vertices[i+1], vertices[i+2]);
+            float d = glm::dot(_position-_parent->getPosition() ,p-_parent->getPosition());
+            std::cout << "d = " << d << std::endl;
+            if (d < 0)
+                res.push_back(0);
+            else
+                res.push_back(1);
+        }
     }
     return res;
 }

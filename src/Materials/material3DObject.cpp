@@ -65,6 +65,7 @@ void Material3DObject::playAnimation() {
             std::cout << model[2][0] << " " << model[2][1] << " " << model[2][2] << " " << model[2][3] << std::endl;
             std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;
             _skeleton->ith(i)->rotate(0.01,glm::vec3(1,1,0));
+            updateVertices();
         } else {
             std::cout << "ha d'accord" << std::endl;
         }
@@ -196,7 +197,9 @@ void Material3DObject::setupSkeleton (Bone* skeleton) {
         std::cout << model[1][0] << " " << model[1][1] << " " << model[1][2] << " " << model[1][3] << std::endl;
         std::cout << model[2][0] << " " << model[2][1] << " " << model[2][2] << " " << model[2][3] << std::endl;
         std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;
-        _bonesWeight.emplace_back(current->wheightComputing(_vertices));
+        auto tmp = current->wheightComputing(_vertices);
+        if (tmp.size()>0)
+            _bonesWeight.emplace_back(tmp);
         i++;
         current = _skeleton->ith(i);
     }
@@ -230,10 +233,13 @@ void Material3DObject::updateVertices() {
     for (unsigned int i = 0; i < _vertices.size(); i+=3) {
         glm::vec3 p = glm::vec3(_vertices[i], _vertices[i+1], _vertices[i+2]);
         glm::vec4 res = glm::vec4(0.f,0.f,0.f,0.f);
+        std::cout << "avant : p = " << p[0] << ", " << p[1] << ", " << p[2] << std::endl;
         for (unsigned int j = 0; j < _bonesWeight.size(); j++) {
-            Bone* btmp = _skeleton->ith(i);
+            //std::cout << " Material3DObject::updateVertices() : j = " << j << std::endl;
+            Bone* btmp = _skeleton->ith(j);
             res += _bonesWeight[j][i/3] * btmp->getTransform() * btmp->getRestPositionInv() * glm::vec4(p,1);
         }
+        //std::cout << "apres : p = " << res[0] << ", " << res[1] << ", " << res[2] << std::endl;
         _vertices[i] = res[0];
         _vertices[i+1] = res[1];
         _vertices[i+2] = res[2];

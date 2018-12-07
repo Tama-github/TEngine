@@ -24,6 +24,7 @@ public:
     void setTransform(glm::mat4 t);
     glm::mat4 getTransform();
     glm::mat4 getRestPositionInv();
+    glm::vec3 getPosition();
 
     std::vector<GLfloat> wheightComputing(std::vector<GLfloat> vertices);
 

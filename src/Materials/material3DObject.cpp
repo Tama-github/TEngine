@@ -55,7 +55,7 @@ Animation& Material3DObject::getAnimation() {
 
 void Material3DObject::playAnimation() {
     _model = _animation.playAnimation(_model);
-    std::cout << "ALO ? anim" << std::endl;
+    /*std::cout << "ALO ? anim" << std::endl;
     for (unsigned int i = 0; i < _bonesWeight.size(); i++) {
         if (Bone * b = _skeleton->ith(i)) {
             std::cout << "Material3DObject::setupSkeleton current " << b->getIdx() << " :" << std::endl;
@@ -69,7 +69,7 @@ void Material3DObject::playAnimation() {
         } else {
             std::cout << "ha d'accord" << std::endl;
         }
-    }
+    }*/
 }
 
 void Material3DObject::setupGL() {
@@ -184,28 +184,28 @@ void Material3DObject::draw(ShaderManager shader) {
     //glBindVertexArray(0);
 }
 
-void Material3DObject::setupSkeleton (Bone* skeleton) {
+/*void Material3DObject::setupSkeleton (Bone* skeleton) {
     _skeleton = skeleton;
     unsigned int i = 0;
     Bone* current = _skeleton;
     /* Computing weight for each vertex */
-    while (current != nullptr) {
-        Bone* b = current;
+    /*while (current != nullptr) {
+        /*Bone* b = current;
         std::cout << "Material3DObject::setupSkeleton current " << b->getIdx() << " :" << std::endl;
         glm::mat4 model =  b->getTransform();
         std::cout << model[0][0] << " " << model[0][1] << " " << model[0][2] << " " << model[0][3] << std::endl;
         std::cout << model[1][0] << " " << model[1][1] << " " << model[1][2] << " " << model[1][3] << std::endl;
         std::cout << model[2][0] << " " << model[2][1] << " " << model[2][2] << " " << model[2][3] << std::endl;
-        std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;
-        auto tmp = current->wheightComputing(_vertices);
+        std::cout << model[3][0] << " " << model[3][1] << " " << model[3][2] << " " << model[3][3] << std::endl;*/
+        /*auto tmp = current->wheightComputing(_vertices);
         if (tmp.size()>0)
             _bonesWeight.emplace_back(tmp);
         i++;
-        current = _skeleton->ith(i);
+        current = current->_children;
     }
 
     /* Nomalization of each weights */
-    std::cout << "nb wheight per vertex : " << _bonesWeight.size() << std::endl;
+    /*std::cout << "nb wheight per vertex : " << _bonesWeight.size() << std::endl;
     std::cout << "Starting normalization" << std::endl;
 
     for (i = 0; i < _vertices.size()/3; i++) {
@@ -223,13 +223,13 @@ void Material3DObject::setupSkeleton (Bone* skeleton) {
 
     }
     std::cout << "nb wheight : " << _bonesWeight.size() << std::endl;
-}
+}*/
 
 Bone* Material3DObject::getSkeleton() {
     return _skeleton;
 }
 
-void Material3DObject::updateVertices() {
+/*void Material3DObject::updateVertices() {
     for (unsigned int i = 0; i < _vertices.size(); i+=3) {
         glm::vec3 p = glm::vec3(_vertices[i], _vertices[i+1], _vertices[i+2]);
         glm::vec4 res = glm::vec4(0.f,0.f,0.f,0.f);
@@ -244,7 +244,7 @@ void Material3DObject::updateVertices() {
         _vertices[i+1] = res[1];
         _vertices[i+2] = res[2];
     }
-}
+}*/
 
 
 

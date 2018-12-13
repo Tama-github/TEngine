@@ -451,37 +451,37 @@ void Scene3DObject::init3DObjects () {
 
     std::vector<GLfloat> vertices = {
         -1.5f, 0.f, 0.f,
-        -1.5f, 0.f, 1.0f,     // 0
-        -1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        -1.5f, 1.f, 0.0f,    // 4
-        -1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        -1.5f, 0.f, -1.f,     // 5
-        -1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        -1.5f, -1.f, 0.0f,    // 4
-        -1.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        -0.5f, 0.f, 1.0f,     // 0
-        -0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        -0.5f, 1.f, 0.0f,    // 4
-        -0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        -0.5f, 0.f, -1.f,     // 5
-        -0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        -0.5f, -1.f, 0.0f,    // 4
-        -0.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        0.5f, 0.f, 1.0f,     // 0
-        0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        0.5f, 1.f, 0.0f,    // 4
-        0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        0.5f, 0.f, -1.f,     // 5
-        0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        0.5f, -1.f, 0.0f,    // 4
+        -1.5f, 0.f, 1.0f,
+        -1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        -1.5f, 1.f, 0.0f,
+        -1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        -1.5f, 0.f, -1.f,
+        -1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        -1.5f, -1.f, 0.0f,
+        -1.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        -0.5f, 0.f, 1.0f,
+        -0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        -0.5f, 1.f, 0.0f,
+        -0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        -0.5f, 0.f, -1.f,
+        -0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        -0.5f, -1.f, 0.0f,
+        -0.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        0.5f, 0.f, 1.0f,
+        0.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        0.5f, 1.f, 0.0f,
+        0.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        0.5f, 0.f, -1.f,
+        0.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        0.5f, -1.f, 0.0f,
         0.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
-        1.5f, 0.f, 1.0f,     // 0
-        1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,     // 2
-        1.5f, 1.f, 0.0f,    // 4
-        1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        1.5f, 0.f, -1.f,     // 5
-        1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,     // 6
-        1.5f, -1.f, 0.0f,    // 4
+        1.5f, 0.f, 1.0f,
+        1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,
+        1.5f, 1.f, 0.0f,
+        1.5f, sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        1.5f, 0.f, -1.f,
+        1.5f, -sqrt(2.f)/2.f, -sqrt(2.f)/2.f,
+        1.5f, -1.f, 0.0f,
         1.5f, -sqrt(2.f)/2.f, sqrt(2.f)/2.f,
         1.5f, 0.f, 0.f,
     };
@@ -527,8 +527,85 @@ void Scene3DObject::init3DObjects () {
         std::cout << std::endl;
     }
     std::cout << std::endl;*/
-
+    std::cout << " début " << std::endl ;
     Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
+
+    std::cout << " init " << std::endl ;
+    glm::mat4 Tr = glm::mat4();
+    glm::vec3 zAxis = glm::vec3(0.f, 0.f, 1.f);
+    float angle = -(float)M_PI/2.f;
+    Tr = glm::rotate(glm::mat4(1.0f), angle, zAxis);
+
+    std::cout << " bones " << std::endl ;
+    Bone* first =  new Bone(0);
+    Bone* second = new Bone(1);
+
+    std::cout << " setup " << std::endl ;
+    first->_children = second;
+    second->_children = nullptr;
+    first->_position = glm::vec3(-1.5f, 0.f, 0.f);
+    second->_position = glm::vec3(0.f,0.f,0.f);
+    first->_length = 1.5f;
+    second->_length = 1.5f;
+    first->_offset = glm::translate(glm::mat4(), first->_position);
+    second->_offset = glm::translate(glm::mat4(), second->_position - first->_position);
+    first->_direction = glm::normalize(second->_length - first->_position);
+    second->_direction = glm::normalize(second->_length - first->_position);
+    second->_parent = first;
+    first->_parent = nullptr;
+
+    std::cout << " Weight computing " << std::endl ;
+    so._bonesWeight.push_back(first->wheightComputing(vertices));
+    so._bonesWeight.push_back(second->wheightComputing(vertices));
+
+    std::cout << " Tr computing " << std::endl ;
+    Tr = glm::inverse(second->_offset) * glm::inverse(second->_parent->_offset) * Tr * second->_offset;
+    std::vector<glm::mat4> boneTrans;
+    glm::mat4 world_pos = second->_parent->_offset * Tr ;
+    boneTrans.emplace_back(glm::mat4() * glm::inverse(glm::mat4()));
+    boneTrans.emplace_back(world_pos * glm::inverse(glm::mat4()));
+
+    /*
+    ===========================================================================
+                                    LBS Compute
+    ===========================================================================
+    */
+
+    std::cout << " LBS " << std::endl ;
+    glm::mat4 blending = glm::mat4(0);
+
+    for (unsigned int i = 0; i < vertices.size(); i+=3) {
+        std::cout << " loop i: " << i << std::endl ;
+        glm::vec3 p = glm::vec3(vertices[i], vertices[i+1], vertices[i+2]);
+
+        std::cout << " avant ws " << std::endl ;
+        float w0 = so._bonesWeight[0][i/3];
+        float w1 = so._bonesWeight[1][i/3];
+
+        std::cout << " apres ws " << std::endl ;
+        blending += boneTrans[0] * w0;
+        blending += boneTrans[1] * w1;
+
+        glm::vec4 tmp = glm::vec4(p[0], p[1], p[2], 1.f);
+
+        std::cout << " avant interp " << std::endl ;
+        //======linear interpolation=======
+        glm::vec4 tmpOrig = glm::vec4(p[0], p[1], p[2], 1.f);
+        glm::vec4 tmpTrans = blending * tmpOrig;
+        glm::vec4 tmpFinal = (w1) * tmpTrans + (1-w1) * tmpOrig;
+        tmp = tmpFinal/tmpFinal[3];
+        //=================================
+
+        std::cout << " après interp " << std::endl ;
+        vertices[i] = tmp[0];
+        vertices[i+1] = tmp[1];
+        vertices[i+2] = tmp[2];
+
+        std::cout << " fin loop " << std::endl ;
+        blending = glm::mat4(0);
+    }
+
+
     so.getIndices() = indices;
     so.getVertices() = vertices;
     Composed3DObject c = Composed3DObject({so});
@@ -537,14 +614,9 @@ void Scene3DObject::init3DObjects () {
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);
 
-    Bone* first =  new Bone(glm::vec3(-1.5f, 0.f, 0.f));
-    Bone* second = new Bone(first, glm::vec3(0.f, 0.f, 0.f));
-    Bone* third =  new Bone(second, glm::vec3(1.5f, 0.f, 0.f));
 
-    std::cout << "first id : " << first->getIdx() << std::endl;
-    std::cout << "second id : " << second->getIdx() << std::endl;
-    std::cout << "third id : " << third->getIdx() << std::endl;
-    _3DObjects[0].getMeshes()[0].setupSkeleton(first);
+
+    //_3DObjects[0].getMeshes()[0].setupSkeleton(first);
 
     /*std::vector<GLfloat> vertices = {
         -1.f, -1.f, 0.f,

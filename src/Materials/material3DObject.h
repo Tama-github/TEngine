@@ -66,7 +66,7 @@ public:
     void setupGL();
     void draw(ShaderManager shader);
 
-    void setupSkeleton (Bone* skeleton);
+    //void setupSkeleton (Bone* skeleton);
     Bone* getSkeleton();
 
     /******** Depreciated *********/
@@ -77,10 +77,11 @@ public:
 
     //void moveBones ();
 
-    void updateVertices();
+    //void updateVertices();
 
 
     glm::mat4 _model;
+    std::vector<std::vector<GLfloat>> _bonesWeight;
 
 protected:
     /* Gl handles */
@@ -100,7 +101,6 @@ protected:
     std::vector<GLfloat> _bitangentes;
     std::vector<GLfloat> _texCoords;
     std::vector<Texture> _textures;
-    std::vector<std::vector<GLfloat>> _bonesWeight;
 
     /* Triangles */
     std::vector<GLuint> _indices;

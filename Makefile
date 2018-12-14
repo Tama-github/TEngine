@@ -406,6 +406,33 @@ src/Materials/composed3dobject.cpp.s:
 	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.s
 .PHONY : src/Materials/composed3dobject.cpp.s
 
+src/Materials/cylinder.o: src/Materials/cylinder.cpp.o
+
+.PHONY : src/Materials/cylinder.o
+
+# target to build an object file
+src/Materials/cylinder.cpp.o:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/cylinder.cpp.o
+.PHONY : src/Materials/cylinder.cpp.o
+
+src/Materials/cylinder.i: src/Materials/cylinder.cpp.i
+
+.PHONY : src/Materials/cylinder.i
+
+# target to preprocess a source file
+src/Materials/cylinder.cpp.i:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/cylinder.cpp.i
+.PHONY : src/Materials/cylinder.cpp.i
+
+src/Materials/cylinder.s: src/Materials/cylinder.cpp.s
+
+.PHONY : src/Materials/cylinder.s
+
+# target to generate assembly for a file
+src/Materials/cylinder.cpp.s:
+	$(MAKE) -f CMakeFiles/helloopenGL.dir/build.make CMakeFiles/helloopenGL.dir/src/Materials/cylinder.cpp.s
+.PHONY : src/Materials/cylinder.cpp.s
+
 src/Materials/light.o: src/Materials/light.cpp.o
 
 .PHONY : src/Materials/light.o
@@ -1040,6 +1067,9 @@ help:
 	@echo "... src/Materials/composed3dobject.o"
 	@echo "... src/Materials/composed3dobject.i"
 	@echo "... src/Materials/composed3dobject.s"
+	@echo "... src/Materials/cylinder.o"
+	@echo "... src/Materials/cylinder.i"
+	@echo "... src/Materials/cylinder.s"
 	@echo "... src/Materials/light.o"
 	@echo "... src/Materials/light.i"
 	@echo "... src/Materials/light.s"

@@ -78,6 +78,7 @@ void Material3DObject::setupGL() {
     glGenBuffers(1, &_tanbo);
     glGenBuffers(1, &_bitanbo);
     glGenBuffers(1, &_texcoordbo);
+    glGenBuffers(1, &_wbo);
 
     glGenBuffers(1, &_ebo);
 
@@ -112,6 +113,17 @@ void Material3DObject::setupGL() {
         glVertexAttribPointer(4, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (GLvoid*)0);
         glEnableVertexAttribArray(4);
 
+        std::vector<GLfloat> weights = {};
+        for (unsigned int i = 0; i < _bonesWeight[0].size(); i++) {
+            weights.push_back(_bonesWeight[0][i]);
+            weights.push_back(_bonesWeight[1][i]);
+        }
+
+        glBindBuffer(GL_ARRAY_BUFFER, _wbo);
+        glBufferData(GL_ARRAY_BUFFER, weights.size()*sizeof (GLfloat), weights.data(), GL_STATIC_DRAW);
+        // 4. Then set our vertex attributes pointers
+        glVertexAttribPointer(5, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (GLvoid*)0);
+        glEnableVertexAttribArray(5);
 
         // 7. Copy our index array in a element buffer for OpenGL to use
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ebo);
@@ -246,5 +258,19 @@ Bone* Material3DObject::getSkeleton() {
     }
 }*/
 
+void Material3DObject::normalizeWeights() {
+    for (unsigned int i = 0; i < _bonesWeight[0].size(); i++) {
+        float norm = 0;
+        for (unsigned int j = 0; j < _bonesWeight.size(); j++) {
+            //std::cout << "_bonesWeight[" << j << "][" << i << "] = " << _bonesWeight[j][i] << std::endl;
+            norm += _bonesWeight[j][i] * _bonesWeight[j][i];
+        }
+        norm = sqrt(norm);
+        //std::cout << "norm = " << norm << std::endl;
+        if (norm != 0)
+            for (unsigned int j = 0; j < _bonesWeight.size(); j++)
+                _bonesWeight[j][i] /= norm;
+    }
+}
 
 

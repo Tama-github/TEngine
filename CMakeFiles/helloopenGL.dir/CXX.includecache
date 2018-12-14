@@ -186,6 +186,14 @@ composed3dobject.h
 ../opengl_stuff.h
 /home/brl1547a/TEngine/TEngine/src/opengl_stuff.h
 
+/home/brl1547a/TEngine/TEngine/src/Materials/cylinder.cpp
+cylinder.h
+/home/brl1547a/TEngine/TEngine/src/Materials/cylinder.h
+
+/home/brl1547a/TEngine/TEngine/src/Materials/cylinder.h
+material3DObject.h
+/home/brl1547a/TEngine/TEngine/src/Materials/material3DObject.h
+
 /home/brl1547a/TEngine/TEngine/src/Materials/light.cpp
 light.h
 /home/brl1547a/TEngine/TEngine/src/Materials/light.h
@@ -355,6 +363,8 @@ iostream
 -
 ../glassert.h
 /home/brl1547a/TEngine/TEngine/src/glassert.h
+../Materials/cylinder.h
+/home/brl1547a/TEngine/TEngine/src/Materials/cylinder.h
 
 /home/brl1547a/TEngine/TEngine/src/hello_3dObjScene/Scene3DObjects.h
 memory

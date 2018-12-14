@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/helloopenGL.dir/src/Materials/bspline.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/bsplinepatch.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/composed3dobject.cpp.o"
+  "CMakeFiles/helloopenGL.dir/src/Materials/cylinder.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/light.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/material.cpp.o"
   "CMakeFiles/helloopenGL.dir/src/Materials/material3DObject.cpp.o"

@@ -68,7 +68,8 @@ std::vector<GLfloat> Bone::wheightComputing(std::vector<GLfloat> vertices) {
         float R2 = R*R;
         float R8 = R*R*R*R*R*R*R*R;
         glm::vec3 pj = glm::vec3(vertices[i], vertices[i+1], vertices[i+2]);
-        glm::vec3 si = glm::vec3(-1.5f/2.f, 0.f, 0.f);
+        glm::vec3 si = (_position + (_position + _direction*_length));
+        si = glm::vec3(si[0]/2, si[1]/2, si[2]/2);
         res.push_back (1/R8 * (R2-glm::length(pj - si))*(R2-glm::length(pj - si))*(R2-glm::length(pj - si))*(R2-glm::length(pj - si)));
     }
     return res;

@@ -1,6 +1,7 @@
 #include "Scene3DObjects.h"
 #include <iostream>
 #include "../glassert.h"
+#include "../Materials/cylinder.h"
 
 #define deg2rad(x) float(M_PI)*(x)/180.f
 
@@ -70,7 +71,7 @@ Scene3DObject::Scene3DObject(int width, int height) :
     _shaderselector.back().genProgram();
     _shaderselector.push_back(ShaderManager("Shaders/vertex_phong_shader.glsl", "Shaders/fragment_phong_light_shader.glsl"));
     _shaderselector.back().genProgram();
-    _shaderselector.push_back(ShaderManager("Shaders/vertex_phong_shader_new.glsl", "Shaders/fragment_phong_light_shader_new.glsl"));
+    _shaderselector.push_back(ShaderManager("Shaders/vertex_wheight.glsl", "Shaders/fragment_weight.glsl"));
     _shaderselector.back().genProgram();
     GL_CHECK_ERROR
     //_screenShader.genProgram();
@@ -449,7 +450,7 @@ void Scene3DObject::init3DObjects () {
     m.useMaterial3DObject(_3DObjects[0].getMeshes()[0]);
     m.convertToMaterial3DObject(_3DObjects[0].getMeshes()[0]);*/
 
-    std::vector<GLfloat> vertices = {
+    /*std::vector<GLfloat> vertices = {
         -1.5f, 0.f, 0.f,
         -1.5f, 0.f, 1.0f,
         -1.5f, sqrt(2.f)/2.f, sqrt(2.f)/2.f,
@@ -512,7 +513,7 @@ void Scene3DObject::init3DObjects () {
     for (unsigned int i = 0; i < t; i++) {
         indices.push_back(tmp[i]+16);
     }
-    t = indices.size();
+    t = indices.size();*/
     /*for (unsigned int i = 1; i <= 7; i++) {
         indices.push_back(i);
         indices.push_back(0);
@@ -527,14 +528,21 @@ void Scene3DObject::init3DObjects () {
         std::cout << std::endl;
     }
     std::cout << std::endl;*/
+    Material3DObject so = Cylinder(glm::vec3(-3.f, 0.f, 0.f), 6.f, 15, 1);
+    std::vector<GLfloat> vertices = so.getVertices();
+    std::vector<GLuint> indices = so.getIndices();
+
+
     std::cout << " début " << std::endl ;
-    Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
+    std::cout << "nb vertices : " << vertices.size() << std::endl;
+    //Material3DObject so = Material3DObject(glm::vec3(0.f,0.f,0.f), glm::vec3(0.7,0.2,0.3));
+
 
     std::cout << " init " << std::endl ;
     glm::mat4 Tr = glm::mat4();
-    glm::vec3 zAxis = glm::vec3(0.f, 0.f, 1.f);
+    glm::vec3 xAxis = glm::vec3(0.f, 0.f, 1.f);
     float angle = -(float)M_PI/2.f;
-    Tr = glm::rotate(glm::mat4(1.0f), angle, zAxis);
+    Tr = glm::rotate(glm::mat4(1.0f), angle, xAxis);
 
     std::cout << " bones " << std::endl ;
     Bone* first =  new Bone(0);
@@ -543,20 +551,26 @@ void Scene3DObject::init3DObjects () {
     std::cout << " setup " << std::endl ;
     first->_children = second;
     second->_children = nullptr;
-    first->_position = glm::vec3(-1.5f, 0.f, 0.f);
+    first->_position = glm::vec3(-3.f, 0.f, 0.f);
     second->_position = glm::vec3(0.f,0.f,0.f);
-    first->_length = 1.5f;
-    second->_length = 1.5f;
+    first->_length = 3.f;
+    second->_length = 3.f;
     first->_offset = glm::translate(glm::mat4(), first->_position);
-    second->_offset = glm::translate(glm::mat4(), second->_position - first->_position);
-    first->_direction = glm::normalize(second->_length - first->_position);
-    second->_direction = glm::normalize(second->_length - first->_position);
+    second->_offset = glm::translate(glm::mat4(), second->_position );
+    first->_direction = glm::normalize(second->_position - first->_position);
+    second->_direction = glm::normalize(second->_position - first->_position);
     second->_parent = first;
     first->_parent = nullptr;
 
     std::cout << " Weight computing " << std::endl ;
     so._bonesWeight.push_back(first->wheightComputing(vertices));
     so._bonesWeight.push_back(second->wheightComputing(vertices));
+    so.normalizeWeights();
+
+    std::cout << " Weight displaying " << std::endl;
+    for (unsigned int i = 0; i < so._bonesWeight[0].size(); i++) {
+        std::cout << "vertex " << i << " : w0 = " << so._bonesWeight[0][i] << "   ,   w1 = " << so._bonesWeight[1][i] << std::endl;
+    }
 
     std::cout << " Tr computing " << std::endl ;
     Tr = glm::inverse(second->_offset) * glm::inverse(second->_parent->_offset) * Tr * second->_offset;

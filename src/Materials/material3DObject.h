@@ -16,6 +16,11 @@
 
 class Material3DObject : public Material {
 public:
+    Material3DObject () :
+        Material(glm::vec3(0.f,0.f,0.f)),
+        _isTextured(false)
+    {}
+
     Material3DObject(glm::vec3 position, std::vector<GLfloat>& vertices, std::vector<GLfloat>& normals, std::vector<GLuint>& indices, glm::vec3 color = glm::vec3(0,0,0)) :
         Material(position),
         _vertices(vertices),
@@ -75,10 +80,7 @@ public:
     void playAnimation();
     /******** *********** *********/
 
-    //void moveBones ();
-
-    //void updateVertices();
-
+    void normalizeWeights();
 
     glm::mat4 _model;
     std::vector<std::vector<GLfloat>> _bonesWeight;
@@ -91,6 +93,7 @@ protected:
     GLuint _tanbo;
     GLuint _bitanbo;
     GLuint _texcoordbo;
+    GLuint _wbo; //weights
 
     GLuint _ebo;
 
@@ -102,7 +105,7 @@ protected:
     std::vector<GLfloat> _texCoords;
     std::vector<Texture> _textures;
 
-    /* Triangles */
+    /* Triangles indices */
     std::vector<GLuint> _indices;
 
     /* Is this mesh have a texture ? */
@@ -115,8 +118,6 @@ protected:
     /* Animation things */
     Bone* _skeleton;
     Animation _animation;
-
-
 
 };
 

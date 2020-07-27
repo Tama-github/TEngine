@@ -142,8 +142,8 @@ bool Scene3DObject::keyboard(unsigned char k) {
 
 void Scene3DObject::init3DObjects () {
     //ObjParser::parse(std::string("Models/cat.obj"), &_3DObjects, true);
-    //ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
-    ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
+    ObjParser::parse(std::string("Models/suzanne.obj"), &_3DObjects, true);
+    //ObjParser::parse(std::string("Models/armadillo.obj"), &_3DObjects, true);
 
     /* Add animations to the added models */
     //_3DObjects[0].getAnimation().addTranslation(glm::vec3(0.001,0,0));

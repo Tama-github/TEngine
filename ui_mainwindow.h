@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.2
+** Created by: Qt User Interface Compiler version 5.11.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,8 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -87,14 +85,14 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Hello OpenGL ...", 0));
-        action_Version_OpenGL->setText(QApplication::translate("MainWindow", "&Version OpenGL", 0));
-        actionHello_triangle->setText(QApplication::translate("MainWindow", "Hello triangle ...", 0));
-        actionHello_camera->setText(QApplication::translate("MainWindow", "Hello camera ...", 0));
-        actionHello_spheres->setText(QApplication::translate("MainWindow", "Hello spheres ...", 0));
-        actionHello_clear->setText(QApplication::translate("MainWindow", "Hello clear ...", 0));
-        menuInfo->setTitle(QApplication::translate("MainWindow", "Info", 0));
-        menu_Demo->setTitle(QApplication::translate("MainWindow", "&Demo", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Hello OpenGL ...", nullptr));
+        action_Version_OpenGL->setText(QApplication::translate("MainWindow", "&Version OpenGL", nullptr));
+        actionHello_triangle->setText(QApplication::translate("MainWindow", "Hello triangle ...", nullptr));
+        actionHello_camera->setText(QApplication::translate("MainWindow", "Hello camera ...", nullptr));
+        actionHello_spheres->setText(QApplication::translate("MainWindow", "Hello spheres ...", nullptr));
+        actionHello_clear->setText(QApplication::translate("MainWindow", "Hello clear ...", nullptr));
+        menuInfo->setTitle(QApplication::translate("MainWindow", "Info", nullptr));
+        menu_Demo->setTitle(QApplication::translate("MainWindow", "&Demo", nullptr));
     } // retranslateUi
 
 };
